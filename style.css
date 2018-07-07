@@ -1,0 +1,90 @@
+/* Global Styles
+============= ===================================================================
+*/
+
+body {
+  background-color: #ABB2B9;
+  font-family: Helvetica, sans-serif
+}
+
+.outterTable {
+  background-color: #EAEDED;
+}
+
+.header {
+  background-color: #FEF5E7;
+}
+
+.footer {
+  background-color: #FEF5E7;
+}
+
+.message {
+  width: 400;
+}
+
+.messageWarning {
+  color: black;
+  background-color: rgb(252, 237, 152);
+}
+
+.messageError {
+  color: white;
+  background-color: rgb(247, 85, 83);
+}
+
+/* Client DB Styles
+================================================================================
+*/
+
+.icon-dash {
+  width: 70px;
+  height: 70px;
+}
+
+.stripe-table {
+  border-collapse: separate;
+  border-spacing: 0 8px;
+}
+
+.stripe-table tr:nth-child(even) {
+  background-color: #d3d3d3;
+}
+
+.disabled-row {
+  color: grey
+}
+
+/* Staff DB Styles
+================================================================================
+*/
+
+/* Staff Styles
+================================================================================
+*/
+
+/* Manager Styles
+================================================================================
+*/
+
+/* Admin Styles
+================================================================================
+*/
+
+.popup-box {
+  width: 400px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.department-dash-image {
+  width: 100px;
+  height: 100px;
+}
+
+.department-map-item {
+  border: 0.7px solid blue;
+  border-radius: 10px;
+  margin: 2px;
+  padding: 5px; 
+}

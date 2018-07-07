@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>User List</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css' />
+	<link rel="stylesheet" href="./bulma-ext-checkradio.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+	  crossorigin="anonymous">
+	<link rel="stylesheet" href="./style.css">
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+</head>
+
+<body>
+	<nav class="navbar has-shadow is-spaced" role="navigation" aria-label="main navigation">
+		<div class="container">
+			<div class="navbar-brand">
+				<div class=" navbar-item">
+					<span class="icon is-large	 has-text-danger">
+						<i class="fab fa-themeisle fa-2x"></i>
+					</span>
+					<span class="label is-medium is-size-4 ">Ticket System</span>
+				</div>
+				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+			<div class="navbar-menu ">
+				<div class="navbar-start">
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link ">
+							<span class="icon is-large has-text-link">
+								<i class="fas fa-ticket-alt fa-lg"></i>
+							</span>
+							<span class="subtitle">Tickets</span>
+						</a>
+						<div class="navbar-dropdown">
+							<a class="navbar-item">
+								<nav class="level">
+									<div class="level-item icon has-text-dark-grey">
+										<i class="fas fa-plus-circle"></i>
+									</div>
+									<div class="level-item">&nbsp;&nbsp;&nbsp;</div>
+									<div class="level-item has-text-left">
+										<div>
+											<p>
+												<strong>New Tickets</strong>
+											</p>
+											<p>Raise new tickets</p>
+										</div>
+									</div>
+								</nav>
+							</a>
+							<hr class="navbar-divider">
+							<a class="navbar-item">
+								<nav class="level">
+									<div class="level-item icon has-text-link">
+										<i class="fas fa-door-open"></i>
+									</div>
+									<div class="level-item">&nbsp;&nbsp;&nbsp;</div>
+									<div class="level-item has-text-left">
+										<div>
+											<p>
+												<strong>Open Tickets</strong>
+											</p>
+											<p>Track open tickets</p>
+										</div>
+									</div>
+								</nav>
+							</a>
+							<hr class="navbar-divider">
+							<a class="navbar-item">
+								<nav class="level">
+									<div class="level-item icon has-text-danger">
+										<i class="fas fa-door-closed"></i>
+									</div>
+									<div class="level-item">&nbsp;&nbsp;&nbsp;</div>
+									<div class="level-item has-text-left">
+										<div>
+											<p>
+												<strong>Closed Tickets</strong>
+											</p>
+											<p>See closed tickets</p>
+										</div>
+									</div>
+								</nav>
+							</a>
+							<hr class="navbar-divider">
+							<a class="navbar-item">
+								<nav class="level">
+									<div class="level-item icon has-text-dark-grey">
+										<i class="far fa-file-alt"></i>
+									</div>
+									<div class="level-item">&nbsp;&nbsp;&nbsp;</div>
+									<div class="level-item has-text-left">
+										<div>
+											<p>
+												<strong>All Tickets</strong>
+											</p>
+											<p>Track open tickets</p>
+										</div>
+								</nav>
+							</a>
+							</div>
+						</div>
+						<div class="navbar-item has-dropdown is-hoverable">
+							<a class="navbar-link">
+								<span class="icon is-large has-text-primary">
+									<i class="fas fa-users fa-lg"></i>
+								</span>
+								<span class="subtitle">Users</span>
+							</a>
+							<div class="navbar-dropdown">
+								<a class="navbar-item">
+									<nav class="level">
+										<div class="level-item icon has-text-dark-grey">
+											<i class="fas fa-user-edit"></i>
+										</div>
+										<div class="level-item">&nbsp;&nbsp;&nbsp;</div>
+										<div class="level-item has-text-left">
+											<div>
+												<p>
+													<strong>New Users</strong>
+												</p>
+												<p>Create New Users</p>
+											</div>
+										</div>
+									</nav>
+								</a>
+								<hr class="navbar-divider">
+								<a class="navbar-item">
+									<nav class="level">
+										<div class="level-item icon has-text-info">
+											<i class="fas fa-address-card"></i>
+										</div>
+										<div class="level-item">&nbsp;&nbsp;&nbsp;</div>
+										<div class="level-item has-text-left">
+											<div>
+												<p>
+													<strong>List Users</strong>
+												</p>
+												<p>View all Users</p>
+											</div>
+										</div>
+									</nav>
+								</a>
+
+							</div>
+						</div>
+						<a class="navbar-item">
+							<span class="icon is-large has-text-warning">
+								<i class="fas fa-bell fa-lg"></i>
+							</span>
+							<span class="subtitle">Notifications</span>
+						</a>
+						<div class="navbar-item has-dropdown is-hoverable">
+							<a class="navbar-link">
+								<span class="icon is-large has-text-info">
+									<i class="fas fa-cog fa-lg "></i>
+								</span>
+								<span class="subtitle">Settings</span>
+							</a>
+							<div class="navbar-dropdown">
+								<a class="navbar-item">
+									<nav class="level">
+										<div class="level-item icon has-text-dark-grey">
+											<i class="fas fa-edit"></i>
+										</div>
+										<div class="level-item">&nbsp;&nbsp;&nbsp;</div>
+										<div class="level-item has-text-left">
+											<div>
+												<p>
+													<strong>Organization Preference</strong>
+												</p>
+												<p>Change organizations preferences</p>
+											</div>
+										</div>
+									</nav>
+								</a>
+								<hr class="navbar-divider">
+								<a class="navbar-item">
+									<nav class="level">
+										<div class="level-item icon has-text-link">
+											<i class="fas fa-chalkboard-teacher"></i>
+										</div>
+										<div class="level-item">&nbsp;&nbsp;&nbsp;</div>
+										<div class="level-item has-text-left">
+											<div>
+												<p>
+													<strong>Personal/UI Preference</strong>
+												</p>
+												<p>Change personal or UI preferences</p>
+											</div>
+										</div>
+									</nav>
+
+								</a>
+								<hr class="navbar-divider">
+								<a class="navbar-item">
+									<nav class="level">
+										<div class="level-item icon has-text-danger">
+											<i class="fas fa-key"></i>
+										</div>
+										<div class="level-item">&nbsp;&nbsp;&nbsp;</div>
+										<div class="level-item has-text-left">
+											<div>
+												<p>
+													<strong>Change Password</strong>
+												</p>
+												<p>Change account password</p>
+											</div>
+										</div>
+									</nav>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="navbar-end">
+
+						<a href="#" class="navbar-item">
+							<span class="icon is-large">
+								<i class="fas fa-user-circle fa-lg"></i>
+							</span>
+							<span class="subtitle">Raj</span>
+						</a>
+						<a href="#" class="navbar-item">
+							<span class="icon is-large has-text-danger">
+								<i class="fas fa- fa-sign-out-alt fa-lg"></i>
+							</span>
+							<span class="subtitle">Logout</span>
+						</a>
+					</div>
+				</div>
+			</div>
+	</nav>
+
+	<section class="section breadcrumb-padding">
+		<nav class="container breadcrumb">
+			<ul>
+				<li>
+					<a href="#">Home</a>
+				</li>
+				<li class="is-active">
+					<a href="#">Users</a>
+				</li>
+			</ul>
+		</nav>
+	</section>
+	<section class="section hero is-light section-reduce-padding">
+		<section class="title is-size-3 has-text-left title-padding section-reduce-padding">
+			Users List
+		</section>
+		<section class="hero is-light">
+			<div class="box">
+				<button class="button is-primary is-rounded">
+					<span class="icon">
+						<i class="fas fa-plus"></i>
+					</span>
+					<span>New user</span>
+				</button>
+				<div class="table-container">
+					<table class="table is-hoverable  is-striped is-fullwidth">
+						<thead>
+							<tr>
+								<th>
+									<div class="field">
+										<div class="control">
+											<input id="check-all" type="checkbox">
+										</div>
+									</div>
+								</th>
+								<th>
+									Users
+								</th>
+								<th>
+								</th>
+								<th>Departments</th>
+								<th>
+									<abbr title="Add department">Assign</abbr>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<div class="field">
+										<div class="control">
+											<input type="checkbox" class="checkbox">
+										</div>
+									</div>
+								</td>
+								<td>
+									<span>Ramu</span>&nbsp;&nbsp;&nbsp;
+									<span>
+										<i class="fas fa-user-tie fa-medium"></i>
+									</span>
+								</td>
+								<td>
+									<i class="fas fa-edit"></i>
+								</td>
+								<td>
+									<div class="buttons">
+										<span class="button is-outlined is-primary has-text-black-bis">
+											Laptop&nbsp;
+											<button class="delete is-small"></button>
+										</span>
+										<span class="button is-outlined is-primary has-text-black-bis">
+											Electronics&nbsp;
+											<button class="delete is-small"></button>
+										</span>
+										<span class="button is-outlined is-primary has-text-black-bis">
+											Accessories&nbsp;
+											<button class="delete is-small"></button>
+										</span>
+									</div>
+								</td>
+								<td>
+									<span class="icon is-medium has-text-link">
+										<i class="fas fa-plus-circle fa-2x"></i>
+									</span>
+									</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="field">
+										<div class="control">
+											<input type="checkbox" class="checkbox">
+										</div>
+									</div>
+								</td>
+								<td>Rahul</td>
+								<td>
+									<i class="fas fa-edit"></i>
+								</td>
+								<td>
+									<div class="buttons">
+										<span class="button is-outlined is-primary has-text-black-bis">
+											Desktop&nbsp;
+											<button class="delete is-small"></button>
+										</span>
+									</div>
+								</td>
+								<td>
+									<span class="icon is-medium has-text-link">
+										<i class="fas fa-plus-circle fa-2x"></i>
+									</span>
+									</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="field">
+										<div class="control">
+											<input type="checkbox" class="checkbox">
+										</div>
+									</div>
+								</td>
+								<td>Shawn</td>
+								<td>
+									<i class="fas fa-edit"></i>
+								</td>
+								<td>
+									<div class="buttons">
+										<span class="button is-outlined is-primary has-text-black-bis">
+											Household&nbsp;
+											<button class="delete is-small"></button>
+										</span>
+										<span class="button is-outlined is-primary has-text-black-bis">
+											Cookery&nbsp;
+											<button class="delete is-small"></button>
+										</span>
+									</div>
+								</td>
+								<td>
+									<span class="icon is-medium has-text-link">
+										<i class="fas fa-plus-circle fa-2x"></i>
+									</span>
+									</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="field">
+										<div class="control">
+											<input type="checkbox" class="checkbox">
+										</div>
+									</div>
+								</td>
+								<td>Manuel</td>
+								<td>
+									<i class="fas fa-edit"></i>
+								</td>
+								<td>
+									<div class="buttons">
+										<span class="button is-outlined is-primary has-text-black-bis">
+											Furnitures&nbsp;
+											<button class="delete is-small"></button>
+										</span>
+										<span class="button is-outlined is-primary has-text-black-bis">
+											Accessories&nbsp;
+											<button class="delete is-small"></button>
+										</span>
+										<span class="button is-outlined is-primary has-text-black-bis">
+											Peripherals&nbsp;
+											<button class="delete is-small"></button>
+										</span>
+										<span class="button is-outlined is-primary has-text-black-bis">
+											Desktop&nbsp;
+											<button class="delete is-small"></button>
+										</span>
+										<span class="button is-outlined is-primary has-text-black-bis">
+											Laptop&nbsp;
+											<button class="delete is-small"></button>
+										</span>
+									</div>
+								</td>
+								<td>
+									<span class="icon is-medium has-text-link">
+										<i class="fas fa-plus-circle fa-2x"></i>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" class="checkbox">
+								</td>
+								<td>Jose</td>
+								<td>
+									<i class="fas fa-edit"></i>
+								</td>
+								<td>
+									<div class="buttons">
+										<span class="button is-outlined is-primary has-text-black-bis">
+											Household&nbsp;
+											<button class="delete is-small"></button>
+										</span>
+									</div>
+								</td>
+								<td>
+									<span class="icon is-medium has-text-link">
+										<i class="fas fa-plus-circle fa-2x"></i>
+									</span>
+									</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" class="checkbox">
+								</td>
+								<td>Lalu</td>
+								<td>
+									<i class="fas fa-edit"></i>
+								</td>
+								<td>
+									<div>
+										<span class="has-text-black-bis">
+											<span class="is-size-5">---</span>
+											</strong>&nbsp;
+										</span>
+									</div>
+								</td>
+								<td>
+									<span class="icon is-medium has-text-link">
+										<i class="fas fa-plus-circle fa-2x"></i>
+									</span>
+									</i>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+	</section>
+	<section class="section hero is-light section-reduce-padding ">
+		<div class="box">
+			<div class="is-size-4 has-text-grey-dark has-text-weight-semibold ">Department List</div>
+			<br>
+			<div class="buttons">
+				<span class="button has-text-black-bis has-background-grey-lighter">Web Hosting</span>
+				<span class="button has-text-black-bis has-background-grey-lighter">Server Handling</span>
+				<span class="button has-text-black-bis has-background-grey-lighter">Desktop</span>
+				<span class="button has-text-black-bis has-background-grey-lighter">Cloud</span>
+				<span class="button has-text-black-bis has-background-grey-lighter">Electronics</span>
+				<span class="button has-text-black-bis has-background-grey-lighter">Peripherals</span>
+				<span class="button has-text-black-bis has-background-grey-lighter">Web Hosting</span>
+				<span class="button has-text-black-bis has-background-grey-lighter">Web Hosting</span>
+			</div>
+		</div>
+	</section>
+
+	<script src="jquery-utils.js"></script>
+	</script>
+</body>
+
+</html>
