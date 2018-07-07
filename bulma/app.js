@@ -21,6 +21,8 @@ $(function () {
     $msgBody.parent().toggleClass('is-light is-info');
   });
 
+  //checkbox select all 
+
   $("#check-all").click(function () {
     $(".checkbox").prop('checked', $(this).prop('checked'));
   });

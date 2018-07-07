@@ -1,0 +1,19 @@
+.hidden {
+  display: none;
+}
+
+.shown {
+  display: inline;
+}
+
+.breadcrumb-padding {
+  padding: 1rem 0.5rem
+}
+
+.title-padding {
+  padding-left: 1.25rem;
+}
+
+.section-reduce-padding {
+  padding-top: 1rem;
+}
