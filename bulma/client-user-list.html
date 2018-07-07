@@ -267,12 +267,12 @@
 						</button>
 						
 						<!-- modal for new user -->
-						<div class="modal is-active">
+						<div class="modal" id="modal-department-root">
 							<div class="modal-background"></div>
 							<div class="modal-card">
 								<header class="modal-card-head">
 									<p class="modal-card-title has-text-weight-semibold ">Add Departments To User</p>
-									<button class="delete"></button>
+									<button id="modal-department-close" class="delete"></button>
 								</header>
 								<section class="modal-card-body">
 									<div class="is-pulled-left"><input type="checkbox" class="checkbox-padding" id="check-all">&nbsp;&nbsp;<span class="has-text-weight-semibold ">Select All Departments</span></div>
@@ -317,7 +317,7 @@
 										<th>
 											<div class="field">
 												<div class="control">
-													<input id="check-all" type="checkbox">
+													<input type="checkbox" id="check-all" class="checkbox">
 												</div>
 											</div>
 										</th>
@@ -366,7 +366,7 @@
 												</span>
 											</div>
 										</td>
-										<td>
+										<td class="modal-department">
 											<span class="icon is-medium has-text-link">
 												<i class="fas fa-plus-circle fa-2x"></i>
 											</span>
@@ -393,7 +393,7 @@
 												</span>
 											</div>
 										</td>
-										<td>
+										<td class="modal-department">
 											<span class="icon is-medium has-text-link">
 												<i class="fas fa-plus-circle fa-2x"></i>
 											</span>
@@ -424,7 +424,7 @@
 												</span>
 											</div>
 										</td>
-										<td>
+										<td class="modal-department">
 											<span class="icon is-medium has-text-link">
 												<i class="fas fa-plus-circle fa-2x"></i>
 											</span>
@@ -467,7 +467,7 @@
 												</span>
 											</div>
 										</td>
-										<td>
+										<td class="modal-department">
 											<span class="icon is-medium has-text-link">
 												<i class="fas fa-plus-circle fa-2x"></i>
 											</span>
@@ -489,7 +489,7 @@
 												</span>
 											</div>
 										</td>
-										<td>
+										<td class="modal-department">
 											<span class="icon is-medium has-text-link">
 												<i class="fas fa-plus-circle fa-2x"></i>
 											</span>
@@ -512,7 +512,7 @@
 												</span>
 											</div>
 										</td>
-										<td>
+										<td class="modal-department">
 											<span class="icon is-medium has-text-link">
 												<i class="fas fa-plus-circle fa-2x"></i>
 											</span>
@@ -550,7 +550,7 @@
 
 	</section>
 
-	<script src="jquery-utils.js"></script>
+	<script src="app.js"></script>
 	</script>
 </body>
 

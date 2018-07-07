@@ -21,10 +21,20 @@ $(function () {
     $msgBody.parent().toggleClass('is-light is-info');
   });
 
-  //checkbox select all 
+  //listener for + icon in user list to open department selector
+  $('.modal-department').on('click', function() {
+    $('#modal-department-root').addClass('is-active');
+  });
 
+  $('#modal-department-close').click(function() {
+    $('#modal-department-root').removeClass('is-active');
+  });
+
+  //checkbox select all 
   $("#check-all").click(function () {
     $(".checkbox").prop('checked', $(this).prop('checked'));
+    console.log('click');
+    
   });
 
   $(".checkbox").change(function () {
