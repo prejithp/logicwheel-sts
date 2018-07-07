@@ -262,175 +262,207 @@
 
         <div class="box">
           <form>
-            <div class="field">
-              <label class="label">Name</label>
-              <div class="control has-icons-left">
-                <input type="text" class="input" placeholder="eg:- Sumesh">
-                <span class="icon is-small">
-                  <i class="fas fa-user"></i>
-                </span>
+            <div class="columns">
+              <div class="column is-6">
+                <div class="field">
+                  <label class="label">Name</label>
+                  <div class="control has-icons-left">
+                    <input type="text" class="input" placeholder="eg:- Sumesh">
+                    <span class="icon is-small">
+                      <i class="fas fa-user"></i>
+                    </span>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="field">
-              <label class="label">Gender</label>
-              <div class="control">
-                <div class="select">
-                  <select>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
-                  </select>
+              <div class="column is-2">
+                <div class="field is-expanded">
+                  <label class="label">Gender</label>
+                  <div class="control">
+                    <div class="select is-fullwidth">
+                      <select>
+                        <option value="">Select gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-4">
+                <div class="field">
+                  <label class="label">Date Of Birth</label>
+                  <div class="control">
+                    <input type="date" class="input">
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="field">
-              <label class="label">Date Of Birth</label>
-              <div class="control">
-                <input type="date" class="input">
-              </div>
-            </div>
-            <div class="field">
-              <label class="label">Primary Email </label>
-              <div class="control has-icons-left">
-                <input class="input " type="email" placeholder="eg:- abc@xyz.com">
-                <span class="icon is-small is-left">
-                  <i class="fas fa-envelope"></i>
-                </span>
-              </div>
-            </div>
-            <div class="field">
-              <label class="label">Secondary Email</label>
-              <div class="control has-icons-left">
-                <input class="input " type="email" placeholder="eg:- abc@xyz.com">
-                <span class="icon is-small is-left">
-                  <i class="fas fa-envelope"></i>
-                </span>
-              </div>
-            </div>
-            <div class="field">
-              <label class="label">Password</label>
-              <div class="control has-icons-left">
-                <input class="input" type="password" placeholder="Password">
-                <span class="icon is-small is-left">
-                  <i class="fas fa-lock"></i>
-                </span>
-              </div>
-            </div>
-            <div class="field">
-                <label class="label">Confirm Password</label>
-                <div class="control has-icons-left">
-                  <input class="input" type="password" placeholder="Password">
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-lock"></i>
-                  </span>
+
+            <div class="columns">
+              <div class="column is-6">
+                <div class="field">
+                  <label class="label">Primary Email </label>
+                  <div class="control has-icons-left">
+                    <input class="input " type="email" placeholder="eg:- abc@xyz.com">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                  </div>
                 </div>
               </div>
-            <div class="field">
-              <label class="label">Primary Phone number</label>
-              <div class="control has-icons-left">
-                <input type="tel" class="input" placeholder="(+91)-8455642514">
-                <span class="icon is-small is-left">
-                  <i class="fas fa-phone"></i>
-                </span>
+              <div class="column is-6">
+                <div class="field">
+                  <label class="label">Secondary Email</label>
+                  <div class="control has-icons-left">
+                    <input class="input " type="email" placeholder="eg:- abc@xyz.com">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="field">
-              <label class="label">Secondary Phone number</label>
-              <div class="control has-icons-left">
-                <input type="tel" class="input" placeholder="(+91)-8455642514">
-                <span class="icon is-small is-left">
-                  <i class="fas fa-phone"></i>
-                </span>
+            <div class="columns">
+              <div class="column is-6">
+                <div class="field">
+                  <label class="label">Password</label>
+                  <div class="control has-icons-left">
+                    <input class="input" type="password" placeholder="Password">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-lock"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-6">
+                <div class="field">
+                  <label class="label">Confirm Password</label>
+                  <div class="control has-icons-left">
+                    <input class="input" type="password" placeholder="Password">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-lock"></i>
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="field">
+
+            <div class="columns">
+              <div class="column is-6">
+                <div class="field">
+                  <label class="label">Primary Phone number</label>
+                  <div class="control has-icons-left">
+                    <input type="tel" class="input" placeholder="(+91)-8455642514">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-phone"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-6">
+                <div class="field">
+                  <label class="label">Secondary Phone number</label>
+                  <div class="control has-icons-left">
+                    <input type="tel" class="input" placeholder="(+91)-84797542514">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-phone"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="field is-expanded">
               <label class="label">Website</label>
               <div class="control">
                 <input type="text" class="input" placeholder="eg:- www.google.com">
               </div>
             </div>
+
             <div class="field">
               <label class="label">Address</label>
               <div class="control">
                 <input type="text" class="input" placeholder="eg:- House No 241">
               </div>
             </div>
-            <div class="field">
-              <label class="label">District</label>
-              <div class="control">
-                <input type="text" class="input" placeholder="eg:- Ernakulam">
+
+            <div class="columns">
+              <div class="column is-6">
+                <div class="field">
+                  <label class="label">City</label>
+                  <div class="control">
+                    <input type="text" class="input" placeholder="eg:- Mumbai"> </div>
+                </div>
               </div>
+              <div class="column is-6">
+                <div class="field">
+                  <label class="label">District</label>
+                  <div class="control">
+                    <input type="text" class="input" placeholder="eg:- Ernakulam">
+                  </div>
+                </div>
+              </div>
+
             </div>
-            <div class="field">
-              <label class="label">City</label>
-              <div class="control">
-                <input type="text" class="input" placeholder="eg:- Mumbai"> </div>
-            </div>
-            <div class="field">
-              <label class="label">State</label>
-              <div class="control">
-                <div class="select">
-                  <select>
-                    <option value="">Select State</option>
-                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
-                    <option value="Andhra Pradesh">Andhra Pradesh</option>
-                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-                    <option value="Assam">Assam</option>
-                    <option value="Bihar">Bihar</option>
-                    <option value="Chandigarh">Chandigarh</option>
-                    <option value="Chhattisgarh">Chhattisgarh</option>
-                    <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
-                    <option value="Daman and Diu">Daman and Diu</option>
-                    <option value="Delhi">Delhi</option>
-                    <option value="Goa">Goa</option>
-                    <option value="Gujarat">Gujarat</option>
-                    <option value="Haryana">Haryana</option>
-                    <option value="Himachal Pradesh">Himachal Pradesh</option>
-                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
-                    <option value="Jharkhand">Jharkhand</option>
-                    <option value="Karnataka">Karnataka</option>
-                    <option value="Kerala">Kerala</option>
-                    <option value="Lakshadweep">Lakshadweep</option>
-                    <option value="Madhya Pradesh">Madhya Pradesh</option>
-                    <option value="Maharashtra">Maharashtra</option>
-                    <option value="Manipur">Manipur</option>
-                    <option value="Meghalaya">Meghalaya</option>
-                    <option value="Mizoram">Mizoram</option>
-                    <option value="Nagaland">Nagaland</option>
-                    <option value="Orissa">Orissa</option>
-                    <option value="Pondicherry">Pondicherry</option>
-                    <option value="Punjab">Punjab</option>
-                    <option value="Rajasthan">Rajasthan</option>
-                    <option value="Sikkim">Sikkim</option>
-                    <option value="Tamil Nadu">Tamil Nadu</option>
-                    <option value="Tripura">Tripura</option>
-                    <option value="Uttaranchal">Uttaranchal</option>
-                    <option value="Uttar Pradesh">Uttar Pradesh</option>
-                    <option value="West Bengal">West Bengal</option>
-                  </select>
+
+
+
+
+            <div class="columns">
+              <div class="column is-4">
+                <div class="field is-expanded">
+                  <label class="label">State</label>
+                  <div class="control">
+                    <div class="select is-fullwidth">
+                      <select>
+                        <option value="">Select State</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Orissa">Orissa</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="West Bengal">West Bengal</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-4">
+                <div class="field is-expanded">
+                  <label class="label">Country</label>
+                  <div class="control">
+                    <div class="select is-fullwidth">
+                      <select>
+                        <option>Select Country</option>
+                        <option value="india">India</option>
+                        <option value="sri-lanka">Sri Lanka</option>
+                        <option value="russia">Russia</option>
+                        <option value="uae">UAE</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-4">
+                <div class="field">
+                  <label for="" class="label">Zip Code</label>
+                  <div class="control">
+                    <input type="text" class="input" placeholder="eg:- 623091">
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="field">
-              <label class="label">Country</label>
-              <div class="control">
-                <div class="select">
-                  <select>
-                    <option>Select Country</option>
-                    <option value="india">India</option>
-                    <option value="sri-lanka">Sri Lanka</option>
-                    <option value="russia">Russia</option>
-                    <option value="uae">UAE</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div class="field">
-              <label for="" class="label">Zip Code</label>
-              <div class="control">
-                <input type="text" class="input" placeholder="eg:- 623091">
-              </div>
-            </div>
+
             <div class="field is-grouped is-grouped-centered">
               <p class="control">
                 <a class="button is-primary">
