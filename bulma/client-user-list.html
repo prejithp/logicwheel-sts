@@ -7,7 +7,6 @@
 	<title>User List</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css' />
-	<link rel="stylesheet" href="./bulma-ext-checkradio.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
 	  crossorigin="anonymous">
 	<link rel="stylesheet" href="./style.css">
@@ -252,247 +251,258 @@
 		</nav>
 	</section>
 	<section class="section hero is-light section-reduce-padding">
-		<section class="title is-size-3 has-text-left title-padding section-reduce-padding">
-			Users List
-		</section>
-		<section class="hero is-light">
-			<div class="box">
-				<button class="button is-primary is-rounded">
-					<span class="icon">
-						<i class="fas fa-plus"></i>
-					</span>
-					<span>New user</span>
-				</button>
-				<div class="table-container">
-					<table class="table is-hoverable  is-striped is-fullwidth">
-						<thead>
-							<tr>
-								<th>
-									<div class="field">
-										<div class="control">
-											<input id="check-all" type="checkbox">
-										</div>
-									</div>
-								</th>
-								<th>
-									Users
-								</th>
-								<th>
-								</th>
-								<th>Departments</th>
-								<th>
-									<abbr title="Add department">Assign</abbr>
-								</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<div class="field">
-										<div class="control">
+
+		<div class="columns">
+			<div class="column is-offset-1 is-10">
+				<section class="title is-size-3 has-text-left title-padding section-reduce-padding">
+					Users List
+				</section>
+				<section class="hero is-light">
+					<div class="box">
+						<button class="button is-primary is-rounded">
+							<span class="icon">
+								<i class="fas fa-plus"></i>
+							</span>
+							<span>New user</span>
+						</button>
+						<div class="table-container">
+							<table class="table is-hoverable  is-striped is-fullwidth">
+								<thead>
+									<tr>
+										<th>
+											<div class="field">
+												<div class="control">
+													<input id="check-all" type="checkbox">
+												</div>
+											</div>
+										</th>
+										<th>
+											Users
+										</th>
+										<th>
+										</th>
+										<th>Departments</th>
+										<th>
+											<abbr title="Add department">Assign</abbr>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<div class="field">
+												<div class="control">
+													<input type="checkbox" class="checkbox">
+												</div>
+											</div>
+										</td>
+										<td>
+											<span>Ramu</span>&nbsp;&nbsp;&nbsp;
+											<span>
+												<i class="fas fa-user-tie fa-medium"></i>
+											</span>
+										</td>
+										<td>
+											<i class="fas fa-edit"></i>
+										</td>
+										<td>
+											<div class="buttons">
+												<span class="button is-outlined is-primary has-text-black-bis">
+													Laptop&nbsp;
+													<button class="delete is-small"></button>
+												</span>
+												<span class="button is-outlined is-primary has-text-black-bis">
+													Electronics&nbsp;
+													<button class="delete is-small"></button>
+												</span>
+												<span class="button is-outlined is-primary has-text-black-bis">
+													Accessories&nbsp;
+													<button class="delete is-small"></button>
+												</span>
+											</div>
+										</td>
+										<td>
+											<span class="icon is-medium has-text-link">
+												<i class="fas fa-plus-circle fa-2x"></i>
+											</span>
+											</i>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="field">
+												<div class="control">
+													<input type="checkbox" class="checkbox">
+												</div>
+											</div>
+										</td>
+										<td>Rahul</td>
+										<td>
+											<i class="fas fa-edit"></i>
+										</td>
+										<td>
+											<div class="buttons">
+												<span class="button is-outlined is-primary has-text-black-bis">
+													Desktop&nbsp;
+													<button class="delete is-small"></button>
+												</span>
+											</div>
+										</td>
+										<td>
+											<span class="icon is-medium has-text-link">
+												<i class="fas fa-plus-circle fa-2x"></i>
+											</span>
+											</i>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="field">
+												<div class="control">
+													<input type="checkbox" class="checkbox">
+												</div>
+											</div>
+										</td>
+										<td>Shawn</td>
+										<td>
+											<i class="fas fa-edit"></i>
+										</td>
+										<td>
+											<div class="buttons">
+												<span class="button is-outlined is-primary has-text-black-bis">
+													Household&nbsp;
+													<button class="delete is-small"></button>
+												</span>
+												<span class="button is-outlined is-primary has-text-black-bis">
+													Cookery&nbsp;
+													<button class="delete is-small"></button>
+												</span>
+											</div>
+										</td>
+										<td>
+											<span class="icon is-medium has-text-link">
+												<i class="fas fa-plus-circle fa-2x"></i>
+											</span>
+											</i>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="field">
+												<div class="control">
+													<input type="checkbox" class="checkbox">
+												</div>
+											</div>
+										</td>
+										<td>Manuel</td>
+										<td>
+											<i class="fas fa-edit"></i>
+										</td>
+										<td>
+											<div class="buttons">
+												<span class="button is-outlined is-primary has-text-black-bis">
+													Furnitures&nbsp;
+													<button class="delete is-small"></button>
+												</span>
+												<span class="button is-outlined is-primary has-text-black-bis">
+													Accessories&nbsp;
+													<button class="delete is-small"></button>
+												</span>
+												<span class="button is-outlined is-primary has-text-black-bis">
+													Peripherals&nbsp;
+													<button class="delete is-small"></button>
+												</span>
+												<span class="button is-outlined is-primary has-text-black-bis">
+													Desktop&nbsp;
+													<button class="delete is-small"></button>
+												</span>
+												<span class="button is-outlined is-primary has-text-black-bis">
+													Laptop&nbsp;
+													<button class="delete is-small"></button>
+												</span>
+											</div>
+										</td>
+										<td>
+											<span class="icon is-medium has-text-link">
+												<i class="fas fa-plus-circle fa-2x"></i>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
 											<input type="checkbox" class="checkbox">
-										</div>
-									</div>
-								</td>
-								<td>
-									<span>Ramu</span>&nbsp;&nbsp;&nbsp;
-									<span>
-										<i class="fas fa-user-tie fa-medium"></i>
-									</span>
-								</td>
-								<td>
-									<i class="fas fa-edit"></i>
-								</td>
-								<td>
-									<div class="buttons">
-										<span class="button is-outlined is-primary has-text-black-bis">
-											Laptop&nbsp;
-											<button class="delete is-small"></button>
-										</span>
-										<span class="button is-outlined is-primary has-text-black-bis">
-											Electronics&nbsp;
-											<button class="delete is-small"></button>
-										</span>
-										<span class="button is-outlined is-primary has-text-black-bis">
-											Accessories&nbsp;
-											<button class="delete is-small"></button>
-										</span>
-									</div>
-								</td>
-								<td>
-									<span class="icon is-medium has-text-link">
-										<i class="fas fa-plus-circle fa-2x"></i>
-									</span>
-									</i>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<div class="field">
-										<div class="control">
+										</td>
+										<td>Jose</td>
+										<td>
+											<i class="fas fa-edit"></i>
+										</td>
+										<td>
+											<div class="buttons">
+												<span class="button is-outlined is-primary has-text-black-bis">
+													Household&nbsp;
+													<button class="delete is-small"></button>
+												</span>
+											</div>
+										</td>
+										<td>
+											<span class="icon is-medium has-text-link">
+												<i class="fas fa-plus-circle fa-2x"></i>
+											</span>
+											</i>
+										</td>
+									</tr>
+									<tr>
+										<td>
 											<input type="checkbox" class="checkbox">
-										</div>
-									</div>
-								</td>
-								<td>Rahul</td>
-								<td>
-									<i class="fas fa-edit"></i>
-								</td>
-								<td>
-									<div class="buttons">
-										<span class="button is-outlined is-primary has-text-black-bis">
-											Desktop&nbsp;
-											<button class="delete is-small"></button>
-										</span>
-									</div>
-								</td>
-								<td>
-									<span class="icon is-medium has-text-link">
-										<i class="fas fa-plus-circle fa-2x"></i>
-									</span>
-									</i>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<div class="field">
-										<div class="control">
-											<input type="checkbox" class="checkbox">
-										</div>
-									</div>
-								</td>
-								<td>Shawn</td>
-								<td>
-									<i class="fas fa-edit"></i>
-								</td>
-								<td>
-									<div class="buttons">
-										<span class="button is-outlined is-primary has-text-black-bis">
-											Household&nbsp;
-											<button class="delete is-small"></button>
-										</span>
-										<span class="button is-outlined is-primary has-text-black-bis">
-											Cookery&nbsp;
-											<button class="delete is-small"></button>
-										</span>
-									</div>
-								</td>
-								<td>
-									<span class="icon is-medium has-text-link">
-										<i class="fas fa-plus-circle fa-2x"></i>
-									</span>
-									</i>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<div class="field">
-										<div class="control">
-											<input type="checkbox" class="checkbox">
-										</div>
-									</div>
-								</td>
-								<td>Manuel</td>
-								<td>
-									<i class="fas fa-edit"></i>
-								</td>
-								<td>
-									<div class="buttons">
-										<span class="button is-outlined is-primary has-text-black-bis">
-											Furnitures&nbsp;
-											<button class="delete is-small"></button>
-										</span>
-										<span class="button is-outlined is-primary has-text-black-bis">
-											Accessories&nbsp;
-											<button class="delete is-small"></button>
-										</span>
-										<span class="button is-outlined is-primary has-text-black-bis">
-											Peripherals&nbsp;
-											<button class="delete is-small"></button>
-										</span>
-										<span class="button is-outlined is-primary has-text-black-bis">
-											Desktop&nbsp;
-											<button class="delete is-small"></button>
-										</span>
-										<span class="button is-outlined is-primary has-text-black-bis">
-											Laptop&nbsp;
-											<button class="delete is-small"></button>
-										</span>
-									</div>
-								</td>
-								<td>
-									<span class="icon is-medium has-text-link">
-										<i class="fas fa-plus-circle fa-2x"></i>
-									</span>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<input type="checkbox" class="checkbox">
-								</td>
-								<td>Jose</td>
-								<td>
-									<i class="fas fa-edit"></i>
-								</td>
-								<td>
-									<div class="buttons">
-										<span class="button is-outlined is-primary has-text-black-bis">
-											Household&nbsp;
-											<button class="delete is-small"></button>
-										</span>
-									</div>
-								</td>
-								<td>
-									<span class="icon is-medium has-text-link">
-										<i class="fas fa-plus-circle fa-2x"></i>
-									</span>
-									</i>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<input type="checkbox" class="checkbox">
-								</td>
-								<td>Lalu</td>
-								<td>
-									<i class="fas fa-edit"></i>
-								</td>
-								<td>
-									<div>
-										<span class="has-text-black-bis">
-											<span class="is-size-5">---</span>
-											</strong>&nbsp;
-										</span>
-									</div>
-								</td>
-								<td>
-									<span class="icon is-medium has-text-link">
-										<i class="fas fa-plus-circle fa-2x"></i>
-									</span>
-									</i>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-		</section>
+										</td>
+										<td>Lalu</td>
+										<td>
+											<i class="fas fa-edit"></i>
+										</td>
+										<td>
+											<div>
+												<span class="has-text-black-bis">
+													<span class="is-size-5">---</span>
+													</strong>&nbsp;
+												</span>
+											</div>
+										</td>
+										<td>
+											<span class="icon is-medium has-text-link">
+												<i class="fas fa-plus-circle fa-2x"></i>
+											</span>
+											</i>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
 	</section>
 	<section class="section hero is-light section-reduce-padding ">
-		<div class="box">
-			<div class="is-size-4 has-text-grey-dark has-text-weight-semibold ">Department List</div>
-			<br>
-			<div class="buttons">
-				<span class="button has-text-black-bis has-background-grey-lighter">Web Hosting</span>
-				<span class="button has-text-black-bis has-background-grey-lighter">Server Handling</span>
-				<span class="button has-text-black-bis has-background-grey-lighter">Desktop</span>
-				<span class="button has-text-black-bis has-background-grey-lighter">Cloud</span>
-				<span class="button has-text-black-bis has-background-grey-lighter">Electronics</span>
-				<span class="button has-text-black-bis has-background-grey-lighter">Peripherals</span>
-				<span class="button has-text-black-bis has-background-grey-lighter">Web Hosting</span>
-				<span class="button has-text-black-bis has-background-grey-lighter">Web Hosting</span>
+		<div class="columns">
+			<div class="column is-10 is-offset-1">
+				<div class="box">
+					<div class="is-size-4 has-text-grey-dark has-text-weight-semibold ">Department List</div>
+					<br>
+					<div class="buttons">
+						<span class="button has-text-black-bis has-background-grey-lighter">Web Hosting</span>
+						<span class="button has-text-black-bis has-background-grey-lighter">Server Handling</span>
+						<span class="button has-text-black-bis has-background-grey-lighter">Desktop</span>
+						<span class="button has-text-black-bis has-background-grey-lighter">Cloud</span>
+						<span class="button has-text-black-bis has-background-grey-lighter">Electronics</span>
+						<span class="button has-text-black-bis has-background-grey-lighter">Peripherals</span>
+						<span class="button has-text-black-bis has-background-grey-lighter">Web Hosting</span>
+						<span class="button has-text-black-bis has-background-grey-lighter">Web Hosting</span>
+					</div>
+				</div>
 			</div>
 		</div>
+
+		</div>
+		</div>
+
 	</section>
 
 	<script src="jquery-utils.js"></script>

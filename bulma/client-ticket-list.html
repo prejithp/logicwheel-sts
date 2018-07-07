@@ -7,7 +7,6 @@
 	<title>Ticket List</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css' />
-	<link rel="stylesheet" href="./bulma-ext-checkradio.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
 	  crossorigin="anonymous">
 	<link rel="stylesheet" href="./style.css">
@@ -255,119 +254,124 @@
 		</nav>
 	</section>
 	<section class="section hero is-light section-reduce-padding">
-		<section class="title is-size-3 has-text-left title-padding section-reduce-padding">
-			Tickets
-		</section>
+		<div class="columns">
+			<div class="column is-10 is-offset-1">
+				<section class="title is-size-3 has-text-left title-padding section-reduce-padding">
+					Tickets
+				</section>
 
-		<div class="box">
-			<button class="button is-primary is-rounded">
-				<span class="icon">
-					<i class="fas fa-plus"></i>
-				</span>
-				<span>New ticket</span>
-			</button>
-			<div class="table-container">
-				<table class="table is-striped is-hoverable is-fullwidth">
-					<thead>
-						<tr>
-							<th>ID</th>
-							<th>
-								<abbr title="Suspended">
-									<span class="icon is-medium">
-										<i class="fas fa-lock fa-lg"></i>
-									</span>
-								</abbr>
+				<div class="box">
+					<button class="button is-primary is-rounded">
+						<span class="icon">
+							<i class="fas fa-plus"></i>
+						</span>
+						<span>New ticket</span>
+					</button>
+					<div class="table-container">
+						<table class="table is-striped is-hoverable is-fullwidth">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>
+										<abbr title="Suspended">
+											<span class="icon is-medium">
+												<i class="fas fa-lock fa-lg"></i>
+											</span>
+										</abbr>
 
-							</th>
-							<th>Subject</th>
-							<th>Department</th>
-							<th>Status</th>
-							<th>Time</th>
-							<th>Close</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr class="has-text-weight-bold has-background-grey-lighter">
-							<td>A98FE4TSF</td>
-							<td>
-								<span class="icon is-medium">
-									<i class="fas fa-lock fa-lg"></i>
-								</span>
-							</td>
-							<td>Computer not switching on</td>
-							<td>Hardware</td>
-							<td>Open</td>
-							<td>19/04/18 12:00AM</td>
-							<td>
-								<span class="icon is-medium">
-									<i class="far fa-window-close fa-lg"></i>
-								</span>
-							</td>
-						</tr>
-						<tr>
-							<td>AG8FEFRG24</td>
-							<td></td>
-							<td>Computer not switching on</td>
-							<td>Software</td>
-							<td>Closed</td>
-							<td>23/06/16 09:00AM</td>
-							<td>
-								<span class="icon is-medium">
-									<i class="far fa-window-close fa-lg"></i>
-								</span>
-							</td>
-						</tr>
-						<tr class="has-background-grey-lighter">
-							<td>EF899P92KD</td>
-							<td>
-								<span class="icon is-medium">
-									<i class="fas fa-lock fa-lg"></i>
-								</span>
-							</td>
+									</th>
+									<th>Subject</th>
+									<th>Department</th>
+									<th>Status</th>
+									<th>Time</th>
+									<th>Close</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="has-text-weight-bold has-background-grey-lighter">
+									<td>A98FE4TSF</td>
+									<td>
+										<span class="icon is-medium">
+											<i class="fas fa-lock fa-lg"></i>
+										</span>
+									</td>
+									<td>Computer not switching on</td>
+									<td>Hardware</td>
+									<td>Open</td>
+									<td>19/04/18 12:00AM</td>
+									<td>
+										<span class="icon is-medium">
+											<i class="far fa-window-close fa-lg"></i>
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<td>AG8FEFRG24</td>
+									<td></td>
+									<td>Computer not switching on</td>
+									<td>Software</td>
+									<td>Closed</td>
+									<td>23/06/16 09:00AM</td>
+									<td>
+										<span class="icon is-medium">
+											<i class="far fa-window-close fa-lg"></i>
+										</span>
+									</td>
+								</tr>
+								<tr class="has-background-grey-lighter">
+									<td>EF899P92KD</td>
+									<td>
+										<span class="icon is-medium">
+											<i class="fas fa-lock fa-lg"></i>
+										</span>
+									</td>
 
-							<td>Keyboard damaged</td>
-							<td>Hardware</td>
-							<td>Closed</td>
-							<td>25/07/16 06:00PM</td>
-							<td>
-								<span class="icon is-medium">
-									<i class="far fa-window-close fa-lg"></i>
-								</span>
-							</td>
-						</tr>
-						<tr class="has-text-weight-bold">
-							<td>CD888H4FE2</td>
-							<td>
-							</td>
-							<td>Wifi not switching on</td>
-							<td>Software</td>
-							<td>Awaiting response</td>
-							<td>19/04/16 10:00AM</td>
-							<td>
-								<span class="icon is-medium">
-									<i class="far fa-window-close fa-lg"></i>
-								</span>
-							</td>
-						</tr>
-						<tr>
-							<td>AD8FE6HS21</td>
-							<td>
-							</td>
+									<td>Keyboard damaged</td>
+									<td>Hardware</td>
+									<td>Closed</td>
+									<td>25/07/16 06:00PM</td>
+									<td>
+										<span class="icon is-medium">
+											<i class="far fa-window-close fa-lg"></i>
+										</span>
+									</td>
+								</tr>
+								<tr class="has-text-weight-bold">
+									<td>CD888H4FE2</td>
+									<td>
+									</td>
+									<td>Wifi not switching on</td>
+									<td>Software</td>
+									<td>Awaiting response</td>
+									<td>19/04/16 10:00AM</td>
+									<td>
+										<span class="icon is-medium">
+											<i class="far fa-window-close fa-lg"></i>
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<td>AD8FE6HS21</td>
+									<td>
+									</td>
 
-							<td>Computer not switching on</td>
-							<td>Hardware</td>
-							<td>Open</td>
-							<td>19/04/18 12:00AM</td>
-							<td>
-								<span class="icon is-medium">
-									<i class="far fa-window-close fa-lg"></i>
-								</span>
-							</td>
-						</tr>
-					</tbody>
-				</table>
+									<td>Computer not switching on</td>
+									<td>Hardware</td>
+									<td>Open</td>
+									<td>19/04/18 12:00AM</td>
+									<td>
+										<span class="icon is-medium">
+											<i class="far fa-window-close fa-lg"></i>
+										</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
 			</div>
 		</div>
+
 		<script src="jquery-utils.js"></script>
 		</script>
 </body>
