@@ -250,6 +250,7 @@
 			</ul>
 		</nav>
 	</section>
+
 	<section class="section hero is-light section-reduce-padding">
 
 		<div class="columns">
@@ -265,7 +266,7 @@
 							</span>
 							<span>New user</span>
 						</button>
-						
+
 						<!-- modal for new user -->
 						<div class="modal" id="modal-department-root">
 							<div class="modal-background"></div>
@@ -275,41 +276,190 @@
 									<button id="modal-department-close" class="delete"></button>
 								</header>
 								<section class="modal-card-body">
-									<div class="is-pulled-left"><input type="checkbox" id="check-all-modal" class="checkbox-padding">&nbsp;&nbsp;<span class="has-text-weight-semibold ">Select All Departments</span></div>
+									<div class="is-pulled-left">
+										<input type="checkbox" id="check-all-modal" class="checkbox-padding">&nbsp;&nbsp;
+										<span class="has-text-weight-semibold ">Select All Departments</span>
+									</div>
 									<hr>
 									<div class="buttons">
-										<button class="button level"><span><input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding"></span>&nbsp;&nbsp;<span class="level-item has-text-weight-semibold">Household</span></button>
-										<button class="button level"><span><input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding"></span>&nbsp;&nbsp;<span class="level-item has-text-weight-semibold">Sever Handling</span></button>
-										<button class="button level"><span><input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding"></span>&nbsp;&nbsp;<span class="level-item has-text-weight-semibold">Cloud</span></button>
-										<button class="button level"><span><input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding"></span>&nbsp;&nbsp;<span class="level-item has-text-weight-semibold">Cloud</span></button>
-										<button class="button level"><span><input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding"></span>&nbsp;&nbsp;<span class="level-item has-text-weight-semibold">Super Compunting</span></button>
-										<button class="button level"><span><input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding"></span>&nbsp;&nbsp;<span class="level-item has-text-weight-semibold">Web Hosting</span></button>
-										<button class="button level"><span><input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding"></span>&nbsp;&nbsp;<span class="level-item has-text-weight-semibold">Domain Services</span></button>
-										<button class="button level"><span><input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding"></span>&nbsp;&nbsp;<span class="level-item has-text-weight-semibold">Networking</span></button>
-										<button class="button level"><span><input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding"></span>&nbsp;&nbsp;<span class="level-item has-text-weight-semibold">General chek</span></button>
-										<button class="button level"><span><input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding"></span>&nbsp;&nbsp;<span class="level-item has-text-weight-semibold">Peripherals</span></button>
+										<button class="button level">
+											<span>
+												<input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding">
+											</span>&nbsp;&nbsp;
+											<span class="level-item has-text-weight-semibold">Household</span>
+										</button>
+										<button class="button level">
+											<span>
+												<input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding">
+											</span>&nbsp;&nbsp;
+											<span class="level-item has-text-weight-semibold">Sever Handling</span>
+										</button>
+										<button class="button level">
+											<span>
+												<input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding">
+											</span>&nbsp;&nbsp;
+											<span class="level-item has-text-weight-semibold">Cloud</span>
+										</button>
+										<button class="button level">
+											<span>
+												<input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding">
+											</span>&nbsp;&nbsp;
+											<span class="level-item has-text-weight-semibold">Cloud</span>
+										</button>
+										<button class="button level">
+											<span>
+												<input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding">
+											</span>&nbsp;&nbsp;
+											<span class="level-item has-text-weight-semibold">Super Compunting</span>
+										</button>
+										<button class="button level">
+											<span>
+												<input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding">
+											</span>&nbsp;&nbsp;
+											<span class="level-item has-text-weight-semibold">Web Hosting</span>
+										</button>
+										<button class="button level">
+											<span>
+												<input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding">
+											</span>&nbsp;&nbsp;
+											<span class="level-item has-text-weight-semibold">Domain Services</span>
+										</button>
+										<button class="button level">
+											<span>
+												<input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding">
+											</span>&nbsp;&nbsp;
+											<span class="level-item has-text-weight-semibold">Networking</span>
+										</button>
+										<button class="button level">
+											<span>
+												<input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding">
+											</span>&nbsp;&nbsp;
+											<span class="level-item has-text-weight-semibold">General chek</span>
+										</button>
+										<button class="button level">
+											<span>
+												<input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding">
+											</span>&nbsp;&nbsp;
+											<span class="level-item has-text-weight-semibold">Peripherals</span>
+										</button>
 									</div>
-									
+
 								</section>
 								<footer class="modal-card-foot">
 									<div class="field is-grouped">
 										<p class="control">
 											<a class="button is-success">
-											Add
+												Add
 											</a>
 										</p>
 										<p class="control">
 											<a class="button is-light">
-											Cancel
+												Cancel
 											</a>
 										</p>
 									</div>
-			
-								</footer>	
+
+								</footer>
 							</div>
 						</div>
-						<!-- -->
-		
+
+						<!-- modal for editing users -->
+						<div class="modal" id="modal-edit-user-root">
+							<div class="modal-background"></div>
+							<div class="modal-card">
+								<header class="modal-card-head">
+									<p class="modal-card-title">Edit User</p>
+									<button id="modal-edit-user-close" class="delete" aria-label="close"></button>
+								</header>
+								<section class="modal-card-body">
+									<form>
+										<div class="columns">
+											<div class="column is-8">
+												<div class="field">
+													<label class="label">Name</label>
+													<div class="control has-icons-left">
+														<input type="text" class="input" placeholder="eg:- Sumesh">
+														<span class="icon is-small">
+															<i class="fas fa-user"></i>
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="column is-4">
+												<div class="field is-expanded">
+													<label class="label">Gender</label>
+													<div class="control">
+														<div class="select is-fullwidth">
+															<select>
+																<option value="">Select gender</option>
+																<option value="male">Male</option>
+																<option value="female">Female</option>
+																<option value="other">Other</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="columns">
+											<div class="column is-6">
+												<div class="field">
+													<label class="label">Primary Email </label>
+													<div class="control has-icons-left">
+														<input class="input " type="email" placeholder="eg:- abc@xyz.com">
+														<span class="icon is-small is-left">
+															<i class="fas fa-envelope"></i>
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="column is-6">
+												<div class="field">
+													<label class="label">Secondary Email</label>
+													<div class="control has-icons-left">
+														<input class="input " type="email" placeholder="eg:- abc@xyz.com">
+														<span class="icon is-small is-left">
+															<i class="fas fa-envelope"></i>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="columns">
+											<div class="column is-6">
+												<div class="field">
+													<label class="label">Primary Phone number</label>
+													<div class="control has-icons-left">
+														<input type="tel" class="input" placeholder="(+91)-8455642514">
+														<span class="icon is-small is-left">
+															<i class="fas fa-phone"></i>
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="column is-6">
+												<div class="field">
+													<label class="label">Secondary Phone number</label>
+													<div class="control has-icons-left">
+														<input type="tel" class="input" placeholder="(+91)-84797542514">
+														<span class="icon is-small is-left">
+															<i class="fas fa-phone"></i>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</section>
+								<footer class="modal-card-foot">
+									<button class="button is-success">Save changes</button>
+									<button class="button">Cancel</button>
+								</footer>
+							</div>
+						</div>
+
 						<div class="table-container">
 							<table class="table is-hoverable  is-striped is-fullwidth">
 								<thead>
@@ -347,7 +497,7 @@
 												<i class="fas fa-user-tie fa-medium"></i>
 											</span>
 										</td>
-										<td>
+										<td class="modal-edit-user">
 											<i class="fas fa-edit"></i>
 										</td>
 										<td>
@@ -366,7 +516,7 @@
 												</span>
 											</div>
 										</td>
-										<td class="modal-department">
+										<td class="modal-add-department">
 											<span class="icon is-medium has-text-link">
 												<i class="fas fa-plus-circle fa-2x"></i>
 											</span>
@@ -382,7 +532,7 @@
 											</div>
 										</td>
 										<td>Rahul</td>
-										<td>
+										<td class="modal-edit-user">
 											<i class="fas fa-edit"></i>
 										</td>
 										<td>
@@ -393,7 +543,7 @@
 												</span>
 											</div>
 										</td>
-										<td class="modal-department">
+										<td class="modal-add-department">
 											<span class="icon is-medium has-text-link">
 												<i class="fas fa-plus-circle fa-2x"></i>
 											</span>
@@ -409,7 +559,7 @@
 											</div>
 										</td>
 										<td>Shawn</td>
-										<td>
+										<td class="modal-edit-user">
 											<i class="fas fa-edit"></i>
 										</td>
 										<td>
@@ -424,7 +574,7 @@
 												</span>
 											</div>
 										</td>
-										<td class="modal-department">
+										<td class="modal-add-department">
 											<span class="icon is-medium has-text-link">
 												<i class="fas fa-plus-circle fa-2x"></i>
 											</span>
@@ -440,7 +590,7 @@
 											</div>
 										</td>
 										<td>Manuel</td>
-										<td>
+										<td class="modal-edit-user">
 											<i class="fas fa-edit"></i>
 										</td>
 										<td>
@@ -467,7 +617,7 @@
 												</span>
 											</div>
 										</td>
-										<td class="modal-department">
+										<td class="modal-add-department">
 											<span class="icon is-medium has-text-link">
 												<i class="fas fa-plus-circle fa-2x"></i>
 											</span>
@@ -478,7 +628,7 @@
 											<input type="checkbox" class="checkbox">
 										</td>
 										<td>Jose</td>
-										<td>
+										<td class="modal-edit-user">
 											<i class="fas fa-edit"></i>
 										</td>
 										<td>
@@ -489,7 +639,7 @@
 												</span>
 											</div>
 										</td>
-										<td class="modal-department">
+										<td class="modal-add-department">
 											<span class="icon is-medium has-text-link">
 												<i class="fas fa-plus-circle fa-2x"></i>
 											</span>
@@ -501,7 +651,7 @@
 											<input type="checkbox" class="checkbox">
 										</td>
 										<td>Lalu</td>
-										<td>
+										<td class="modal-edit-user">
 											<i class="fas fa-edit"></i>
 										</td>
 										<td>
@@ -512,7 +662,7 @@
 												</span>
 											</div>
 										</td>
-										<td class="modal-department">
+										<td class="modal-add-department">
 											<span class="icon is-medium has-text-link">
 												<i class="fas fa-plus-circle fa-2x"></i>
 											</span>
