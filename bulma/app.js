@@ -30,7 +30,20 @@ $(function () {
     $('#modal-department-root').removeClass('is-active');
   });
 
-  //checkbox select all 
+
+  //Use for select all in modal boxes 
+  $("#check-all-modal").click(function () {
+    $(".checkbox-modal").prop('checked', $(this).prop('checked'));
+    console.log('click');
+    
+  });
+
+  $(".checkbox-modal").change(function () {
+    if (!$(this).prop("checked")) {
+      $("#check-all-modal").prop("checked", false);
+    }
+  });
+  //Can be used in select all in main tables
   $("#check-all").click(function () {
     $(".checkbox").prop('checked', $(this).prop('checked'));
     console.log('click');
