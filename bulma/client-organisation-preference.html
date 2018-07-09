@@ -264,43 +264,33 @@
         <section class="hero is-light">
           <div class="box">
             <form>
-              <div class="columns">
-                <div class="column is-6">
-                  <div class="field">
-                    <label class="label">Name</label>
-                    <div class="control has-icons-left">
-                      <input type="text" class="input" placeholder="eg:- Sumesh">
-                      <span class="icon is-small">
-                        <i class="fas fa-user"></i>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="column is-2">
-                  <div class="field is-expanded">
-                    <label class="label">Gender</label>
-                    <div class="control">
-                      <div class="select is-fullwidth">
-                        <select>
-                          <option value="">Select gender</option>
-                          <option value="male">Male</option>
-                          <option value="female">Female</option>
-                          <option value="other">Other</option>
-                        </select>
+              <div class="">
+                <div class="columns">
+                   <div class="column  is-two-thirds"> 
+                    <div class="field">
+                      <label class="label">Name Of Organization</label>
+                      <div class="control has-icons-left">
+                        <input type="text" class="input" placeholder="eg:- logicWheels">
+                        <span class="icon is-small">
+                          <i class="fas fa-user"></i>
+                        </span>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="column is-4">
-                  <div class="field">
-                    <label class="label">Date Of Birth</label>
-                    <div class="control">
-                      <input type="date" class="input">
+                    <div class="field">
+                        <label class="label">Website</label>
+                        <div class="control">
+                          <input type="text" class="input" placeholder="eg:- www.google.com">
+                        </div>
                     </div>
                   </div>
+                  <div class="column is-3 is-offset-1 ">
+                      <figure class="image is-128x128">
+                          <img src="https://bulma.io/images/placeholders/128x128.png" >
+                        </figure>
+                        <label class="label column">Profile Pic &nbsp;&nbsp;<span><i class="fas fa-pen "></i></span></label>
+                  </div>
                 </div>
-              </div>
-
+               
               <div class="columns">
                 <div class="column is-6">
                   <div class="field">
@@ -325,30 +315,7 @@
                   </div>
                 </div>
               </div>
-              <div class="columns">
-                <div class="column is-6">
-                  <div class="field">
-                    <label class="label">Password</label>
-                    <div class="control has-icons-left">
-                      <input class="input" type="password" placeholder="Password">
-                      <span class="icon is-small is-left">
-                        <i class="fas fa-lock"></i>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="column is-6">
-                  <div class="field">
-                    <label class="label">Confirm Password</label>
-                    <div class="control has-icons-left">
-                      <input class="input" type="password" placeholder="Password">
-                      <span class="icon is-small is-left">
-                        <i class="fas fa-lock"></i>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                
 
               <div class="columns">
                 <div class="column is-6">
@@ -375,12 +342,7 @@
                 </div>
               </div>
 
-              <div class="field is-expanded">
-                <label class="label">Website</label>
-                <div class="control">
-                  <input type="text" class="input" placeholder="eg:- www.google.com">
-                </div>
-              </div>
+
 
               <div class="field">
                 <label class="label">Address</label>
@@ -459,15 +421,23 @@
                   </div>
                 </div>
               </div>
+              <hr>
+              <div class="field">
+                <label class="label">Note</label>
+                <div class="control">
+                  <textarea cols="30" rows="5" class="textarea" disabled>Note to show which read only made by the admin</textarea>
+                </div>
+              </div>
+              <hr>
 
               <div class="field is-grouped is-grouped-centered">
                 <p class="control">
-                  <a class="button is-primary">
+                  <a class="button is-info has-text-weight-semibold">
                     Submit
                   </a>
                 </p>
                 <p class="control">
-                  <a class="button is-light">
+                  <a class="button has-background-grey-lighter has-text-weight-semibold ">
                     Cancel
                   </a>
                 </p>
