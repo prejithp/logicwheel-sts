@@ -28,6 +28,11 @@ $(function () {
     }
   });
 
+  //increase height of of textarea with increasing number of lines
+  $('section').on('change keyup keydown paste cut', 'textarea', function () {
+    $(this).height(0).height(this.scrollHeight);
+  }).find('textarea').change();
+
   //  =========== CLIENT DASHBOARD ============
 
   //Click listener for dismiss button in dashboard messages. Also checks if all rows are hidden, in that case, the title preceding the table is also hidden
@@ -63,11 +68,11 @@ $(function () {
   });
 
   // listener for edit icon in user list to open edit user modal
-  $('.modal-edit-user').click(function() {    
+  $('.modal-edit-user').click(function () {
     $('#modal-edit-user-root').addClass('is-active');
   });
 
-  $('#modal-edit-user-close').click(function() {
+  $('#modal-edit-user-close').click(function () {
     $('#modal-edit-user-root').removeClass('is-active');
   })
 });
