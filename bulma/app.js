@@ -2,6 +2,16 @@ $(function () {
 
   // ========== General functions ============
 
+  //load navbar
+  $("#navbar").load("navbar.html", function () {
+    //nav bar burger toggle
+    $('#navbar-toggle').click(function () {
+      $(this).toggleClass('is-active');
+      $('.navbar-menu').toggleClass('is-active');
+    });
+
+  });
+
   //Use for select all in modal boxes 
   $("#check-all-modal").click(function () {
     $(".checkbox-modal").prop('checked', $(this).prop('checked'));
@@ -32,12 +42,6 @@ $(function () {
   $('section').on('change keyup keydown paste cut', 'textarea', function () {
     $(this).height(0).height(this.scrollHeight);
   }).find('textarea').change();
-
-  //nav bar burger toggle
-  $('#navbar-toggle').click(function() {
-    $(this).toggleClass('is-active');
-    $('.navbar-menu').toggleClass('is-active');
-  });
 
   //  =========== CLIENT DASHBOARD ============
 
