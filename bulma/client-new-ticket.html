@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>User List</title>
+	<title>New Ticket</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css' />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
@@ -246,93 +246,103 @@
 				</li>
 				<li class="#">
 					<a href="#">Tickets</a>
-                </li>
+				</li>
 				<li class="is-active">
-                    <a href="#">New Tickets</a>
-                </li>
+					<a href="#">New Ticket</a>
+				</li>
 			</ul>
 		</nav>
-    </section>
-    <section class="section hero is-light section-reduce-padding is-fullheight">
-      <div class="box">
-          <div class="field">
-              <div class="control ">
-                  <label  class="label ">Department</label>
-                  <div class="control ">
-                    <div class="select ">
-                        <select>
-                        <option>Cloud Handling</option>
-                        <option>Web Hosting</option>
-                        <option>Networking</option>
-                        <option>Services</option>
-                    </select>
-                    </div>
-                </div>
-              </div>
-          </div>
-          <div class="">
-                <label class="label ">Department Id</label>
-                <span class="has-text-weight-semibold ">Web24x7host</span>
-            </div>
-          <div class="field">
-                <div class="control">
-                    <label class="label">Priority List</label>
-                    <div class="control ">
-                        <div class="select ">
-                            <select>
-                                <option>Low</option>
-                                <option>Normal</option>
-                                <option>Emergency</option>
-                                <option>Critical</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="field">
-                <label class="label">Subject</label>
-                <div class="control">
-                    <input type="text" class="input" placeholder="eg:- enter the subject here">
-                </div>         
-            </div>
-            <div class="field">
-                <label class="label">Message</label>
-                <div class="control">
-                    <textarea class="textarea" placeholder="place your quries here "></textarea>
-                </div>
-            </div>
-            <div class="field">
-                <label class="label">Private Message</label>
-                <div class="control">
-                    <textarea class="textarea" placeholder="enter your private message here"></textarea>
-                </div>
-            </div>
-            <div class="field">
-                <label class="label">Attachments</label>
-                <div class="control">
-                    <div class="file">
-                            <label class="file-label">
-                                <input class="file-input" type="file">
-                                <span class="file-cta">
-                                <span class="file-icon">
-                                    <i class="fas fa-upload"></i>
-                                </span>
-                                <span class="file-label">
-                                    Choose a file…
-                                </span>
-                                </span>
-                            </label>
-                    </div>
-                </div>
-            </div>
-            <br><br>
-            <div class="buttons is-centered">
-                <button class="button is-inverted is-light">Clear</button>
-                <button class="button is-success">Submit Ticket</button>
-            </div>
-      </div>         
-    </section>
-    <script src="jquery-utils.js"></script>
+	</section>
+	<section class="section hero is-light section-reduce-padding is-fullheight">
+
+		<div class="columns">
+			<div class="column is-offset-1 is-10">
+				<section class="title is-size-3 has-text-left title-padding section-reduce-padding">
+					New Ticket
+				</section>
+				<div class="box">
+					<div class="columns is-centered is-variable is-8">
+						<div class="column">
+							<div class="field is-expanded">
+								<label class="label">Department</label>
+								<div class="control">
+									<div class="select is-fullwidth">
+										<select>
+											<option>Cloud Handling</option>
+											<option>Web Hosting</option>
+											<option>Networking</option>
+											<option>Services</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column ">
+							<div class="field is-expanded">
+								<label class="label">Priority List</label>
+								<div class="control">
+									<div class="select is-fullwidth">
+										<select>
+											<option>Low</option>
+											<option>Normal</option>
+											<option>Emergency</option>
+											<option>Critical</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="field">
+						<label class="label">Subject</label>
+						<div class="control">
+							<input type="text" class="input" placeholder="Enter the subject here">
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">Message</label>
+						<div class="control">
+							<textarea class="textarea" placeholder="Use this field to enter your queries" rows="10"></textarea>
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">Private Message</label>
+						<div class="control">
+							<textarea class="textarea" placeholder="Use this field to enter sensitive information such as passwords, if required" rows="3"></textarea>
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">Attachments</label>
+						<div class="control">
+							<div class="file">
+								<label class="file-label">
+									<input class="file-input" type="file">
+									<span class="file-cta">
+										<span class="file-icon">
+											<i class="fas fa-upload"></i>
+										</span>
+										<span class="file-label">
+											Choose a file…
+										</span>
+									</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<br>
+					<br>
+					<div class="buttons is-centered">
+						<button class="button is-info">Submit Ticket</button>
+						<button class="button has-background-grey-lighter has-text-weight-semibold">Clear</button>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<script src="./app.js"></script>
 	</script>
 </body>
 
