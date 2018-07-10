@@ -33,6 +33,12 @@ $(function () {
     $(this).height(0).height(this.scrollHeight);
   }).find('textarea').change();
 
+  //nav bar burger toggle
+  $('#navbar-toggle').click(function() {
+    $(this).toggleClass('is-active');
+    $('.navbar-menu').toggleClass('is-active');
+  });
+
   //  =========== CLIENT DASHBOARD ============
 
   //Click listener for dismiss button in dashboard messages. Also checks if all rows are hidden, in that case, the title preceding the table is also hidden
