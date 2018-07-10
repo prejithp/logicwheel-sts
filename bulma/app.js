@@ -9,7 +9,6 @@ $(function () {
       $(this).toggleClass('is-active');
       $('.navbar-menu').toggleClass('is-active');
     });
-
   });
 
   //Use for select all in modal boxes 
@@ -78,11 +77,11 @@ $(function () {
   });
 
   // listener for edit icon in user list to open edit user modal
-  $('.modal-edit-user').click(function () {
-    $('#modal-edit-user-root').addClass('is-active');
+  $('#modal-new-user').click(function () {
+    $('#modal-add-user-root').addClass('is-active');
   });
 
-  $('#modal-edit-user-close').click(function () {
-    $('#modal-edit-user-root').removeClass('is-active');
+  $('#modal-add-user-close').click(function () {
+    $('#modal-add-user-root').removeClass('is-active');
   })
 });
