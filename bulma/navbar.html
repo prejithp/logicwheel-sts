@@ -2,238 +2,220 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>STS-Login</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css' />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-        crossorigin="anonymous">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>STS-Login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css' />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+	  crossorigin="anonymous">
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+
 </head>
 
 <body>
 	<nav class="navbar has-shadow is-spaced" role="navigation" aria-label="main navigation">
-		<div class="container">
-			<div class="navbar-brand">
-				<a href="./client-dash-homepage.html" class="navbar-item">
-					<span class="icon is-large has-text-danger">
-						<i class="fab fa-themeisle fa-2x"></i>
-					</span>
-					<span class="label is-medium is-size-4 ">Ticket System</span>
-				</a>
-				<a href="./client-dash-homepage.html" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-					<span aria-hidden="true"></span>
-					<span aria-hidden="true"></span>
-					<span aria-hidden="true"></span>
-				</a>
-			</div>
-			<div class="navbar-menu ">
-				<div class="navbar-start">
-					<div class="navbar-item has-dropdown is-hoverable">
-						<a href="./client-ticket-list.html" class="navbar-link">
-							<span class="icon is-large has-text-link">
-								<i class="fas fa-ticket-alt fa-lg"></i>
-							</span>
-							<span class="subtitle">Tickets</span>
-						</a>
-						<div class="navbar-dropdown">
-							<a href="./client-new-ticket.html" class="navbar-item">
-								<nav class="level">
-									<div class="level-item icon has-text-dark-grey">
-										<i class="fas fa-plus-circle"></i>
-									</div>
-									<div class="level-item">&nbsp;&nbsp;&nbsp;</div>
-									<div class="level-item has-text-left">
-										<div>
-											<p>
-												<strong>New Tickets</strong>
-											</p>
-											<p>Raise new tickets</p>
-										</div>
-									</div>
-								</nav>
-							</a>
-							<hr class="navbar-divider">
-							<a href="./client-open-ticket-list.html" class="navbar-item">
-								<nav class="level">
-									<div class="level-item icon has-text-link">
-										<i class="fas fa-door-open"></i>
-									</div>
-									<div class="level-item">&nbsp;&nbsp;&nbsp;</div>
-									<div class="level-item has-text-left">
-										<div>
-											<p>
-												<strong>Open Tickets</strong>
-											</p>
-											<p>Track open tickets</p>
-										</div>
-									</div>
-								</nav>
-							</a>
-							<hr class="navbar-divider">
-							<a href="client-closed-ticket-list.html" class="navbar-item">
-								<nav class="level">
-									<div class="level-item icon has-text-danger">
-										<i class="fas fa-door-closed"></i>
-									</div>
-									<div class="level-item">&nbsp;&nbsp;&nbsp;</div>
-									<div class="level-item has-text-left">
-										<div>
-											<p>
-												<strong>Closed Tickets</strong>
-											</p>
-											<p>See closed tickets</p>
-										</div>
-									</div>
-								</nav>
-							</a>
-							<hr class="navbar-divider">
-							<a href="./client-ticket-list.html" class="navbar-item">
-								<nav class="level">
-									<div class="level-item icon has-text-dark-grey">
-										<i class="far fa-file-alt"></i>
-									</div>
-									<div class="level-item">&nbsp;&nbsp;&nbsp;</div>
-									<div class="level-item has-text-left">
-										<div>
-											<p>
-												<strong>All Tickets</strong>
-											</p>
-											<p>Track open tickets</p>
-										</div>
-								</nav>
-							</a>
-							</div>
-						</div>
-						<div class="navbar-item has-dropdown is-hoverable">
-							<a href="client-user-list.html" class="navbar-link">
-								<span class="icon is-large has-text-primary">
-									<i class="fas fa-users fa-lg"></i>
-								</span>
-								<span class="subtitle">Users</span>
-							</a>
-							<div class="navbar-dropdown">
-								<a href="./client-new-user.html" class="navbar-item">
-									<nav class="level">
-										<div class="level-item icon has-text-dark-grey">
-											<i class="fas fa-user-edit"></i>
-										</div>
-										<div class="level-item">&nbsp;&nbsp;&nbsp;</div>
-										<div class="level-item has-text-left">
-											<div>
-												<p>
-													<strong>New Users</strong>
-												</p>
-												<p>Create New Users</p>
-											</div>
-										</div>
-									</nav>
-								</a>
-								<hr class="navbar-divider">
-								<a href="client-user-list.html" class="navbar-item">
-									<nav class="level">
-										<div class="level-item icon has-text-info">
-											<i class="fas fa-address-card"></i>
-										</div>
-										<div class="level-item">&nbsp;&nbsp;&nbsp;</div>
-										<div class="level-item has-text-left">
-											<div>
-												<p>
-													<strong>List Users</strong>
-												</p>
-												<p>View all Users</p>
-											</div>
-										</div>
-									</nav>
-								</a>
-							</div>
-						</div>
-						<a class="navbar-item">
-							<span class="icon is-large has-text-warning">
-								<i class="fas fa-bell fa-lg"></i>
-							</span>
-							<span class="subtitle">Notifications</span>
-						</a>
-						<div class="navbar-item has-dropdown is-hoverable">
-							<a class="navbar-link">
-								<span class="icon is-large has-text-info">
-									<i class="fas fa-cog fa-lg "></i>
-								</span>
-								<span class="subtitle">Settings</span>
-							</a>
-							<div class="navbar-dropdown">
-								<a href="client-organisation-preference.html" class="navbar-item">
-									<nav class="level">
-										<div class="level-item icon has-text-dark-grey">
-											<i class="fas fa-edit"></i>
-										</div>
-										<div class="level-item">&nbsp;&nbsp;&nbsp;</div>
-										<div class="level-item has-text-left">
-											<div>
-												<p>
-													<strong>Organization Preference</strong>
-												</p>
-												<p>Change organizations preferences</p>
-											</div>
-										</div>
-									</nav>
-								</a>
-								<hr class="navbar-divider">
-								<a href="#" class="navbar-item">
-									<nav class="level">
-										<div class="level-item icon has-text-link">
-											<i class="fas fa-chalkboard-teacher"></i>
-										</div>
-										<div class="level-item">&nbsp;&nbsp;&nbsp;</div>
-										<div class="level-item has-text-left">
-											<div>
-												<p>
-													<strong>Personal/UI Preference</strong>
-												</p>
-												<p>Change personal or UI preferences</p>
-											</div>
-										</div>
-									</nav>
+		<div class="navbar-brand">
+			<a href="./client-dash-homepage.html" class="navbar-item">
+				<span class="icon is-large has-text-danger">
+					<i class="fab fa-themeisle fa-2x"></i>
+				</span>
+				<span class="label is-medium is-size-4 ">Ticket System</span>
+			</a>
+			<a id="navbar-toggle" role="button" class="navbar-burger" ar ia-label="menu" aria-expanded="false">
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			</a>
+		</div>
+		<div class="navbar-menu ">
 
-								</a>
-								<hr class="navbar-divider">
-								<a class="navbar-item">
-									<nav class="level">
-										<div class="level-item icon has-text-danger">
-											<i class="fas fa-key"></i>
-										</div>
-										<div class="level-item">&nbsp;&nbsp;&nbsp;</div>
-										<div class="level-item has-text-left">
-											<div>
-												<p>
-													<strong>Change Password</strong>
-												</p>
-												<p>Change account password</p>
-											</div>
-										</div>
-									</nav>
-								</a>
+			<div class="navbar-start">
+
+				<div class="navbar-item has-dropdown is-hoverable">
+					<a href="./client-ticket-list.html" class="navbar-link">
+						<span class="icon is-large has-text-link">
+							<i class="fas fa-ticket-alt fa-lg"></i>
+						</span>
+						<span class="subtitle">Tickets</span>
+					</a>
+					<div class="navbar-dropdown">
+						<a href="./client-new-ticket.html" class="navbar-item">
+							<div class="columns is-mobile is-variable is-2">
+								<div class="column is-narrow">
+									<span class="icon is-large has-text-dark-grey">
+										<i class="fas fa-plus-circle"></i>
+									</span>
+
+								</div>
+								<div class="column">
+									<strong>New Tickets</strong>
+									<br> Raise new tickets
+								</div>
 							</div>
-						</div>
-					</div>
-					<div class="navbar-end">
-						<a href="#" class="navbar-item">
-							<span class="icon is-large">
-								<i class="fas fa-user-circle fa-lg"></i>
-							</span>
-							<span class="subtitle">Raj</span>
 						</a>
+						<hr class="navbar-divider">
+						<a href="./client-open-ticket-list.html" class="navbar-item">
+							<div class="columns is-mobile is-variable is-2">
+								<div class="column is-narrow">
+									<span class="icon is-large has-text-success">
+										<i class="fas fa-door-open"></i>
+									</span>
+								</div>
+								<div class="column">
+									<strong>Open Tickets</strong>
+									<br>Track open tickets</div>
+							</div>
+						</a>
+						<hr class="navbar-divider">
+						<a href="client-closed-ticket-list.html" class="navbar-item">
+							<div class="columns is-mobile is-variable is-2">
+								<div class="column is-narrow">
+									<span class="icon is-large has-text-danger">
+										<i class="fas fa-door-closed"></i>
+									</span>
+
+								</div>
+								<div class="column">
+									<strong>Closed Tickets</strong>
+									<br> See closed tickets
+								</div>
+							</div>
+						</a>
+						<hr class="navbar-divider">
+						<a href="./client-ticket-list.html" class="navbar-item">
+							<div class="columns is-mobile is-variable is-2">
+								<div class="column is-narrow">
+									<span class="icon is-large has-text-info">
+										<i class="far fa-file-alt"></i>
+									</span>
+								</div>
+								<div class="column">
+									<strong>All Tickets</strong>
+									<br> Track every ticket
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="navbar-item has-dropdown is-hoverable">
+					<a href="client-user-list.html" class="navbar-link">
+						<span class="icon is-large has-text-primary">
+							<i class="fas fa-users fa-lg"></i>
+						</span>
+						<span class="subtitle">Users</span>
+					</a>
+					<div class="navbar-dropdown">
+						<a href="./client-new-user.html" class="navbar-item">
+							<nav class="columns is-mobile is-variable is-2">
+								<div class="column is-narrow">
+									<span class="icon is-large has-text-dark-grey">
+										<i class="fas fa-user-edit"></i>
+									</span>
+								</div>
+								<div class="column">
+									<strong>New Users</strong>
+									<br> Create New Users
+								</div>
+							</nav>
+						</a>
+						<hr class="navbar-divider">
+						<a href="client-user-list.html" class="navbar-item">
+							<nav class="columns is-mobile is-variable is-2">
+								<div class="column is-narrow">
+									<span class="icon is-large has-text-info">
+										<i class="fas fa-address-card"></i>
+									</span>
+								</div>
+								<div class="column">
+									<strong>List Users</strong>
+									<br> View all Users
+								</div>
+							</nav>
+						</a>
+					</div>
+				</div>
+				<div class="navbar-item has-dropdown is-hoverable">
+					<a class="navbar-link">
+						<span class="icon is-large has-text-info">
+							<i class="fas fa-cog fa-lg "></i>
+						</span>
+						<span class="subtitle">Settings</span>
+					</a>
+					<div class="navbar-dropdown">
+						<a href="client-organisation-preference.html" class="navbar-item">
+							<div class="columns is-mobile is-variable is-2">
+								<div class="column is-narrow">
+									<span class="icon is-large has-text-dark-grey">
+										<i class="fas fa-edit"></i>
+									</span>
+								</div>
+								<div class="column">
+									<strong>Organization Preference</strong>
+									<br> Change organizations preferences
+								</div>
+							</div>
+						</a>
+						<hr class="navbar-divider">
 						<a href="#" class="navbar-item">
-							<span class="icon is-large has-text-danger">
-								<i class="fas fa- fa-sign-out-alt fa-lg"></i>
-							</span>
-							<span class="subtitle">Logout</span>
+							<div class="columns is-mobile is-variable is-2">
+								<div class="column">
+									<span class="icon is-large has-text-link">
+										<i class="fas fa-chalkboard-teacher"></i>
+									</span>
+								</div>
+								<div class="column">
+									<strong>Personal/UI Preference</strong>
+									<br> Change personal or UI preferences
+								</div>
+							</div>
+						</a>
+						<hr class="navbar-divider">
+						<a class="navbar-item">
+							<div class="columns is-mobile is-variable is-2">
+								<div class="column is-narrow">
+									<span class="icon is-large has-text-danger">
+										<i class="fas fa-key"></i>
+									</span>
+
+								</div>
+								<div class="column">
+									<strong>Change Password</strong>
+									<br> Change account password
+								</div>
+							</div>
 						</a>
 					</div>
 				</div>
 			</div>
+			<div class="navbar-end">
+				<a class="navbar-item icon is-large has-text-grey is-hidden-touch">
+					<i class="fas fa-bell fa-lg"></i>
+				</a>
+				<a class="navbar-item is-hidden-desktop">
+					<span class="icon is-large has-text-grey">
+						<i class="fas fa-bell fa-lg"></i>
+					</span>
+					<span class="subtitle">Notifications</span>
+				</a>
+				<a href="#" class="navbar-item">
+					<span class="icon is-large has-text-grey">
+						<i class="fas fa-user-circle fa-lg"></i>
+					</span>
+					<span class="subtitle">Raj</span>
+				</a>
+				<a href="#" class="navbar-item">
+					<span class="icon is-large has-text-danger">
+						<i class="fas fa- fa-sign-out-alt fa-lg"></i>
+					</span>
+					<span class="subtitle">Logout</span>
+				</a>
+			</div>
+		</div>
 	</nav>
-    <section class="hero is-fullheight is-light"></section>
+	<section class="hero is-fullheight is-light"></section>
+
+	<script src="./app.js"></script>
 </body>
 
 </html>
