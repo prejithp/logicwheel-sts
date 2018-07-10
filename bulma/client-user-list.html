@@ -39,13 +39,109 @@
 				<section class="hero is-light">
 					<div class="box">
 						<div class="buttons">
-						<button id="modal-new-user" class="button is-primary is-rounded">
-							<span class="icon">
-								<i class="fas fa-plus"></i>
-							</span>
-							<span class="has-text-weight-semibold">New user</span></a>
-						</button>					
+							<button id="modal-new-user" class="button is-primary is-rounded">
+								<span class="icon">
+									<i class="fas fa-plus"></i>
+								</span>
+								<span class="has-text-weight-semibold">New user</span>
+								</a>
+							</button>
 						</div>
+
+						<!-- modal to add department to a user -->
+						<div class="modal" id="modal-department-root">
+							<div class="modal-background"></div>
+							<div class="modal-card">
+								<header class="modal-card-head">
+									<p class="modal-card-title has-text-weight-semibold ">Add Departments To User</p>
+									<button id="modal-department-close" class="delete"></button>
+								</header>
+								<section class="modal-card-body">
+									<div class="is-pulled-left">
+										<input type="checkbox" id="check-all-modal" class="checkbox-padding">&nbsp;&nbsp;
+										<span class="has-text-weight-semibold ">Select All Departments</span>
+									</div>
+									<hr>
+									<div class="buttons">
+										<button class="button level">
+											<span>
+												<input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding">
+											</span>&nbsp;&nbsp;
+											<span class="level-item has-text-weight-semibold">Household</span>
+										</button>
+										<button class="button level">
+											<span>
+												<input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding">
+											</span>&nbsp;&nbsp;
+											<span class="level-item has-text-weight-semibold">Sever Handling</span>
+										</button>
+										<button class="button level">
+											<span>
+												<input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding">
+											</span>&nbsp;&nbsp;
+											<span class="level-item has-text-weight-semibold">Cloud</span>
+										</button>
+										<button class="button level">
+											<span>
+												<input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding">
+											</span>&nbsp;&nbsp;
+											<span class="level-item has-text-weight-semibold">Cloud</span>
+										</button>
+										<button class="button level">
+											<span>
+												<input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding">
+											</span>&nbsp;&nbsp;
+											<span class="level-item has-text-weight-semibold">Super Compunting</span>
+										</button>
+										<button class="button level">
+											<span>
+												<input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding">
+											</span>&nbsp;&nbsp;
+											<span class="level-item has-text-weight-semibold">Web Hosting</span>
+										</button>
+										<button class="button level">
+											<span>
+												<input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding">
+											</span>&nbsp;&nbsp;
+											<span class="level-item has-text-weight-semibold">Domain Services</span>
+										</button>
+										<button class="button level">
+											<span>
+												<input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding">
+											</span>&nbsp;&nbsp;
+											<span class="level-item has-text-weight-semibold">Networking</span>
+										</button>
+										<button class="button level">
+											<span>
+												<input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding">
+											</span>&nbsp;&nbsp;
+											<span class="level-item has-text-weight-semibold">General chek</span>
+										</button>
+										<button class="button level">
+											<span>
+												<input type="checkbox" class="level-item checkbox checkbox-modal checkbox-padding">
+											</span>&nbsp;&nbsp;
+											<span class="level-item has-text-weight-semibold">Peripherals</span>
+										</button>
+									</div>
+								</section>
+								<footer class="modal-card-foot">
+									<div class="field is-grouped">
+										<p class="control">
+											<a class="button is-success">
+												Add
+											</a>
+										</p>
+										<p class="control">
+											<a class="button is-light">
+												Cancel
+											</a>
+										</p>
+									</div>
+								</footer>
+							</div>
+						</div>
+
 
 						<!-- modal for new user -->
 						<div class="modal" id="modal-add-user-root">
@@ -182,7 +278,10 @@
 											</span>
 										</td>
 										<td class="modal-edit-user">
-											<a href="client-edit-user.html"><a href="client-edit-user.html"><i class="fas fa-edit"></i></a>
+											<a href="client-edit-user.html">
+												<a href="client-edit-user.html">
+													<i class="fas fa-edit"></i>
+												</a>
 										</td>
 										<td>
 											<div class="buttons">
@@ -217,7 +316,9 @@
 										</td>
 										<td>Rahul</td>
 										<td class="modal-edit-user">
-											<a href="client-edit-user.html"><i class="fas fa-edit"></i></a>
+											<a href="client-edit-user.html">
+												<i class="fas fa-edit"></i>
+											</a>
 										</td>
 										<td>
 											<div class="buttons">
@@ -244,7 +345,9 @@
 										</td>
 										<td>Shawn</td>
 										<td class="modal-edit-user">
-											<a href="client-edit-user.html"><i class="fas fa-edit"></i></a>
+											<a href="client-edit-user.html">
+												<i class="fas fa-edit"></i>
+											</a>
 										</td>
 										<td>
 											<div class="buttons">
@@ -275,7 +378,9 @@
 										</td>
 										<td>Manuel</td>
 										<td class="modal-edit-user">
-											<a href="client-edit-user.html"><i class="fas fa-edit"></i></a>
+											<a href="client-edit-user.html">
+												<i class="fas fa-edit"></i>
+											</a>
 										</td>
 										<td>
 											<div class="buttons">
@@ -313,7 +418,9 @@
 										</td>
 										<td>Jose</td>
 										<td class="modal-edit-user">
-											<a href="client-edit-user.html"><i class="fas fa-edit"></i></a>
+											<a href="client-edit-user.html">
+												<i class="fas fa-edit"></i>
+											</a>
 										</td>
 										<td>
 											<div class="buttons">
@@ -336,7 +443,9 @@
 										</td>
 										<td>Lalu</td>
 										<td class="modal-edit-user">
-											<a href="client-edit-user.html"><i class="fas fa-edit"></i></a>
+											<a href="client-edit-user.html">
+												<i class="fas fa-edit"></i>
+											</a>
 										</td>
 										<td>
 											<div>
