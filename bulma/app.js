@@ -10,10 +10,10 @@ $(function () {
       $('.navbar-menu').toggleClass('is-active');
     });
   });
-
+// TODO: BUGggggggg 
   //Use for select all in modal boxes 
   $("#check-all-modal").click(function () {
-    $(".checkbox-modal").prop('checked', $(this).prop('checked'));
+    $(".checkbox-modal").prop('checked', $(this).children('input').prop('checked'));
     console.log('click');
 
   });

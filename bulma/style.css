@@ -17,7 +17,12 @@
 .section-reduce-padding {
     padding-top: 1rem;
 }
-.checkbox-padding
-{   width:0.9rem;
+
+.checkbox-padding {
+    width:0.9rem;
     height:0.9rem;
+}
+
+.extra-right-padding {
+    margin-right: 0.5rem;
 }
