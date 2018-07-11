@@ -10,17 +10,25 @@ $(function () {
       $('.navbar-menu').toggleClass('is-active');
     });
   });
-// TODO: BUGggggggg 
+
   //Use for select all in modal boxes 
   $("#check-all-modal").click(function () {
-    $(".checkbox-modal").prop('checked', $(this).children('input').prop('checked'));
-    console.log('click');
 
+    $(this).children('input').prop('checked', !$(this).children('input').prop('checked'))
+
+    $(".checkbox-modal").find('input').each(function () {
+      $(this).prop('checked', $('#check-all-modal').children('input').prop('checked'))
+    })
+    console.log('click');
   });
 
-  $(".checkbox-modal").change(function () {
+  $(".checkbox-modal").click(function () {
+    console.log($(this).find('input').prop('checked'));
+
+    $(this).find('input').prop('checked', !$(this).find('input').prop('checked'));
+    
     if (!$(this).prop("checked")) {
-      $("#check-all-modal").prop("checked", false);
+      $("#check-all-modal").find('input').prop("checked", false);
     }
   });
 
