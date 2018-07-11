@@ -26,3 +26,24 @@
 .extra-right-padding {
     margin-right: 0.5rem;
 }
+
+.bottom-border {
+    border-bottom: 1px solid lightgrey;
+}
+
+.rounded-image {
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.image-label {
+    padding: 1.5rem 1.75rem;
+    color: #363636;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.image-label:hover {
+    color: hsl(204, 86%, 53%);
+    transition: all 0.4s linear;
+}

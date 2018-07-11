@@ -19,11 +19,9 @@ $(function () {
     $(".checkbox-modal").find('input').each(function () {
       $(this).prop('checked', $('#check-all-modal').children('input').prop('checked'))
     })
-    console.log('click');
   });
 
   $(".checkbox-modal").click(function () {
-    console.log($(this).find('input').prop('checked'));
 
     $(this).find('input').prop('checked', !$(this).find('input').prop('checked'));
     
@@ -35,7 +33,6 @@ $(function () {
   //Can be used in select all in main tables
   $("#check-all").click(function () {
     $(".checkbox").prop('checked', $(this).prop('checked'));
-    console.log('click');
 
   });
 
@@ -93,3 +90,4 @@ $(function () {
     $('#modal-add-user-root').removeClass('is-active');
   })
 });
+

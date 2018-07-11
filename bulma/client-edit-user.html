@@ -42,7 +42,7 @@
         <div class="box">
           <form>
             <div class="columns">
-              <div class="column is-two-thirds">
+              <div class="column is-8">
                 <div class="columns">
                   <div class="field column">
                     <label class="label">Name</label>
@@ -78,13 +78,13 @@
                   </div>
                 </div>
               </div>
-              <div class="column is-3 is-offset-1 ">
-                <figure class="image is-128x128">
-                  <img src="https://bulma.io/images/placeholders/128x128.png">
+              <div class="column is-3 is-offset-1">
+                <figure class="image is-128x128 ">
+                  <img class="rounded-image" src="https://bulma.io/images/placeholders/128x128.png">
                 </figure>
-                <label class="label column">Profile Pic &nbsp;&nbsp;
-                  <span>
-                    <i class="fas fa-pen "></i>
+                <label class="image-label">Change
+                  <span class="icon">
+                    <i class="fas fa-pen"></i>
                   </span>
                 </label>
               </div>
@@ -248,17 +248,9 @@
               </div>
             </div>
 
-            <div class="field is-grouped is-grouped-centered">
-              <p class="control">
-                <a class="button is-primary">
-                  Submit
-                </a>
-              </p>
-              <p class="control">
-                <a class="button is-light">
-                  Cancel
-                </a>
-              </p>
+            <div class="buttons is-centered">
+              <button class="button has-text-weight-semibold is-info">Submit</button>
+              <button class="button has-text-weight-semibold has-background-grey-lighter">Clear</button>
             </div>
           </form>
         </div>
