@@ -90,6 +90,16 @@ $(function () {
     $('#modal-add-user-root').removeClass('is-active');
   });
 
+  //used to display or hide the assign department and delete user buttons
+  $('.checkbox').change(function () {
+    if($('.checkbox:checked').length > 0) {
+      $('.btn-grouped-checkbox').removeClass('is-hidden')
+    } else {
+      $('.btn-grouped-checkbox').addClass('is-hidden')
+    }
+
+  })
+
   // =================== NEW TICKET ==============
 
   // append button to file attachments when a new file has been added

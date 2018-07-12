@@ -21,6 +21,7 @@
 .checkbox-padding {
     width:0.9rem;
     height:0.9rem;
+    cursor: pointer;
 }
 
 .extra-right-padding {
