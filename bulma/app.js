@@ -9,7 +9,28 @@ $(function () {
       $(this).toggleClass('is-active');
       $('.navbar-menu').toggleClass('is-active');
     });
+
+    //load change password modal after navbar has finished loading
+    $('#modal-change-password-container').load("change-password.html", function () {
+      //appear on clicking change password nav item
+      $('#modal-change-password').click(function () {
+        $('#modal-change-password-root').addClass('is-active')
+      })
+      
+      // close on clicking cancel or x
+      $('.modal-close-btn').click(function () {
+        $(this).parents('.modal').removeClass('is-active');
+      })
+    });
+
+    $('.modal-close-btn').click(function () {
+      console.log('sgesi');
+
+      $(this).parents('.modal').removeClass('is-active');
+    })
+
   });
+
 
   //Use for select all in modal boxes 
   $("#check-all-modal").click(function () {
@@ -97,9 +118,9 @@ $(function () {
   });
 
   // listener on x buttons in departments which triggers confirmation delete department modal
-  $('.delete-department').click(function() {    
+  $('.delete-department').click(function () {
     console.log('test');
-    
+
     $('#modal-delete-department-root').addClass('is-active');
   });
 
