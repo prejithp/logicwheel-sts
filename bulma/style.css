@@ -55,3 +55,13 @@
     background-color: white;
     width: 2.5rem;
 }
+
+.delete-spacer {
+    margin-left: 0.5rem;
+}
+
+/* use for disabled pagination buttons */
+.disable-hover:hover {
+    cursor: not-allowed;
+    border-color: #e6e6e6;
+}

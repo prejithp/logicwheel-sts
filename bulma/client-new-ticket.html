@@ -97,7 +97,7 @@
 								<div class="control">
 									<div class="file">
 										<label class="file-label">
-											<input class="file-input" type="file">
+											<input id="input-file-new-ticket" class="file-input" type="file" multiple>
 											<span class="file-cta">
 												<span class="file-icon">
 													<i class="fas fa-upload"></i>
@@ -111,14 +111,14 @@
 								</div>
 							</div>
 						</div>
-						<!-- write jquery for this -->
-						<div class="column">
+						<div class="column is-hidden" id="file-attachments">
 							<div class="field">
 								<label class="label">Attached Files:</label>
+								<div class="control buttons" id="file-attachments-container">
+								</div>
 							</div>
 						</div>
 					</div>
-					<br>
 					<br>
 					<div class="buttons is-centered">
 						<button class="button is-info has-text-weight-semibold">Submit Ticket</button>

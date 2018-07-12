@@ -24,7 +24,7 @@ $(function () {
   $(".checkbox-modal").click(function () {
 
     $(this).find('input').prop('checked', !$(this).find('input').prop('checked'));
-    
+
     if (!$(this).prop("checked")) {
       $("#check-all-modal").find('input').prop("checked", false);
     }
@@ -88,6 +88,21 @@ $(function () {
 
   $('#modal-add-user-close').click(function () {
     $('#modal-add-user-root').removeClass('is-active');
-  })
-});
+  });
 
+  // =================== NEW TICKET ==============
+
+  // append button to file attachments when a new file has been added
+  $('#input-file-new-ticket').change(function () {
+    var $attachmentContainer = $('#file-attachments-container');
+
+    $('#file-attachments').removeClass('is-hidden');
+
+    for (var i = 0; i < $(this).get(0).files.length; ++i) {
+      $attachmentContainer.append(`
+          <div class="button">${$(this).get(0).files[i].name}<a class="delete delete-spacer is-small"></a></div>
+        `)
+    }
+  })
+
+});
