@@ -103,7 +103,6 @@
 		</div>
 	</div>
 
-
 	<!-- modal for new user -->
 	<div class="modal" id="modal-add-user-root">
 		<div class="modal-background"></div>
@@ -203,6 +202,31 @@
 		</div>
 	</div>
 
+	<!-- modal to delete users -->
+	<div class="modal" id="modal-delete-user-root">
+		<div class="modal-background"></div>
+		<div class="modal-card">
+			<header class="modal-card-head">
+				<p class="modal-card-title">Delete User</p>
+				<button id="modal-delete-user-close" class="delete" aria-label="close"></button>
+			</header>
+			<section class="modal-card-body">
+				This action will delete the users you have selected along with all records of their activity and also delete all the tickets that were started by this user.<br /><br />
+
+				Are you sure you want to perform this operation?<br />Please type in <strong>YES</strong> to confirm this action<br />
+				<div class="field">
+					<div class="control">
+						<input type="text" class="input" autofocus>
+					</div>
+				</div>
+			</section>
+			<footer class="modal-card-foot">
+				<a id="" class="button is-danger has-text-weight-semibold" disabled>Delete user</a>
+				<a class="button has-background-grey-lighter has-text-weight-semibold">Cancel</a>
+			</footer>
+		</div>
+	</div>
+
 	<section class="section breadcrumb-padding">
 		<nav class="container breadcrumb">
 			<ul>
@@ -239,9 +263,9 @@
 								</span>
 								<span class="has-text-weight-semibold">Assign Department</span>
 							</button>
-							<button class="button is-rounded has-background-grey-light has-text-white is-hidden btn-grouped-checkbox">
+							<button id="modal-delete-user" class="button is-rounded has-background-grey-light has-text-white is-hidden btn-grouped-checkbox">
 								<span class="icon">
-									<i class="fas fa-user-plus"></i>
+									<i class="fas fa-user-minus"></i>
 								</span>
 								<span class="has-text-weight-semibold">Delete user</span>
 							</button>

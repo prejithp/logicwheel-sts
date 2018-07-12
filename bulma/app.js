@@ -90,6 +90,15 @@ $(function () {
     $('#modal-add-user-root').removeClass('is-active');
   });
 
+  // listener for delete user button in user list to open delete user modal
+  $('#modal-delete-user').click(function () {
+    $('#modal-delete-user-root').addClass('is-active');
+  });
+
+  $('#modal-delete-user-close').click(function () {
+    $('#modal-delete-user-root').removeClass('is-active');
+  });
+
   //used to display or hide the assign department and delete user buttons
   $('.checkbox').change(function () {
     if($('.checkbox:checked').length > 0) {
@@ -97,7 +106,6 @@ $(function () {
     } else {
       $('.btn-grouped-checkbox').addClass('is-hidden')
     }
-
   })
 
   // =================== NEW TICKET ==============
