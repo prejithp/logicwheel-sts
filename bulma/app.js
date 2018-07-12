@@ -96,6 +96,13 @@ $(function () {
     }
   });
 
+  // listener on x buttons in departments which triggers confirmation delete department modal
+  $('.delete-department').click(function() {    
+    console.log('test');
+    
+    $('#modal-delete-department-root').addClass('is-active');
+  });
+
   // listener to close modals, for cancel and close buttons
   $('.modal-close-btn').click(function () {
     $(this).parents('.modal').removeClass('is-active');

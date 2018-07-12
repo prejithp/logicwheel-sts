@@ -238,21 +238,25 @@
 
 	<!-- modal to delete a department from a user -->
 	<div class="modal" id="modal-delete-department-root">
-			<div class="modal-background"></div>
-			<div class="modal-card">
-				<header class="modal-card-head">
-					<p class="modal-card-title">Modal title</p>
-					<button class="delete" aria-label="close"></button>
-				</header>
-				<section class="modal-card-body">
-					<!-- Content ... -->
-				</section>
-				<footer class="modal-card-foot">
-					<button class="button is-success">Save changes</button>
-					<button class="button">Cancel</button>
-				</footer>
-			</div>
+		<div class="modal-background"></div>
+		<div class="modal-card">
+			<header class="modal-card-head">
+				<p class="modal-card-title">Remove Department</p>
+				<button class="delete modal-close-btn" aria-label="close"></button>
+			</header>
+			<section class="modal-card-body">
+				<div class="content">
+					<p>This action will remove the specified department from the user and he/she will no longer be able to access or open tickets
+						in this department any more.</p>
+					<p>Are you sure you want to perform this action?</p>
+				</div>
+			</section>
+			<footer class="modal-card-foot">
+				<button class="button is-info has-text-weight-semibold">Save changes</button>
+				<button class="button modal-close-btn has-text-weight-semibold has-background-grey-lighter">Cancel</button>
+			</footer>
 		</div>
+	</div>
 
 	<section class="section breadcrumb-padding">
 		<nav class="container breadcrumb">
@@ -345,15 +349,15 @@
 											<div class="buttons">
 												<span class="button is-outlined is-primary has-text-black-bis">
 													Laptop
-													<button class="delete is-small delete-spacer"></button>
+													<button class="delete is-small delete-spacer  delete-department"></button>
 												</span>
 												<span class="button is-outlined is-primary has-text-black-bis">
 													Electronics
-													<button class="delete is-small delete-spacer"></button>
+													<button class="delete is-small delete-spacer  delete-department"></button>
 												</span>
 												<span class="button is-outlined is-primary has-text-black-bis">
 													Accessories
-													<button class="delete is-small delete-spacer"></button>
+													<button class="delete is-small delete-spacer  delete-department"></button>
 												</span>
 											</div>
 										</td>
@@ -382,7 +386,7 @@
 											<div class="buttons">
 												<span class="button is-outlined is-primary has-text-black-bis">
 													Desktop
-													<button class="delete is-small delete-spacer"></button>
+													<button class="delete is-small delete-spacer  delete-department"></button>
 												</span>
 											</div>
 										</td>
@@ -411,11 +415,11 @@
 											<div class="buttons">
 												<span class="button is-outlined is-primary has-text-black-bis">
 													Household
-													<button class="delete is-small delete-spacer"></button>
+													<button class="delete is-small delete-spacer  delete-department"></button>
 												</span>
 												<span class="button is-outlined is-primary has-text-black-bis">
 													Cookery
-													<button class="delete is-small delete-spacer"></button>
+													<button class="delete is-small delete-spacer  delete-department"></button>
 												</span>
 											</div>
 										</td>
@@ -444,23 +448,23 @@
 											<div class="buttons">
 												<span class="button is-outlined is-primary has-text-black-bis">
 													Furnitures
-													<button class="delete is-small delete-spacer"></button>
+													<button class="delete is-small delete-spacer  delete-department"></button>
 												</span>
 												<span class="button is-outlined is-primary has-text-black-bis">
 													Accessories
-													<button class="delete is-small delete-spacer"></button>
+													<button class="delete is-small delete-spacer  delete-department"></button>
 												</span>
 												<span class="button is-outlined is-primary has-text-black-bis">
 													Peripherals
-													<button class="delete is-small delete-spacer"></button>
+													<button class="delete is-small delete-spacer  delete-department"></button>
 												</span>
 												<span class="button is-outlined is-primary has-text-black-bis">
 													Desktop
-													<button class="delete is-small delete-spacer"></button>
+													<button class="delete is-small delete-spacer  delete-department"></button>
 												</span>
 												<span class="button is-outlined is-primary has-text-black-bis">
 													Laptop
-													<button class="delete is-small delete-spacer"></button>
+													<button class="delete is-small delete-spacer  delete-department"></button>
 												</span>
 											</div>
 										</td>
@@ -484,7 +488,7 @@
 											<div class="buttons">
 												<span class="button is-outlined is-primary has-text-black-bis">
 													Household
-													<button class="delete is-small delete-spacer"></button>
+													<button class="delete is-small delete-spacer delete-department "></button>
 												</span>
 											</div>
 										</td>
