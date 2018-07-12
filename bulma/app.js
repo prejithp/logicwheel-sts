@@ -77,26 +77,14 @@ $(function () {
     $('#modal-department-root').addClass('is-active');
   });
 
-  $('#modal-department-close').click(function () {
-    $('#modal-department-root').removeClass('is-active');
-  });
-
   // listener for edit icon in user list to open edit user modal
   $('#modal-new-user').click(function () {
     $('#modal-add-user-root').addClass('is-active');
   });
 
-  $('#modal-add-user-close').click(function () {
-    $('#modal-add-user-root').removeClass('is-active');
-  });
-
   // listener for delete user button in user list to open delete user modal
   $('#modal-delete-user').click(function () {
     $('#modal-delete-user-root').addClass('is-active');
-  });
-
-  $('#modal-delete-user-close').click(function () {
-    $('#modal-delete-user-root').removeClass('is-active');
   });
 
   //listener to disable/enable the delete user button in delete users modal
@@ -107,6 +95,18 @@ $(function () {
       $('#btn-delete-user').attr('disabled', true);
     }
   });
+
+  // listener to close modals, for cancel and close buttons
+  $('.modal-close-btn').click(function () {
+    $(this).parents('.modal').removeClass('is-active');
+  });
+
+  //listen for esacpe to close modals
+  $(document).keyup(function (event) {
+    if (event.keyCode === 27) {
+      $('.modal').removeClass('is-active')
+    }
+  })
 
   //used to display or hide the assign department and delete user buttons
   $('.checkbox').change(function () {
