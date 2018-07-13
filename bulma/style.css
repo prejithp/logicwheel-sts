@@ -1,68 +1,82 @@
+@font-face {
+  font-family: "Segoe-Mono-Boot";
+  src: url("../Segoe-Mono-Boot.ttf.woff") format("woff"),
+    url("../Segoe-Mono-Boot.ttf.svg#Segoe-Mono-Boot") format("svg"),
+    url("../Segoe-Mono-Boot.ttf.eot"),
+    url("../Segoe-Mono-Boot.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .hidden {
-    display: none;
+  display: none;
 }
 
 .shown {
-    display: inline;
+  display: inline;
 }
 
 .breadcrumb-padding {
-    padding: 1rem 0.5rem
+  padding: 1rem 0.5rem;
 }
 
 .title-padding {
-    padding-left: 1.25rem;
+  padding-left: 1.25rem;
 }
 
 .section-reduce-padding {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 .checkbox-padding {
-    width:0.9rem;
-    height:0.9rem;
-    cursor: pointer;
+  width: 0.9rem;
+  height: 0.9rem;
+  cursor: pointer;
 }
 
 .extra-right-padding {
-    margin-right: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .bottom-border {
-    border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
 }
 
 .rounded-image {
-    border: 1px solid white;
-    border-radius: 50%;
+  border: 1px solid white;
+  border-radius: 20%;
 }
 
 .image-label {
-    padding: 1.5rem 1.75rem;
-    color: #363636;
-    font-weight: 700;
-    cursor: pointer;
+  padding: 1.5rem 1.75rem;
+  color: #363636;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .image-label:hover {
-    color: hsl(204, 86%, 53%);
-    transition: all 0.4s linear;
+  color: hsl(204, 86%, 53%);
+  transition: all 0.4s linear;
 }
 
 .pagination-spacer {
-    border: none;
-    outline: none;
-    padding: 0;
-    background-color: white;
-    width: 2.5rem;
+  border: none;
+  outline: none;
+  padding: 0;
+  background-color: white;
+  width: 2.5rem;
 }
 
 .delete-spacer {
-    margin-left: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 /* use for disabled pagination buttons */
 .disable-hover:hover {
-    cursor: not-allowed;
-    border-color: #e6e6e6;
+  cursor: not-allowed;
+  border-color: #e6e6e6;
+}
+
+.input-message {
+  font-family: 'Segoe-Mono-Boot';
 }
