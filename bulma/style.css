@@ -93,3 +93,7 @@
   font-weight: 300;
   margin-left: 0.2rem;
 }
+
+.ticket-id {
+  font-weight: 200 !important;
+}
