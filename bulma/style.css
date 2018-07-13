@@ -88,3 +88,8 @@
 .align-right {
   text-align: right;
 }
+
+.ticket-post-time {
+  font-weight: 300;
+  margin-left: 0.2rem;
+}

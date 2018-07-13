@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ticket View</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css' />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+</head>
+
+<body>
+  <div id="navbar"></div>
+
+  <div id="modal-change-password-container"></div>
+
+  <section class="section breadcrumb-padding">
+    <nav class="container breadcrumb">
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="">Tickets</a>
+        </li>
+        <li class="is-active">
+          <a href="#">Ticket View</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+  <section class="section hero is-light section-reduce-padding">
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+        <section class="title is-size-3 has-text-left title-padding section-reduce-padding">
+          <div class="columns is-hidden-touch ">
+            <div class="column is-narrow">
+              <span class="subtitle  is-size4 ">
+                <i class="fas fa-lock-open"></i>
+              </span>
+            </div>
+            <div class="column is-9">
+              Issue regarding domain name service
+            </div>
+            <div class="column">
+              <small class="subtitle is-size4 ">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </small>
+            </div>
+          </div>
+          <div class="columns is-hidden-desktop">
+            <div class="column is-narrow">
+              <span class="subtitle  is-size4 ">
+                <i class="fas fa-lock-open"></i>
+              </span>
+              <small class="subtitle is-size4 ">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </small>
+            </div>
+            <div class="column">
+              Issue regarding domain name service
+            </div>
+          </div>
+        </section>
+        <div class="box">
+          <div class="columns">
+            <div class="column">
+              <div class="field">
+                <label class="label">Ticket Id :</label>
+                <div class="control">
+                  <input type="text" value="#23fcb8" class="input" disabled>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="field ">
+                <label class="label ">Department Name :</label>
+                <div class="control ">
+                  <input type="text" value="Web Hosting" class="input" disabled>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="field">
+                <lable class="label ">Priority Level</lable>
+                <div class="control ">
+                  <input type="text" class="input" value="Low" disabled>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column">
+              <div class="field">
+                <label class="label">Created On</label>
+                <input type="text" class="input" value="24-11-2018" disabled>
+              </div>
+            </div>
+            <div class="column">
+              <div class="field">
+                <label class="label">Status</label>
+                <input type="text" class="input" value="Open" disabled>
+              </div>
+            </div>
+            <br>
+            <div class="column">
+              <span class="control ">
+                <a class="button">Close ticket</a>
+              </span>
+
+              <span class="buttons has-addons">
+                <span class="button">ASC</span>
+                <span class="button">DES</span>
+              </span>
+            </div>
+          </div>
+          <hr>
+          <div class="columns is-variable is-2">
+            <div class="column is-narrow">
+              <figure class="image is-64x64">
+                <img class="rounded-image" src="../17.jpg">
+              </figure>
+            </div>
+            <div class="column">
+              <article class="message is-dark">
+                <div class="message-header">
+                  <p>Jean Batista
+                    <span class="ticket-post-time">commented 7 days ago</span>
+                  </p>
+                  <span>
+                    <span class="tag">Client</span>
+
+                    <span class="icon">
+                      <i class="far fa-star"></i>
+                    </span>
+                  </span>
+                </div>
+                <div class="message-body">
+                  my computer not working from yesterday. please help!
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="columns is-variable is-2">
+            <div class="column is-narrow">
+              <figure class="image is-64x64">
+                <img class="rounded-image" src="../94.jpg">
+              </figure>
+            </div>
+            <div class="column">
+              <article class="message is-dark">
+                <div class="message-header">
+                  <p>Jake Romero
+                    <span class="ticket-post-time">commented 6 days ago</span>
+                  </p>
+                  <span>
+                    <span class="tag">Staff</span>
+                    <span class="icon">
+                      <i class="far fa-star"></i>
+                    </span>
+                  </span>
+                </div>
+                <div class="message-body">
+                  Reboot it
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="columns is-variable is-2">
+            <div class="column is-narrow">
+              <figure class="image is-64x64">
+                <img class="rounded-image" src="../17.jpg">
+              </figure>
+            </div>
+            <div class="column">
+              <article class="message is-dark">
+                <div class="message-header">
+                  <p>Jean Batista
+                    <span class="ticket-post-time">commented 6 days ago</span>
+                  </p>
+                  <span>
+                    <span class="tag">Client</span>
+                    <span class="icon">
+                      <i class="far fa-star"></i>
+                    </span>
+                  </span>
+                </div>
+                <div class="message-body">
+                  its still not workin!
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="columns is-variable is-2">
+            <div class="column is-narrow">
+              <figure class="image is-64x64">
+
+              </figure>
+
+            </div>
+            <div class="column">
+              <article class="message is-warning">
+                <div class="message-body">
+                  Jake has been assigned to this ticket
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="columns is-variable is-2">
+            <div class="column is-narrow">
+              <figure class="image is-64x64">
+                <img class="rounded-image" src="../94.jpg">
+              </figure>
+            </div>
+            <div class="column">
+              <article class="message is-dark">
+                <div class="message-header">
+                  <p>Jake Romero
+                    <span class="ticket-post-time">commented 5 days ago</span>
+                  </p>
+                  <span>
+                    <span class="tag">Staff</span>
+                    <span class="icon">
+                      <i class="far fa-star"></i>
+                    </span>
+                  </span>
+                </div>
+                <div class="message-body">
+                  Which is the model that you are using?
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="columns is-variable is-2">
+            <div class="column is-narrow">
+              <figure class="image is-64x64">
+                <img class="rounded-image" src="../17.jpg">
+              </figure>
+            </div>
+            <div class="column">
+              <article class="message is-dark">
+                <div class="message-header">
+                  <p>Jean Batista
+                    <span class="ticket-post-time">commented 4 days ago</span>
+                  </p>
+                  <span>
+                    <span class="tag">Client</span>
+
+                    <span class="icon">
+                      <i class="far fa-star"></i>
+                    </span>
+                  </span>
+                </div>
+                <div class="message-body">
+                  where can i find the model number?
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="columns is-variable is-2">
+            <div class="column is-narrow">
+              <figure class="image is-64x64">
+
+              </figure>
+            </div>
+            <div class="column">
+              <article class="message is-warning">
+                <div class="message-body">
+                  Jake has had enough with this lady and has reassigned it to Shawn Mendez
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="columns is-variable is-2">
+            <div class="column is-narrow">
+              <figure class="image is-64x64">
+                <img class="rounded-image" src="../1.jpg">
+              </figure>
+            </div>
+            <div class="column">
+              <article class="message is-dark">
+                <div class="message-header">
+                  <p>Shawn Mendez
+                    <span class="ticket-post-time">commented 3 days ago</span>
+                  </p>
+                  <span>
+                    <span class="tag">Staff</span>
+
+                    <span class="icon">
+                      <i class="far fa-star"></i>
+                    </span>
+                  </span>
+                </div>
+                <div class="message-body">
+                  You can find the model number behind the CPU case
+                </div>
+              </article>
+            </div>
+          </div>
+          <label class="label">Message</label>
+          <div class="control">
+            <textarea class="textarea input-message placeholders" cols="30" rows="8" placeholder="Leave your comments here"></textarea>
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <label class="label">Private Message</label>
+            <textarea class="textarea input-message" cols="30" rows="3" placeholder="Use this field to pass secure information"></textarea>
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <label class="label">Attachments</label>
+            <div class="file">
+              <label class="file-label">
+                <input class="file-input" type="file" name="resume">
+                <span class="file-cta">
+                  <span class="file-icon">
+                    <i class="fas fa-upload"></i>
+                  </span>
+                  <span class="file-label">
+                    Choose a file…
+                  </span>
+                </span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="buttons is-centered">
+          <div class="button has-text-weight-semibold is-success">Update</div>
+          <div class="button has-text-weight-semibold">Update &amp; Close</div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
