@@ -33,13 +33,14 @@ $(function () {
 
 
   //Use for select all in modal boxes 
-  $("#check-all-modal").click(function () {
+  $("#check-all-modal").click(function (event) { 
 
-    $(this).children('input').prop('checked', !$(this).children('input').prop('checked'))
+    console.log('click');
 
-    $(".checkbox-modal").find('input').each(function () {
-      $(this).prop('checked', $('#check-all-modal').children('input').prop('checked'))
-    })
+    $(this).find('input').prop('checked', !$(this).find('input').prop('checked'))
+
+    $(".checkbox-modal").find('input').prop('checked', $('#check-all-modal').find('input').prop('checked'))
+    
   });
 
   $(".checkbox-modal").click(function () {
