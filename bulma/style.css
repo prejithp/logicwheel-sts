@@ -97,3 +97,8 @@
 .ticket-id {
   font-weight: 200 !important;
 }
+.align_dash_msg
+ {
+  border:1px solid black;
+  margin-top:1rem;
+ }
