@@ -39,7 +39,7 @@
         <section class="title is-size-3 has-text-left section-reduce-padding">
           <div class="columns is-hidden-touch ">
             <div class="column is-narrow">
-              <button class="button is-success override">
+              <button class="button is-success disable-pointer">
                 <span class="icon is-large">
                   <i class="fas fa-exclamation-circle"></i>
                 </span>
@@ -47,7 +47,6 @@
               </button>
             </div>
             <div class="column">
-
               <span>Issue regarding domain name service</span>
               <span class="ticket-id">#23FCB8</span>
             </div>
@@ -59,33 +58,52 @@
           </div>
         </section>
         <div class="box">
-          <div class="columns">
-            <div class="column">
-              <div class="field ">
-                <label class="label ">Department Name :</label>
-                <div class="control ">
-                  <input type="text" value="Web Hosting" class="input" disabled>
+          <div class="columns is-variable is-2">
+            <div class="column is-three-quarters">
+              <div class="columns">
+                <div class="column is-4">
+                  <div class="field">
+                    <label class="label">Created On</label>
+                    <input type="text" class="input" value="24-11-2018" disabled>
+                  </div>
+                </div>
+                <div class="column is-4">
+                  <div class="field ">
+                    <label class="label ">Department Name :</label>
+                    <div class="control ">
+                      <input type="text" value="Web Hosting" class="input" disabled>
+                    </div>
+                  </div>
+                </div>
+                <div class="column is-4">
+                  <div class="field">
+                    <lable class="label ">Priority Level</lable>
+                    <div class="control ">
+                      <input type="text" class="input" value="Low" disabled>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="column">
-              <div class="field">
-                <lable class="label ">Priority Level</lable>
-                <div class="control ">
-                  <input type="text" class="input" value="Low" disabled>
-                </div>
+
+            <div class="column ">
+              <div class="buttons has-addons has-text-centered post-btn-aligner">
+                <button class="button is-active is-link">Asc</button>
+                <button class="button">Desc</button>
               </div>
+            </div>
+            <div class="column">
+              <button class="button is-danger post-btn-aligner">Close Ticket</button>
             </div>
           </div>
-          <div class="columns">
+          <!-- <div class="columns">
             <div class="column is-narrow">
               <span>
-                <em>Jean Batista</em> created this ticket 6 days back on 24/8/18</span>
+                <em>Jean Batista</em> created this ticket 6 days back on 24/8/18
+              </span>
             </div>
-            <div class="column has-text-right	">
-              <button class="button is-danger">Close Ticket</button>
-            </div>
-          </div>
+
+          </div> -->
           <!-- <div class="columns">
             <div class="column">
               <div class="field">
@@ -114,17 +132,21 @@
             </div>
             <div class="column">
               <article class="message has-background-white-ter">
-                <div class="message-header">
+                <div class="message-header client-message-header">
                   <p>You
                     <span class="ticket-post-time">commented 7 days ago</span>
                   </p>
                   <span>
-                    <span class="icon">
-                      <i class="far fa-star"></i>
+                    <span class="post-details">
+                      <span class="icon">
+                        <i class="far fa-star"></i>
+                      </span>
                     </span>
+
+                    <span class="post-number">#1</span>
                   </span>
                 </div>
-                <div class="message-body">
+                <div class="message-body client-message">
                   I would like to share with you our latest iteration of improved withStyles and typescript. We think it's really awesome.
                   I believe that after we find a good naming for the methods we can make a PR :) </div>
               </article>
@@ -137,19 +159,23 @@
               </figure>
             </div>
             <div class="column">
-              <article class="message is-link">
-                <div class="message-header">
+              <article class="message has-background-white-ter">
+                <div class="message-header client-message-header">
                   <p>Jake Romero
                     <span class="ticket-post-time">commented 6 days ago</span>
                   </p>
                   <span>
-                    <span class="tag">Staff</span>
-                    <span class="icon">
-                      <i class="far fa-star"></i>
+                    <span class="post-details">
+                      <span class="tag is-dark">Staff</span>
+                      <span class="icon">
+                        <i class="far fa-star"></i>
+                      </span>
                     </span>
+
+                    <span class="post-number">#2</span>
                   </span>
                 </div>
-                <div class="message-body">
+                <div class="message-body client-message">
                   Thanks for sharing your work! But I'm not really involved in the TypeScript story. Could you check that out with Tom? :)
                 </div>
               </article>
@@ -162,18 +188,21 @@
               </figure>
             </div>
             <div class="column">
-              <article class="message is-dark">
-                <div class="message-header">
+              <article class="message has-background-white-ter">
+                <div class="message-header client-message-header">
                   <p>You
                     <span class="ticket-post-time">commented 6 days ago</span>
                   </p>
                   <span>
-                    <span class="icon">
-                      <i class="far fa-star"></i>
+                    <span class="post-details">
+                      <span class="icon">
+                        <i class="far fa-star"></i>
+                      </span>
                     </span>
+                    <span class="post-number">#3</span>
                   </span>
                 </div>
-                <div class="message-body">
+                <div class="message-body client-message">
                   Hey @pelotom, dose it look like something you would want to include as part of the library?
                 </div>
               </article>
@@ -201,19 +230,23 @@
               </figure>
             </div>
             <div class="column">
-              <article class="message is-link">
-                <div class="message-header">
+              <article class="message has-background-white-ter">
+                <div class="message-header client-message-header">
                   <p>Tom Mendez
                     <span class="ticket-post-time">commented 5 days ago</span>
                   </p>
                   <span>
-                    <span class="tag">Staff</span>
-                    <span class="icon">
-                      <i class="far fa-star"></i>
+                    <span class="post-details">
+                      <span class="tag is-dark">Staff</span>
+                      <span class="icon">
+                        <i class="far fa-star"></i>
+                      </span>
                     </span>
+
+                    <span class="post-number">#4</span>
                   </span>
                 </div>
-                <div class="message-body">
+                <div class="message-body client-message">
                   @jean could you summarize the main innovation here? It seems like some of what you're proposing is already handled fine by
                   the core typings.
                 </div>
@@ -227,18 +260,22 @@
               </figure>
             </div>
             <div class="column">
-              <article class="message is-dark">
-                <div class="message-header">
+              <article class="message has-background-white-ter">
+                <div class="message-header client-message-header">
                   <p>You
                     <span class="ticket-post-time">commented 4 days ago</span>
                   </p>
                   <span>
-                    <span class="icon">
-                      <i class="far fa-star"></i>
+                    <span class="post-details">
+                      <span class="icon">
+                        <i class="far fa-star"></i>
+                      </span>
                     </span>
+
+                    <span class="post-number">#5</span>
                   </span>
                 </div>
-                <div class="message-body">
+                <div class="message-body client-message">
                   OK, WithStyles looks cool! My wrapper function is also removing the outside props classes and theme, And also with overloading
                   we can make the theme exists or not by the value of withTheme I'll try to make an example later today?
                 </div>
@@ -250,7 +287,6 @@
               <figure class="image is-64x64">
                 <img src="https://keyreply.com/assets/images/keyreply-worldclassbot.png" alt="bot">
               </figure>
-              <span>fesfef</span>
             </div>
             <div class="column">
               <article class="message is-warning">
@@ -267,20 +303,24 @@
               </figure>
             </div>
             <div class="column">
-              <article class="message is-link">
-                <div class="message-header">
+              <article class="message has-background-white-ter">
+                <div class="message-header client-message-header">
                   <p>Tom Mendez
                     <span class="ticket-post-time">commented 3 days ago</span>
                   </p>
                   <span>
-                    <span class="tag">Staff</span>
+                    <span class="post-details">
+                      <span class="tag is-dark">Staff</span>
 
-                    <span class="icon">
-                      <i class="far fa-star"></i>
+                      <span class="icon">
+                        <i class="far fa-star"></i>
+                      </span>
                     </span>
+
+                    <span class="post-number">#6</span>
                   </span>
                 </div>
-                <div class="message-body">
+                <div class="message-body client-message">
                   We could definitely use types which accurately model when the theme should be available!
                 </div>
               </article>
