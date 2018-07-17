@@ -97,3 +97,8 @@
 .ticket-id {
   font-weight: 200 !important;
 }
+
+.override {
+  cursor: default;
+  pointer-events: none;
+}
