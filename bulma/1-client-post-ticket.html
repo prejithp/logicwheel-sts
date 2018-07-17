@@ -36,55 +36,30 @@
   <section class="section hero is-light section-reduce-padding">
     <div class="columns">
       <div class="column is-10 is-offset-1">
-        <section class="title is-size-3 has-text-left title-padding section-reduce-padding">
+        <section class="title is-size-3 has-text-left section-reduce-padding">
           <div class="columns is-hidden-touch ">
             <div class="column is-narrow">
-              <span class="subtitle  is-size4 ">
-                <i class="fas fa-lock-open"></i>
-              </span>
+              <button class="button is-success override">
+                <span class="icon is-large">
+                  <i class="fas fa-exclamation-circle"></i>
+                </span>
+                <span>Open</span>
+              </button>
             </div>
-            <div class="column is-9">
+            <div class="column">
+
               <span>Issue regarding domain name service</span>
               <span class="ticket-id">#23FCB8</span>
             </div>
-            <div class="column">
-              <small class="subtitle is-size4 ">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </small>
-            </div>
-          </div>
-          <div class="columns is-hidden-desktop">
             <div class="column is-narrow">
-              <span class="subtitle  is-size4 ">
-                <i class="fas fa-lock-open"></i>
+              <span class="icon">
+                <i class="fas fa-lock"></i>
               </span>
-              <small class="subtitle is-size4 ">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </small>
-            </div>
-            <div class="column">
-              Issue regarding domain name service
             </div>
           </div>
         </section>
         <div class="box">
           <div class="columns">
-            <div class="column">
-              <div class="field">
-                <label class="label">Ticket Id :</label>
-                <div class="control">
-                  <input type="text" value="#23fcb8" class="input" disabled>
-                </div>
-              </div>
-            </div>
             <div class="column">
               <div class="field ">
                 <label class="label ">Department Name :</label>
@@ -103,16 +78,19 @@
             </div>
           </div>
           <div class="columns">
+            <div class="column is-narrow">
+              <span>
+                <em>Jean Batista</em> created this ticket 6 days back on 24/8/18</span>
+            </div>
+            <div class="column has-text-right	">
+              <button class="button is-danger">Close Ticket</button>
+            </div>
+          </div>
+          <!-- <div class="columns">
             <div class="column">
               <div class="field">
                 <label class="label">Created On</label>
                 <input type="text" class="input" value="24-11-2018" disabled>
-              </div>
-            </div>
-            <div class="column">
-              <div class="field">
-                <label class="label">Status</label>
-                <input type="text" class="input" value="Open" disabled>
               </div>
             </div>
             <br>
@@ -126,7 +104,7 @@
                 <span class="button">DES</span>
               </span>
             </div>
-          </div>
+          </div> -->
           <hr>
           <div class="columns is-variable is-2">
             <div class="column is-narrow">
@@ -135,22 +113,20 @@
               </figure>
             </div>
             <div class="column">
-              <article class="message is-dark">
+              <article class="message has-background-white-ter">
                 <div class="message-header">
-                  <p>Jean Batista
+                  <p>You
                     <span class="ticket-post-time">commented 7 days ago</span>
                   </p>
                   <span>
-                    <span class="tag">Client</span>
-
                     <span class="icon">
                       <i class="far fa-star"></i>
                     </span>
                   </span>
                 </div>
                 <div class="message-body">
-                  my computer not working from yesterday. please help!
-                </div>
+                  I would like to share with you our latest iteration of improved withStyles and typescript. We think it's really awesome.
+                  I believe that after we find a good naming for the methods we can make a PR :) </div>
               </article>
             </div>
           </div>
@@ -161,7 +137,7 @@
               </figure>
             </div>
             <div class="column">
-              <article class="message is-dark">
+              <article class="message is-link">
                 <div class="message-header">
                   <p>Jake Romero
                     <span class="ticket-post-time">commented 6 days ago</span>
@@ -174,7 +150,7 @@
                   </span>
                 </div>
                 <div class="message-body">
-                  Reboot it
+                  Thanks for sharing your work! But I'm not really involved in the TypeScript story. Could you check that out with Tom? :)
                 </div>
               </article>
             </div>
@@ -188,18 +164,17 @@
             <div class="column">
               <article class="message is-dark">
                 <div class="message-header">
-                  <p>Jean Batista
+                  <p>You
                     <span class="ticket-post-time">commented 6 days ago</span>
                   </p>
                   <span>
-                    <span class="tag">Client</span>
                     <span class="icon">
                       <i class="far fa-star"></i>
                     </span>
                   </span>
                 </div>
                 <div class="message-body">
-                  its still not workin!
+                  Hey @pelotom, dose it look like something you would want to include as part of the library?
                 </div>
               </article>
             </div>
@@ -207,79 +182,14 @@
           <div class="columns is-variable is-2">
             <div class="column is-narrow">
               <figure class="image is-64x64">
-
+                <img src="https://keyreply.com/assets/images/keyreply-worldclassbot.png" alt="bot">
               </figure>
 
             </div>
             <div class="column">
               <article class="message is-warning">
                 <div class="message-body">
-                  Jake has been assigned to this ticket
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="columns is-variable is-2">
-            <div class="column is-narrow">
-              <figure class="image is-64x64">
-                <img class="rounded-image" src="../94.jpg">
-              </figure>
-            </div>
-            <div class="column">
-              <article class="message is-dark">
-                <div class="message-header">
-                  <p>Jake Romero
-                    <span class="ticket-post-time">commented 5 days ago</span>
-                  </p>
-                  <span>
-                    <span class="tag">Staff</span>
-                    <span class="icon">
-                      <i class="far fa-star"></i>
-                    </span>
-                  </span>
-                </div>
-                <div class="message-body">
-                  Which is the model that you are using?
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="columns is-variable is-2">
-            <div class="column is-narrow">
-              <figure class="image is-64x64">
-                <img class="rounded-image" src="../17.jpg">
-              </figure>
-            </div>
-            <div class="column">
-              <article class="message is-dark">
-                <div class="message-header">
-                  <p>Jean Batista
-                    <span class="ticket-post-time">commented 4 days ago</span>
-                  </p>
-                  <span>
-                    <span class="tag">Client</span>
-
-                    <span class="icon">
-                      <i class="far fa-star"></i>
-                    </span>
-                  </span>
-                </div>
-                <div class="message-body">
-                  where can i find the model number?
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="columns is-variable is-2">
-            <div class="column is-narrow">
-              <figure class="image is-64x64">
-
-              </figure>
-            </div>
-            <div class="column">
-              <article class="message is-warning">
-                <div class="message-body">
-                  Jake has had enough with this lady and has reassigned it to Shawn Mendez
+                  Tom has been assigned to this ticket
                 </div>
               </article>
             </div>
@@ -291,9 +201,75 @@
               </figure>
             </div>
             <div class="column">
+              <article class="message is-link">
+                <div class="message-header">
+                  <p>Tom Mendez
+                    <span class="ticket-post-time">commented 5 days ago</span>
+                  </p>
+                  <span>
+                    <span class="tag">Staff</span>
+                    <span class="icon">
+                      <i class="far fa-star"></i>
+                    </span>
+                  </span>
+                </div>
+                <div class="message-body">
+                  @jean could you summarize the main innovation here? It seems like some of what you're proposing is already handled fine by
+                  the core typings.
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="columns is-variable is-2">
+            <div class="column is-narrow">
+              <figure class="image is-64x64">
+                <img class="rounded-image" src="../17.jpg">
+              </figure>
+            </div>
+            <div class="column">
               <article class="message is-dark">
                 <div class="message-header">
-                  <p>Shawn Mendez
+                  <p>You
+                    <span class="ticket-post-time">commented 4 days ago</span>
+                  </p>
+                  <span>
+                    <span class="icon">
+                      <i class="far fa-star"></i>
+                    </span>
+                  </span>
+                </div>
+                <div class="message-body">
+                  OK, WithStyles looks cool! My wrapper function is also removing the outside props classes and theme, And also with overloading
+                  we can make the theme exists or not by the value of withTheme I'll try to make an example later today?
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="columns is-variable is-2">
+            <div class="column is-narrow">
+              <figure class="image is-64x64">
+                <img src="https://keyreply.com/assets/images/keyreply-worldclassbot.png" alt="bot">
+              </figure>
+              <span>fesfef</span>
+            </div>
+            <div class="column">
+              <article class="message is-warning">
+                <div class="message-body">
+                  Tom increased priority for this ticket
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="columns is-variable is-2">
+            <div class="column is-narrow">
+              <figure class="image is-64x64">
+                <img class="rounded-image" src="../1.jpg">
+              </figure>
+            </div>
+            <div class="column">
+              <article class="message is-link">
+                <div class="message-header">
+                  <p>Tom Mendez
                     <span class="ticket-post-time">commented 3 days ago</span>
                   </p>
                   <span>
@@ -305,7 +281,7 @@
                   </span>
                 </div>
                 <div class="message-body">
-                  You can find the model number behind the CPU case
+                  We could definitely use types which accurately model when the theme should be available!
                 </div>
               </article>
             </div>
