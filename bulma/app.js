@@ -87,7 +87,7 @@ $(function () {
 
   //Click listener for expand button in dashboard messages. Toggles hidden class and sets background classes on clicks
   $('.btn-expand').click(function () {
-    var $msgBody = $(this).parent();
+    var $msgBody = $(this).parents(".message-header");
     $msgBody.next().toggleClass('hidden');
     $msgBody.parent().toggleClass('is-light is-info');
   });
