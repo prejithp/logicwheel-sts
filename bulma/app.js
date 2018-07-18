@@ -16,7 +16,7 @@ $(function () {
       $('#modal-change-password').click(function () {
         $('#modal-change-password-root').addClass('is-active')
       })
-      
+
       // close on clicking cancel or x
       $('.modal-close-btn').click(function () {
         $(this).parents('.modal').removeClass('is-active');
@@ -31,16 +31,25 @@ $(function () {
 
   });
 
+  var rootContainer = $('.root, #root')
+  var mediaWidth = window.matchMedia("only screen and (max-width: 600px)");
+  $(window).resize(function () {
+    if (mediaWidth.matches) {
+      rootContainer.removeClass('section')
+    } else {
+      rootContainer.addClass('section')
+    }
+  })
 
   //Use for select all in modal boxes 
-  $("#check-all-modal").click(function (event) { 
+  $("#check-all-modal").click(function (event) {
 
     console.log('click');
 
     $(this).find('input').prop('checked', !$(this).find('input').prop('checked'))
 
     $(".checkbox-modal").find('input').prop('checked', $('#check-all-modal').find('input').prop('checked'))
-    
+
   });
 
   $(".checkbox-modal").click(function () {
