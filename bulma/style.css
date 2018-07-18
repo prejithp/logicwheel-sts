@@ -92,6 +92,7 @@
 .ticket-post-time {
   font-weight: 300;
   margin-left: 0.2rem;
+  fonts-size: 0.8rem !important;
 }
 
 .ticket-id {
