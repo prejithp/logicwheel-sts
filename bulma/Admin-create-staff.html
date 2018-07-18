@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>New Employee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css' />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+</head>
+
+<body>
+  <div id="navbar"></div>
+
+  <!-- modal to change passwords to be loaded async -->
+  <div id="modal-change-password-container"></div>
+
+  <section class="section breadcrumb-padding">
+    <nav class="container breadcrumb">
+      <ul>
+        <li>
+          <a href="client-dash-homepage.html">Home</a>
+        </li>
+        <li>
+          <a href="client-user-list.html">Users</a>
+        </li>
+        <li class="is-active">
+          <a href="#">Staff</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+
+  <section class="section hero is-light section-reduce-padding">
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+        <section class="title is-size-3 has-text-left title-padding section-reduce-padding">
+          Add Employee
+        </section>
+
+        <div class="box">
+          <form>
+            <div class="columns">
+              <div class="column is-two-thirds">
+                <div class="columns">
+                  <div class="field column">
+                    <label class="label">
+                      <span>Name</span>
+                      <span class="has-text-danger is-size-6">&nbsp;*</span>
+                    </label>
+                    <div class="control has-icons-left">
+                      <input type="text" class="input" placeholder="eg:- Sumesh">
+                      <span class="icon is-small">
+                        <i class="fas fa-user"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="columns">
+                  <div class="field column is-half is-expanded">
+                    <label class="label">
+                      <span>Gender</span>
+                      <span class="has-text-danger is-size-6">&nbsp;*</span>
+                    </label>
+                    <div class="control">
+                      <div class="select is-fullwidth">
+                        <select>
+                          <option value="">Select gender</option>
+                          <option value="male">Male</option>
+                          <option value="female">Female</option>
+                          <option value="other">Other</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column is-half">
+                    <div class="field">
+                      <label class="label">Date Of Birth</label>
+                      <div class="control">
+                        <input type="date" class="input">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-3 is-offset-1 ">
+                <figure class="image is-128x128">
+                  <img class="rounded-image" src="https://bulma.io/images/placeholders/128x128.png">
+                </figure>
+                <label class="label column">Profile Pic&nbsp;&nbsp;
+                  <span>
+                    <i class="fas fa-pen "></i>
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-6">
+                <div class="field">
+                  <label class="label">
+                    <span>Primary Email</span>
+                    <span class="has-text-danger is-size-6">&nbsp;*</span>
+                  </label>
+                  <div class="control has-icons-left">
+                    <input class="input " type="email" placeholder="eg:- abc@xyz.com">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-6">
+                <div class="field">
+                  <label class="label">
+                    <span>Secondary Email</span>
+                    <span class="has-text-danger is-size-6">&nbsp;*</span>
+                  </label>
+                  <div class="control has-icons-left">
+                    <input class="input " type="email" placeholder="eg:- abc@xyz.com">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-6">
+                <div class="field">
+                  <label class="label">Password</label>
+                  <div class="control has-icons-left">
+                    <input class="input" type="password" placeholder="Password">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-lock"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-6">
+                <div class="field">
+                  <label class="label">Confirm Password</label>
+                  <div class="control has-icons-left">
+                    <input class="input" type="password" placeholder="Password">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-lock"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="columns">
+              <div class="column is-6">
+                <div class="field">
+                  <label class="label">
+                    <span>Primary Phone number</span>
+                    <span class="has-text-danger is-size-6">&nbsp;*</span>
+                  </label>
+                  <div class="control has-icons-left">
+                    <input type="tel" class="input" placeholder="(+91)-8455642514">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-phone"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-6">
+                <div class="field">
+                  <label class="label">
+                    <span>Secondary Phone number</span>
+                    <span class="has-text-danger is-size-6">&nbsp;*</span>
+                  </label>
+                  <div class="control has-icons-left">
+                    <input type="tel" class="input" placeholder="(+91)-84797542514">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-phone"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="field column is-half">
+                <label class="label">Website</label>
+                <div class="control">
+                  <input type="text" class="input" placeholder="eg:- www.google.com">
+                </div>
+              </div>
+              <div class="column is-one-third">
+                  <div class="field">
+                      <label class="lebel">
+                        <span class="has-text-weight-bold">Assign Manager</span>
+                        <span class="has-text-danger is-size-6">&nbsp;*</span>
+                      </label>
+                      <span class="control ">
+                        <input type="text" class="input" placeholder="Manager's Id">
+                      </span>
+                    </div>    
+              </div>
+              <div class="column">
+                <div class="field columns">
+                    <span class="column is-narrow">
+                      <label class="lebel ">
+                        <span class="has-text-weight-bold">Is Manager</span>
+                        <span class="has-text-danger is-size-6">&nbsp;*</span>
+                      </label>
+                      <span class="control" style="margin-top:0.8rem;margin-left:1.2rem;">
+                        <input class="checkbox-padding" type="checkbox" placeholder="eg:- abc@xyz.com">
+                      </span>
+                    </span>
+                  </div>
+              </div>
+
+            </div>
+
+
+            <div class="field">
+              <label class="label">Address</label>
+              <div class="control">
+                <input type="text" class="input" placeholder="eg:- House No 241">
+              </div>
+            </div>
+
+            <div class="columns">
+              <div class="column is-6">
+                <div class="field">
+                  <label class="label">City</label>
+                  <div class="control">
+                    <input type="text" class="input" placeholder="eg:- Mumbai"> </div>
+                </div>
+              </div>
+              <div class="column is-6">
+                <div class="field">
+                  <label class="label">District</label>
+                  <div class="control">
+                    <input type="text" class="input" placeholder="eg:- Ernakulam">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-4">
+                <div class="field is-expanded">
+                  <label class="label">State</label>
+                  <div class="control">
+                    <div class="select is-fullwidth">
+                      <select>
+                        <option value="">Select State</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Orissa">Orissa</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="West Bengal">West Bengal</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-4">
+                <div class="field is-expanded">
+                  <label class="label">Country</label>
+                  <div class="control">
+                    <div class="select is-fullwidth">
+                      <select>
+                        <option>Select Country</option>
+                        <option value="india">India</option>
+                        <option value="sri-lanka">Sri Lanka</option>
+                        <option value="russia">Russia</option>
+                        <option value="uae">UAE</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-4">
+                <div class="field">
+                  <label for="" class="label">Zip Code</label>
+                  <div class="control">
+                    <input type="text" class="input" placeholder="eg:- 623091">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="field is-grouped is-grouped-centered buttons">
+              <button class="button is-info has-text-weight-semibold">
+                Submit
+              </button>
+              <button class="button has-text-weight-semibold">
+                Cancel
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    </script>
+</body>
+
+</html>
