@@ -92,10 +92,11 @@
 .ticket-post-time {
   font-weight: 300;
   margin-left: 0.2rem;
+  font-size: 0.9rem;
 }
 
 .ticket-id {
-  font-weight: 200 !important;
+  font-weight: 300 !important;
 }
 
 .disable-pointer {
@@ -104,17 +105,21 @@
 }
 
 .client-message {
-  border: 1px solid slategrey;
+  border: 1px solid #bcc4cb;
   background-color: #ffffff;
   border-top: none;
-  border: 0.5px solid slategrey !important;
+  border: 0.5px solid #bcc4cb !important;
   border-top: none !important;
 }
 
 .client-message-header {
   background-color: #f5f5f5;
   color: #000000;
-  border: 0.5px solid slategrey;
+  border: 0.5px solid #bcc4cb;
+}
+
+.system-message-header {
+  margin-bottom: 0.5rem;
 }
 
 .post-details {
@@ -123,6 +128,7 @@
 
 .post-number {
   padding-left: 1rem;
+  font-size: 1.2rem;
   border-left: 1px solid black;
 }
 
@@ -133,4 +139,21 @@
 .align_dash_msg {
   border: 1px solid black;
   margin-top: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .ticket-post-time {
+    font-size: 0.8rem;
+    margin-left: 0.1rem;
+  }
+  .post-number {
+    font-size: 1rem;
+    padding-left: 0.3rem;
+  }
+  .post-name {
+    font-size: 0.9rem;
+  }
+  .post-details {
+    padding-right: 0.3rem;
+  }
 }
