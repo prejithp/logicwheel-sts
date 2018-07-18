@@ -127,8 +127,12 @@
 
 .post-number {
   padding-left: 1rem;
+  padding-right: 1rem;
   font-size: 1.2rem;
-  border-left: 1px solid black;
+  border: 0.5px solid #6f6f6f;
+  border-radius: 20px;
+  color: white;
+  background-color: #6f6f6f;
 }
 
 .post-btn-aligner {
