@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css' />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-	  crossorigin="anonymous">
+	 crossorigin="anonymous">
 	<link rel="stylesheet" href="./style.css">
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
 </head>
@@ -141,19 +141,29 @@
 						<span class="column is-half">
 							Messages
 						</span>
-						<span class="column is-size-6 is-half">
+						<span class="column is-size-6 is-half is-hidden-mobile">
 							<span class="buttons has-addons is-right ">
-								<label class="is-size-6 level-item" style="margin-right:1rem;">Sort By : </label>
+								<label class="is-size-6" style="margin-right:1rem;">Sort By : </label>
 								<div class="buttons has-addons ">
-										<span class="button is-active is-link">Time</span>
-										<span class="button">Category</span>
-									</div>
+									<span class="button is-active is-link ">Time</span>
+									<span class="button ">Category</span>
+								</div>
 							</span>
 						</span>
+						<span class="column is-size-6 is-half is-hidden-tablet">
+							<span class="buttons has-addons is-right ">
+								<label class="is-size-6 " style="margin-right:1rem;">Sort By : </label>
+								<div class="buttons has-addons ">
+									<span class="button is-active is-link is-small">Time</span>
+									<span class="button is-small">Category</span>
+								</div>
+							</span>
+						</span>
+	
 					</span>
 				</div>
-				<div class="box">
-					<table cellspacing=4 class="table is-fullwidth">
+				<div class="">
+					<table cellspacing=5 class="table is-fullwidth">
 						<tbody>
 							<tr>
 								<td>
@@ -162,19 +172,94 @@
 											<p>
 												<span class="icon is-medium">
 													<i class="fas fa-info-circle"></i>
-												</span> Subject of the message is contined here, click to expand
+												</span> Subject of the message is contined here, click to expand <button class="tag align_dash_msg has-text-weight-bold is-hidden-tablet">Client Message</button>
 											</p>
-												<span class="columns" >
-													<span class="tag column align_dash_msg">
-														Client 
-													</span>
-													<span class="column">
-														<button class="button is-rounded is-outlined btn-expand">
-															<span class="icon">
-																<i class="fas fa-angle-down"></i>
-															</span>
-														</button>
-													</span>
+											<span class="columns is-mobile">
+												<span class="tag column align_dash_msg is-hidden-mobile">
+													Client Message
+												</span>
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down"></i>
+														</span>
+													</button>
+												</span>
+											</span>
+										</div>
+										<div class="message-body hidden">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											<strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
+											Nullam gravida purus diam, et dictum
+											<a>felis venenatis</a> efficitur. Aenean ac
+											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
+											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+											<p style="text-align: right">
+												<button class="button is-warning btn-dismiss">
+													<span class="has-text-weight-semibold">Dismiss</span>
+												</button>
+											</p>
+										</div>
+									</article>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<article class="message is-light">
+										<div class="message-header">
+											<p>
+												<span class="icon is-medium">
+													<i class="fas fa-info-circle"></i>
+												</span>Hello World &nbsp;<button class="tag align_dash_msg has-text-weight-bold is-hidden-tablet">Department Message</button>
+											</p>
+											<span class="columns is-mobile">
+												<span class="tag align_dash_msg column is-hidden-mobile">
+													Department Message
+												</span>
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down"></i>
+														</span>
+													</button>
+												</span>
+											</span>
+										</div>
+										<div class="message-body hidden">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											<strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
+											Nullam gravida purus diam, et dictum
+											<a>felis venenatis</a> efficitur. Aenean ac
+											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
+											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+											<p style="text-align: right">
+												<button class="button is-warning btn-dismiss">
+													<span class="has-text-weight-semibold">Dismiss</span>
+												</button>
+											</p>
+										</div>
+									</article>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<article class="message is-light">
+										<div class="message-header has-background-white-bis has-text-dark">
+											<p>
+												<span class="icon is-medium">
+													<i class="fas fa-info-circle"></i>
+												</span> Subject of the message is contined here, click to expand  &nbsp;<button class="tag align_dash_msg has-text-weight-bold is-hidden-tablet">Global Message</button>
+											</p>
+											<span class="columns is-mobile">
+												<span class="tag align_dash_msg column is-hidden-mobile">
+													Global Message
+												</span>
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down "></i>
+														</span>
+													</button>
 												</span>
 										</div>
 										<div class="message-body hidden">
@@ -200,20 +285,22 @@
 											<p>
 												<span class="icon is-medium">
 													<i class="fas fa-info-circle"></i>
-												</span>Hello World
+												</span> Subject of the message is contined here, click to expand
+												&nbsp;<button class="tag align_dash_msg has-text-weight-bold is-hidden-tablet">Client Message</button>
 											</p>
-												<span class="columns">
-													<span class="tag align_dash_msg column">
-														Department 
-													</span>
-													<span class="column"> 
-														<button class="button is-rounded is-outlined btn-expand">
-															<span class="icon">
-																<i class="fas fa-angle-down"></i>
-															</span>
-														</button>
-													</span>
+											<span class="columns is-mobile">
+
+												<span class="tag column align_dash_msg is-hidden-mobile">
+													Client Message
 												</span>
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down"></i>
+														</span>
+													</button>
+												</span>
+											</span>
 										</div>
 										<div class="message-body hidden">
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -238,18 +325,20 @@
 											<p>
 												<span class="icon is-medium">
 													<i class="fas fa-info-circle"></i>
-												</span> Subject of the message is contined here, click to expand</p>
-												<span class="columns">
-													<span class="tag align_dash_msg column is-right;">
-														Global 
-													</span>
-													<span class="column"> 
-														<button class="button is-rounded is-outlined btn-expand">
-															<span class="icon">
-																<i class="fas fa-angle-down "></i>
-															</span>
-														</button>
-													</span>
+												</span>Hello World  &nbsp;<button class="tag align_dash_msg has-text-weight-bold is-hidden-tablet">Department Message</button>
+ 											</p>
+											<span class="columns is-mobile">
+												<span class="tag align_dash_msg column is-hidden-mobile">
+													Department Message
+												</span>
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down"></i>
+														</span>
+													</button>
+												</span>
+											</span>
 										</div>
 										<div class="message-body hidden">
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -268,158 +357,46 @@
 								</td>
 							</tr>
 							<tr>
-									<td>
-										<article class="message is-light">
-											<div class="message-header">
-												<p>
-													<span class="icon is-medium">
-														<i class="fas fa-info-circle"></i>
-													</span> Subject of the message is contined here, click to expand
-												</p>
-													<span class="columns" >
-														
-														<span class="tag column align_dash_msg">
-															Client 
+								<td>
+									<article class="message is-light">
+										<div class="message-header has-background-white-bis has-text-darke">
+											<p>
+												<span class="icon is-medium">
+													<i class="fas fa-info-circle"></i>
+												</span> Subject of the message is contined here, click to expand  &nbsp;<button class="tag align_dash_msg has-text-weight-bold is-hidden-tablet">Global Message</button>
+ 											</p>
+											<span class="columns is-mobile">
+												<span class="tag align_dash_msg column is-hidden-mobile">
+													Global Message
+												</span>
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down"></i>
 														</span>
-														<span class="column">
-															<button class="button is-rounded is-outlined btn-expand">
-																<span class="icon">
-																	<i class="fas fa-angle-down"></i>
-																</span>
-															</button>
-														</span>
-													</span>
-											</div>
-											<div class="message-body hidden">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-												<strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
-												Nullam gravida purus diam, et dictum
-												<a>felis venenatis</a> efficitur. Aenean ac
-												<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
-												id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-												<p style="text-align: right">
-													<button class="button is-warning btn-dismiss">
-														<span class="has-text-weight-semibold">Dismiss</span>
 													</button>
-												</p>
-											</div>
-										</article>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<article class="message is-light">
-											<div class="message-header has-background-white-bis has-text-dark">
-												<p>
-													<span class="icon is-medium">
-														<i class="fas fa-info-circle"></i>
-													</span>Hello World</p>
-													<span class="columns is-3">
-														<span class="tag align_dash_msg column">
-															Department 
-														</span>
-														<span class="column"> 
-															<button class="button is-rounded is-outlined btn-expand">
-																<span class="icon">
-																	<i class="fas fa-angle-down"></i>
-																</span>
-															</button>
-														</span>
-													</span>
-											</div>
-											<div class="message-body hidden">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-												<strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
-												Nullam gravida purus diam, et dictum
-												<a>felis venenatis</a> efficitur. Aenean ac
-												<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
-												id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-												<p style="text-align: right">
-													<button class="button is-warning btn-dismiss">
-														<span class="has-text-weight-semibold">Dismiss</span>
-													</button>
-												</p>
-											</div>
-										</article>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<article class="message is-light">
-											<div class="message-header ">
-												<p>
-													<span class="icon is-medium">
-														<i class="fas fa-info-circle"></i>
-													</span>Subject of the message is contined here, click to expand</p>
-												<span>
-													<span class="columns">
-														<span class="tag align_dash_msg column">
-															Department 
-														</span>
-														<span class="column"> 
-															<button class="button is-rounded is-outlined btn-expand">
-																<span class="icon">
-																	<i class="fas fa-angle-down"></i>
-																</span>
-															</button>
-														</span>
-											</div>
-											<div class="message-body hidden">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-												<strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
-												Nullam gravida purus diam, et dictum
-												<a>felis venenatis</a> efficitur. Aenean ac
-												<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
-												id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-												<p style="text-align: right">
-													<button class="button is-warning btn-dismiss">
-														<span class="has-text-weight-semibold">Dismiss</span>
-													</button>
-												</p>
-											</div>
-										</article>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<article class="message is-light">
-											<div class="message-header has-background-white-bis has-text-darke">
-												<p>
-													<span class="icon is-medium">
-														<i class="fas fa-info-circle"></i>
-													</span> Subject of the message is contined here, click to expand</p>
-													<span class="columns">
-														<span class="tag align_dash_msg column">
-															Global 	
-														</span>
-														<span class="column"> 
-															<button class="button is-rounded is-outlined btn-expand">
-																<span class="icon">
-																	<i class="fas fa-angle-down"></i>
-																</span>
-															</button>
-														</span>
-											</div>
-											<div class="message-body hidden">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-												<strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
-												Nullam gravida purus diam, et dictum
-												<a>felis venenatis</a> efficitur. Aenean ac
-												<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
-												id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-												<p style="text-align: right">
-													<button class="button is-warning btn-dismiss">
-														<span class="has-text-weight-semibold">Dismiss</span>
-													</button>
-												</p>
-											</div>
-										</article>
-									</td>
-								</tr>
+												</span>
+										</div>
+										<div class="message-body hidden">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											<strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
+											Nullam gravida purus diam, et dictum
+											<a>felis venenatis</a> efficitur. Aenean ac
+											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
+											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+											<p style="text-align: right">
+												<button class="button is-warning btn-dismiss">
+													<span class="has-text-weight-semibold">Dismiss</span>
+												</button>
+											</p>
+										</div>
+									</article>
+								</td>
+							</tr>
 						</tbody>
 					</table>
 				</div>
-		</div>
+			</div>
 	</section>
 
 	<script src="./app.js"></script>
