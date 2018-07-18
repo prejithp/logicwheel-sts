@@ -173,3 +173,8 @@
     font-size: 0.7rem !important;
   }
 }
+@media screen and (max-width:600px){
+  .dashboard-msg-sub {
+    font-size: 0.9rem;
+}
+}
