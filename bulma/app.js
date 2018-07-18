@@ -40,6 +40,7 @@ $(function () {
       rootContainer.addClass('section')
     }
   })
+  $(window).trigger('resize');  
 
   //Use for select all in modal boxes 
   $("#check-all-modal").click(function (event) {
