@@ -2,7 +2,7 @@ $(function () {
 
   // ========== General functions ============
 
-  //load navbar
+  //load client navbar
   $("#navbar").load("navbar.html", function () {
     //nav bar burger toggle
     $('#navbar-toggle').click(function () {
@@ -30,6 +30,14 @@ $(function () {
     })
 
   });
+  
+  //load staff navbar
+  $("#navbar-staff").load("staff-navbar.html", function () {
+    //nav bar burger toggle
+    $('#navbar-toggle').click(function () {
+      $(this).toggleClass('is-active');
+      $('.navbar-menu').toggleClass('is-active');
+    }); })
 
   var rootContainer = $('.root, #root')
   var mediaWidth = window.matchMedia("only screen and (max-width: 600px)");
