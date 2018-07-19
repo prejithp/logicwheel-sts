@@ -156,6 +156,10 @@ pre {
   word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
+.sort-text {
+  padding-right: 1rem;
+}
+
 /* TODO: Set max width on a containing block element to prevenet text overflow in smaller devices and tablets for extremely large names */
 
 .post-name {
