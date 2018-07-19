@@ -165,7 +165,7 @@ $(function () {
     }
   })
 
-  // =================== NEW TICKET ==============
+  // ============= NEW TICKET | POST TICKET ==============
 
   // append button to file attachments when a new file has been added
   $('#input-file-new-ticket').change(function () {
