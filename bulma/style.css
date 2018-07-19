@@ -1,9 +1,6 @@
 @font-face {
   font-family: "Segoe-Mono-Boot";
-  src: url("../Segoe-Mono-Boot.ttf.woff") format("woff"),
-    url("../Segoe-Mono-Boot.ttf.svg#Segoe-Mono-Boot") format("svg"),
-    url("../Segoe-Mono-Boot.ttf.eot"),
-    url("../Segoe-Mono-Boot.ttf.eot?#iefix") format("embedded-opentype");
+  src: url("../Segoe-Mono-Boot.ttf.woff") format("woff"), url("../Segoe-Mono-Boot.ttf.svg#Segoe-Mono-Boot") format("svg"), url("../Segoe-Mono-Boot.ttf.eot"), url("../Segoe-Mono-Boot.ttf.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -72,6 +69,7 @@
 }
 
 /* use for disabled pagination buttons */
+
 .disable-hover:hover {
   cursor: not-allowed;
   border-color: #e6e6e6;
@@ -151,6 +149,7 @@
 }
 
 /* TODO: Set max width on a containing block element to prevenet text overflow in smaller devices and tablets for extremely large names */
+
 .post-name {
   white-space: nowrap;
   overflow: hidden;
@@ -177,9 +176,7 @@
   .post-staff {
     font-size: 0.7rem !important;
   }
-}
-@media screen and (max-width:600px){
   .dashboard-msg-sub {
     font-size: 0.9rem;
-}
+  }
 }

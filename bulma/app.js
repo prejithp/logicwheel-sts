@@ -10,7 +10,22 @@ $(function () {
       $('.navbar-menu').toggleClass('is-active');
     });
 
-    //load change password modal after navbar has finished loading
+    loadChangePasswordModal();
+  });
+
+  //load staff navbar
+  $("#navbar-staff").load("staff-navbar.html", function () {
+    //nav bar burger toggle
+    $('#navbar-toggle').click(function () {
+      $(this).toggleClass('is-active');
+      $('.navbar-menu').toggleClass('is-active');
+    });
+
+    loadChangePasswordModal();
+  })
+
+  //load change password modal after navbar has finished loading
+  function loadChangePasswordModal() {
     $('#modal-change-password-container').load("change-password.html", function () {
       //appear on clicking change password nav item
       $('#modal-change-password').click(function () {
@@ -22,23 +37,9 @@ $(function () {
         $(this).parents('.modal').removeClass('is-active');
       })
     });
+  }
 
-    $('.modal-close-btn').click(function () {
-      console.log('sgesi');
-
-      $(this).parents('.modal').removeClass('is-active');
-    })
-
-  });
-  
-  //load staff navbar
-  $("#navbar-staff").load("staff-navbar.html", function () {
-    //nav bar burger toggle
-    $('#navbar-toggle').click(function () {
-      $(this).toggleClass('is-active');
-      $('.navbar-menu').toggleClass('is-active');
-    }); })
-
+  // listen for window resize and remove section for small screens
   var rootContainer = $('.root, #root')
   var mediaWidth = window.matchMedia("only screen and (max-width: 600px)");
   $(window).resize(function () {
@@ -48,7 +49,7 @@ $(function () {
       rootContainer.addClass('section')
     }
   })
-  $(window).trigger('resize');  
+  $(window).trigger('resize');
 
   //Use for select all in modal boxes 
   $("#check-all-modal").click(function (event) {
