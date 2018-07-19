@@ -150,6 +150,7 @@
   margin-top: 0.5rem;
 }
 
+/* TODO: Set max width on a containing block element to prevenet text overflow in smaller devices and tablets for extremely large names */
 .post-name {
   white-space: nowrap;
   overflow: hidden;
