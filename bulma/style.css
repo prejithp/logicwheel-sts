@@ -22,6 +22,19 @@ pre {
   /* Internet Explorer 5.5+ */
 }
 
+::-webkit-input-placeholder {
+  color: #acacac !important;
+}
+::-moz-placeholder {
+  color: #acacac !important;
+}
+:-ms-input-placeholder {
+  color: #acacac !important;
+}
+::placeholder {
+  color: #acacac !important;
+}
+
 .hidden {
   display: none;
 }

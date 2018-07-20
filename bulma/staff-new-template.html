@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Create Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css' />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+</head>
+
+<body>
+  <div id="navbar-staff"></div>
+
+
+  <div id="modal-change-password-container"></div>
+
+  <section class="section breadcrumb-padding">
+    <nav class="container breadcrumb">
+      <ul>
+        <li>
+          <a href="staff-dashboard.html">Home</a>
+        </li>
+        <li>
+          <a href="#">Templates</a>
+        </li>
+        <li class="is-active">
+          <a href="#">Create Template</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+
+  <section id="root" class="section hero is-light section-reduce-padding">
+    <div class="columns">
+      <div class="column is-offset-1 is-10">
+        <section class="title is-size-3 has-text-left title-padding section-reduce-padding">
+          Create Template
+        </section>
+        <div class="box">
+          <div class="field">
+            <label class="label">
+              Title
+            </label>
+            <div class="control">
+              <input type="text" class="input" placeholder="Initial reply">
+            </div>
+          </div>
+
+
+          <div class="columns">
+            <div class="column is-4">
+              <div class="field">
+                <label for="Keyboard Shorcut" class="label">Keyboard Shorcut</label>
+                <div class="control">
+                  <input type="text" class="input" placeholder="r+m">
+                </div>
+              </div>
+            </div>
+            <div class="column is-4">
+              <div class="field">
+                <label for="Department" class="label">Department</label>
+                <div class="control">
+                  <div class="select is-fullwidth">
+                    <select>
+                      <option value="">Hardware</option>
+                      <option value="">Server Handling</option>
+                      <option value="">Service</option>
+                      <option value="">Hardware</option>
+                      <option value="">Server Handling</option>
+                      <option value="">Service</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-4">
+              <div class="field is-expanded">
+                <label class="label">Template Type</label>
+                <div class="control">
+                  <div class="select is-fullwidth">
+                    <select>
+                      <option>HTML</option>
+                      <option>Markdeown</option>
+                      <option>Simple Text</option>
+                      <option>Markdeown</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Template Content</label>
+            <div class="control">
+              <textarea cols="50" class="textarea input-message" rows="50" placeholder="Hi #name, welcome to Amazon support center"></textarea>
+            </div>
+          </div>
+          <div class="buttons is-centered">
+            <button class="button is-info has-text-weight-semibold is-link">Create Template</button>
+            <button class="button has-text-weight-semibold has-background-grey-lighter">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
