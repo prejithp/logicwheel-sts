@@ -25,6 +25,10 @@
   padding-top: 1rem;
 }
 
+.section-reduce-padding-bottom {
+  padding-bottom: 1rem;
+}
+
 .checkbox-padding {
   width: 0.9rem;
   height: 0.9rem;
@@ -137,30 +141,11 @@
   margin-top: 1.8rem;
 }
 
-.align_dash_msg {
-  border: 1px solid black;
-  margin-top: 1rem;
-}
-
 .star-container {
   border-top: 0.5px solid #dbe4ec;
   padding-top: 0.5rem;
   margin-top: 0.5rem;
 }
-
-pre {
-  white-space: pre-wrap;       /* Since CSS 2.1 */
-  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-  white-space: -pre-wrap;      /* Opera 4-6 */
-  white-space: -o-pre-wrap;    /* Opera 7 */
-  word-wrap: break-word;       /* Internet Explorer 5.5+ */
-}
-
-.sort-text {
-  padding-right: 1rem;
-}
-
-/* TODO: Set max width on a containing block element to prevenet text overflow in smaller devices and tablets for extremely large names */
 
 .post-name {
   white-space: nowrap;
@@ -169,6 +154,42 @@ pre {
   -o-text-overflow: ellipsis;
   -ms-text-overflow: ellipsis;
 }
+
+.align_dash_msg {
+  border: 1px solid black;
+  margin-top: 1rem;
+}
+
+pre {
+  white-space: pre-wrap;
+  /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
+}
+
+.staff-dash-card {
+  border-radius: 15px;
+  min-height: 170px;
+  box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, .2);
+}
+
+.staff-dash-card:hover {
+  transition: all 0.1s ease-in;
+  box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
+
+}
+
+.staff-dash-card-image {
+  padding-top: 1rem;
+}
+
+/* TODO: Set max width on a containing block element to prevenet text overflow in smaller devices and tablets for extremely large names */
 
 @media only screen and (max-width: 600px) {
   .ticket-post-time {
