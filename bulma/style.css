@@ -5,6 +5,23 @@
   font-style: normal;
 }
 
+.has-text-purple {
+  color: #6f5499
+}
+
+pre {
+  white-space: pre-wrap;
+  /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
+}
+
 .hidden {
   display: none;
 }
@@ -32,7 +49,7 @@
 .checkbox-padding {
   width: 0.9rem;
   height: 0.9rem;
-  cursor: pointer;
+  cursor: pointer;#6f5499
 }
 
 .extra-right-padding {
@@ -160,19 +177,6 @@
   margin-top: 1rem;
 }
 
-pre {
-  white-space: pre-wrap;
-  /* Since CSS 2.1 */
-  white-space: -moz-pre-wrap;
-  /* Mozilla, since 1999 */
-  white-space: -pre-wrap;
-  /* Opera 4-6 */
-  white-space: -o-pre-wrap;
-  /* Opera 7 */
-  word-wrap: break-word;
-  /* Internet Explorer 5.5+ */
-}
-
 .staff-dash-card {
   border-radius: 15px;
   min-height: 170px;
@@ -182,8 +186,7 @@ pre {
 
 .staff-dash-card:hover {
   transition: all 0.1s ease-in;
-  box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
-
+  box-shadow: 2px 4px 8px 0 rgba(46, 61, 73, .2);
 }
 
 .staff-dash-card-image {
