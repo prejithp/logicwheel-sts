@@ -177,6 +177,7 @@ pre {
   border-radius: 15px;
   min-height: 170px;
   box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, .2);
+  cursor: pointer;
 }
 
 .staff-dash-card:hover {
@@ -187,6 +188,10 @@ pre {
 
 .staff-dash-card-image {
   padding-top: 1rem;
+}
+
+.staff-dash-inner-image {
+  width: 40px;
 }
 
 /* TODO: Set max width on a containing block element to prevenet text overflow in smaller devices and tablets for extremely large names */
