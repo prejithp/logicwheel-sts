@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Create Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css' />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+</head>
+
+<body>
+  <div id="navbar-staff"></div>
+
+
+  <div id="modal-change-password-container"></div>
+
+  <section class="section breadcrumb-padding">
+    <nav class="container breadcrumb">
+      <ul>
+        <li>
+          <a href="staff-dashboard.html">Home</a>
+        </li>
+        <li>
+          <a href="#">Templates</a>
+        </li>
+        <li class="is-active">
+          <a href="#">Create New Template</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+
+  <section id="root" class="section hero is-light section-reduce-padding">
+      <div class="box">
+        <div class="field">
+          <label for="Template-id"><strong>Title </strong></label>
+          <div class="control">
+            <input type="text" class="input">
+          </div>
+        </div>
+        <div class="field">
+            <label class="label">Template Type</label>
+            <div class="control">
+              <div class="select">
+                <select>
+                  <option>HTML</option>
+                  <option>Markdeown</option>
+                  <option>Simple Text</option>
+                  <option>Markdeown</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        <div class="field">
+          <label for="Keyboard Shorcut" class="label">Keyboard Shorcut</label>
+          <div class="control">
+            <input type="text" class="input">
+          </div>
+        </div>
+        <div class="field">
+            <label for="Department" class="label">Department</label>
+            <div class="control">
+              <div class="select">
+                <select>
+                  <option value="">Hardware</option>
+                  <option value="">Server Handling</option>
+                  <option value="">Service</option>
+                  <option value="">Hardware</option>
+                  <option value="">Server Handling</option>
+                  <option value="">Service</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Access Type</label>
+            <div class="control">
+              <div class="select">
+                <select >
+                  <option>Public</option>
+                  <option>Private</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Template Area</label>
+            <div class="control">
+              <textarea id="" cols="50" class="textarea" rows="50"></textarea>
+            </div>
+          </div>
+      </div>
+  </section>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
