@@ -84,10 +84,10 @@ $(function () {
   });
 
   //increase height of of textarea with increasing number of lines
-  $('textarea').on('change keyup keydown paste cut',  function () {
+  $('textarea').on('change keyup keydown paste cut', function () {
     //TODO: this implementation is slightly buggy, the textarea does not resize properly and it is not possible to manually resize the textarea
     console.log($(this), $(this).height());
-    
+
     $(this).height(0).height(this.scrollHeight);
   }).change();
 
@@ -183,4 +183,40 @@ $(function () {
     }
   })
 
+  // Hide reply button while being scrolled
+  // $(window).scroll(function() {
+  //   if($(this).scrollTop() > 0) {
+  //     
+  //   } else {
+  //     
+  //   }
+  // })
+
+  $(window).scroll(function () {
+    clearTimeout($.data(this, 'scrollTimer'));
+    $('#reply-container').slideUp(200);
+    $.data(this, 'scrollTimer', setTimeout(function () {
+      $('#reply-container').slideDown(200);
+    }, 500));
+  });
+
+  // ============ temp jQuery to showcase working of message ==================
+  $('.btn-msg-sort-time').click(function () {
+    if (!($(this).hasClass('is-active'))) {
+      $('.btn-msg-sort-category').removeClass('is-active is-link')
+      $('.btn-msg-sort-time').addClass('is-active is-link')
+      $('#time-sorted').removeClass('is-hidden');
+      $('#category-sorted').addClass('is-hidden');
+    }
+  })
+
+  $('.btn-msg-sort-category').click(function () {
+
+    if (!($(this).hasClass('is-active'))) {
+      $('.btn-msg-sort-time').removeClass('is-active is-link')
+      $('.btn-msg-sort-category').addClass('is-active is-link')
+      $('#category-sorted').removeClass('is-hidden');
+      $('#time-sorted').addClass('is-hidden');
+    }
+  })
 });

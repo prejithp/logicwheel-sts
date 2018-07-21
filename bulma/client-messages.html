@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css' />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-	  crossorigin="anonymous">
+	 crossorigin="anonymous">
 	<link rel="stylesheet" href="./style.css">
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
 </head>
@@ -31,10 +31,11 @@
 			</ul>
 		</nav>
 	</section>
-	<section id="root" class="section hero is-light ">
+
+	<section id="root" class="section hero is-light section-reduce-padding">
 		<div class="columns">
 			<div class="column is-offset-1 is-10">
-				<div class="level">
+				<!-- <div class="level">
 					<div class="level-left">
 						<div class="level-item">
 							<div class="title is-size-3 has-text-left title-padding message-title-padding">Messages</div>
@@ -48,25 +49,82 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 
-				<div class="title is-size-3 has-text-left title-padding section-reduce-padding ">Client Messages</div>
-				<div class="box">
+				<div class="title is-size-3 is-size-4-mobile has-text-left title-padding section-reduce-padding ">
+					<span class="columns is-mobile">
+						<span class="column is-half-touch is-one-third-tablet">
+							Messages
+						</span>
+						<span class="column is-one-third is-hidden-touch">
+							<div class="buttons has-addons is-centered">
+								<span class="button is-primary is-selected">Active</span>
+								<span class="button">Archived</span>
+								<span class="button">All</span>
+							</div>
+						</span>
+						<span class="column is-half-touch is-one-third-tablet is-hidden-mobile">
+							<span class="buttons has-addons is-right">
+								<label class="is-size-6" style="margin-right:1rem;">Sort By : </label>
+								<div class="buttons has-addons ">
+									<span class="button is-active is-link btn-msg-sort-time">Time</span>
+									<span class="button btn-msg-sort-category">Category</span>
+								</div>
+							</span>
+						</span>
+						<span class="column is-half is-hidden-tablet">
+							<span class="buttons has-addons is-right ">
+								<label class="is-size-6 " style="margin-right:1rem;">Sort By : </label>
+								<div class="buttons has-addons ">
+									<span class="button is-active is-link is-small btn-msg-sort-time">Time</span>
+									<span class="button is-small btn-msg-sort-category">Category</span>
+								</div>
+							</span>
+						</span>
+					</span>
+					<span class="columns is-mobile is-hidden-desktop is-centered">
+						<span class="column">
+							<div class="buttons has-addons is-centered">
+								<span class="button is-primary is-selected">Active</span>
+								<span class="button">Archived</span>
+								<span class="button">All</span>
+							</div>
+						</span>
+					</span>
+				</div>
+				<div id="time-sorted">
 					<table cellspacing=5 class="table is-fullwidth">
 						<tbody>
 							<tr>
 								<td>
 									<article class="message is-light">
-										<div class="message-header">
+										<div class="message-header has-background-white-bis has-text-dark">
 											<p>
 												<span class="icon is-medium">
 													<i class="fas fa-info-circle"></i>
-												</span> Subject of the message is contined here, click to expand</p>
-											<button class="button is-rounded is-outlined btn-expand">
-												<span class="icon">
-													<i class="fas fa-angle-down"></i>
 												</span>
-											</button>
+												<span>
+													<span class="dashboard-msg-sub"> Subject of the message is contined here, click to expand </span>
+													<br>
+													<span class="icon is-medium is-hidden-mobile">
+														<i></i>
+													</span>
+													<span class="has-text-weight-semibold is-size-7">On 22nd Jun 18, 11:15 PM</span>
+												</span>
+												<button class="tag align_dash_msg has-text-weight-bold is-hidden-tablet">Client Message</button>
+											</p>
+											<span class="columns is-mobile">
+												<span class="tag column align_dash_msg is-hidden-mobile">
+													Client Message
+												</span>
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down"></i>
+														</span>
+													</button>
+												</span>
+											</span>
 										</div>
 										<div class="message-body hidden">
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -74,7 +132,8 @@
 											Nullam gravida purus diam, et dictum
 											<a>felis venenatis</a> efficitur. Aenean ac
 											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
-											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem. facilisis sodales
+											sem.
 											<p class="align-right">
 												<button class="button btn-dismiss has-background-grey-lighter has-text-weight-semibold">
 													<span>Archive</span>
@@ -94,12 +153,29 @@
 											<p>
 												<span class="icon is-medium">
 													<i class="fas fa-info-circle"></i>
-												</span>Hello World</p>
-											<button class="button is-rounded is-outlined btn-expand">
-												<span class="icon">
-													<i class="fas fa-angle-down"></i>
 												</span>
-											</button>
+												<span>
+													Hello World
+													<br>
+													<span class="icon is-medium is-hidden-mobile">
+														<i></i>
+													</span>
+													<span class="has-text-weight-semibold is-size-7">On 25nd Jun 18, 1:15 AM</span>
+												</span>
+												<button class="tag align_dash_msg has-text-weight-bold is-hidden-tablet">Department Message</button>
+											</p>
+											<span class="columns is-mobile">
+												<span class="tag align_dash_msg column is-hidden-mobile">
+													Department Message
+												</span>
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down"></i>
+														</span>
+													</button>
+												</span>
+											</span>
 										</div>
 										<div class="message-body hidden">
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -107,7 +183,8 @@
 											Nullam gravida purus diam, et dictum
 											<a>felis venenatis</a> efficitur. Aenean ac
 											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
-											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem. facilisis sodales
+											sem.
 											<p class="align-right">
 												<button class="button btn-dismiss has-background-grey-lighter has-text-weight-semibold">
 													<span>Archive</span>
@@ -123,16 +200,34 @@
 							<tr>
 								<td>
 									<article class="message is-light">
-										<div class="message-header ">
+										<div class="message-header has-background-white-bis has-text-dark">
 											<p>
 												<span class="icon is-medium">
 													<i class="fas fa-info-circle"></i>
-												</span>Subject of the message is contined here, click to expand</p>
-											<button class="button is-rounded is-outlined btn-expand">
-												<span class="icon">
-													<i class="fas fa-angle-down"></i>
 												</span>
-											</button>
+												<span>
+													<span class="dashboard-msg-sub">
+														Subject of the message is contined here, click to expand
+													</span>
+													<br>
+													<span class="icon is-medium is-hidden-mobile">
+														<i></i>
+													</span>
+													<span class="has-text-weight-semibold is-size-7">On nd Jun 19, 10:00 PM</span>
+												</span>
+												<button class="tag align_dash_msg has-text-weight-bold is-hidden-tablet">Global Message</button>
+											</p>
+											<span class="columns is-mobile">
+												<span class="tag align_dash_msg column is-hidden-mobile">
+													Global Message
+												</span>
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down "></i>
+														</span>
+													</button>
+												</span>
 										</div>
 										<div class="message-body hidden">
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -140,7 +235,8 @@
 											Nullam gravida purus diam, et dictum
 											<a>felis venenatis</a> efficitur. Aenean ac
 											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
-											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem. facilisis sodales
+											sem.
 											<p class="align-right">
 												<button class="button btn-dismiss has-background-grey-lighter has-text-weight-semibold">
 													<span>Archive</span>
@@ -156,16 +252,35 @@
 							<tr>
 								<td>
 									<article class="message is-light">
-										<div class="message-header ">
+										<div class="message-header">
 											<p>
 												<span class="icon is-medium">
 													<i class="fas fa-info-circle"></i>
-												</span>Subject of the message is contined here, click to expand</p>
-											<button class="button is-rounded is-outlined btn-expand">
-												<span class="icon">
-													<i class="fas fa-angle-down"></i>
 												</span>
-											</button>
+												<span>
+													<span class="dashboard-msg-sub">
+														Subject of the message is contined here, click to expand
+													</span>
+													<br>
+													<span class="icon is-medium is-hidden-mobile">
+														<i></i>
+													</span>
+													<span class="has-text-weight-semibold is-size-7">On 2nd Jun 19, 10:00 PM</span>
+												</span>
+												<button class="tag align_dash_msg has-text-weight-bold is-hidden-tablet">Client Message</button>
+											</p>
+											<span class="columns is-mobile">
+												<span class="tag column align_dash_msg is-hidden-mobile">
+													Client Message
+												</span>
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down"></i>
+														</span>
+													</button>
+												</span>
+											</span>
 										</div>
 										<div class="message-body hidden">
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -173,7 +288,8 @@
 											Nullam gravida purus diam, et dictum
 											<a>felis venenatis</a> efficitur. Aenean ac
 											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
-											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem. facilisis sodales
+											sem.
 											<p class="align-right">
 												<button class="button btn-dismiss has-background-grey-lighter has-text-weight-semibold">
 													<span>Archive</span>
@@ -189,16 +305,33 @@
 							<tr>
 								<td>
 									<article class="message is-light">
-										<div class="message-header ">
+										<div class="message-header has-background-white-bis has-text-dark">
 											<p>
 												<span class="icon is-medium">
 													<i class="fas fa-info-circle"></i>
-												</span>Subject of the message is contined here, click to expand</p>
-											<button class="button is-rounded is-outlined btn-expand">
-												<span class="icon">
-													<i class="fas fa-angle-down"></i>
 												</span>
-											</button>
+												<span>
+													<span class="dashboard-msg-sub"> Hello World </span>
+													<br>
+													<span class="icon is-medium is-hidden-mobile">
+														<i></i>
+													</span>
+													<span class="has-text-weight-semibold is-size-7">On nd Jun 19, 10:00 PM</span>
+												</span>
+												<button class="tag align_dash_msg has-text-weight-bold is-hidden-tablet">Department Message</button>
+											</p>
+											<span class="columns is-mobile">
+												<span class="tag align_dash_msg column is-hidden-mobile">
+													Department Message
+												</span>
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down"></i>
+														</span>
+													</button>
+												</span>
+											</span>
 										</div>
 										<div class="message-body hidden">
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -206,7 +339,8 @@
 											Nullam gravida purus diam, et dictum
 											<a>felis venenatis</a> efficitur. Aenean ac
 											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
-											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem. facilisis sodales
+											sem.
 											<p class="align-right">
 												<button class="button btn-dismiss has-background-grey-lighter has-text-weight-semibold">
 													<span>Archive</span>
@@ -222,16 +356,32 @@
 							<tr>
 								<td>
 									<article class="message is-light">
-										<div class="message-header ">
+										<div class="message-header has-background-white-bis has-text-darke">
 											<p>
 												<span class="icon is-medium">
 													<i class="fas fa-info-circle"></i>
-												</span>Subject of the message is contined here, click to expand</p>
-											<button class="button is-rounded is-outlined btn-expand">
-												<span class="icon">
-													<i class="fas fa-angle-down"></i>
 												</span>
-											</button>
+												<span>
+													<span class="dashboard-msg-sub"> Subject of the message is contined here, click to expand </span>
+													<br>
+													<span class="icon is-medium is-hidden-mobile">
+														<i></i>
+													</span>
+													<span class="has-text-weight-semibold is-size-7 ">On nd Jun 19, 10:00 PM</span>
+												</span>
+												<button class="tag align_dash_msg has-text-weight-bold is-hidden-tablet">Global Message</button>
+											</p>
+											<span class="columns is-mobile">
+												<span class="tag align_dash_msg column is-hidden-mobile">
+													Global Message
+												</span>
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down"></i>
+														</span>
+													</button>
+												</span>
 										</div>
 										<div class="message-body hidden">
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -239,7 +389,8 @@
 											Nullam gravida purus diam, et dictum
 											<a>felis venenatis</a> efficitur. Aenean ac
 											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
-											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem. facilisis sodales
+											sem.
 											<p class="align-right">
 												<button class="button btn-dismiss has-background-grey-lighter has-text-weight-semibold">
 													<span>Archive</span>
@@ -255,56 +406,38 @@
 						</tbody>
 					</table>
 				</div>
-				<div class="title  is-size-3 has-text-left title-padding section-reduce-padding ">Department Messages</div>
-				<div class="box">
+				<div id="category-sorted" class="is-hidden">
+					<div class="title is-size-4 has-text-left title-padding section-reduce-padding ">Client Messages</div>
 					<table cellspacing=5 class="table is-fullwidth">
 						<tbody>
 							<tr>
 								<td>
 									<article class="message is-light">
-										<div class="message-header ">
+										<div class="message-header has-background-white-bis has-text-dark">
 											<p>
 												<span class="icon is-medium">
 													<i class="fas fa-info-circle"></i>
-												</span>Subject of the message is contined here, click to expand</p>
-											<button class="button is-rounded is-outlined btn-expand">
-												<span class="icon">
-													<i class="fas fa-angle-down"></i>
 												</span>
-											</button>
-										</div>
-										<div class="message-body hidden">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-											<strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
-											Nullam gravida purus diam, et dictum
-											<a>felis venenatis</a> efficitur. Aenean ac
-											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
-											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-											<p class="align-right">
-												<button class="button btn-dismiss has-background-grey-lighter has-text-weight-semibold">
-													<span>Archive</span>
-												</button>
-												<button class="button is-danger btn-dismiss has-text-weight-semibold">
-													<span>Delete</span>
-												</button>
+												<span>
+													<span class="dashboard-msg-sub"> Subject of the message is contined here, click to expand </span>
+													<br>
+													<span class="icon is-medium is-hidden-mobile">
+														<i></i>
+													</span>
+													<span class="has-text-weight-semibold is-size-7">On 22nd Jun 18, 11:15 PM</span>
+												</span>
+												<button class="tag align_dash_msg has-text-weight-bold is-hidden-tablet">Client Message</button>
 											</p>
-										</div>
-									</article>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<article class="message is-light">
-										<div class="message-header ">
-											<p>
-												<span class="icon is-medium">
-													<i class="fas fa-info-circle"></i>
-												</span>Subject of the message is contined here, click to expand</p>
-											<button class="button is-rounded is-outlined btn-expand">
-												<span class="icon">
-													<i class="fas fa-angle-down"></i>
+											<span class="columns is-mobile">
+
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down"></i>
+														</span>
+													</button>
 												</span>
-											</button>
+											</span>
 										</div>
 										<div class="message-body hidden">
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -312,7 +445,8 @@
 											Nullam gravida purus diam, et dictum
 											<a>felis venenatis</a> efficitur. Aenean ac
 											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
-											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem. facilisis sodales
+											sem.
 											<p class="align-right">
 												<button class="button btn-dismiss has-background-grey-lighter has-text-weight-semibold">
 													<span>Archive</span>
@@ -332,12 +466,27 @@
 											<p>
 												<span class="icon is-medium">
 													<i class="fas fa-info-circle"></i>
-												</span>Subject of the message is contined here, click to expand</p>
-											<button class="button is-rounded is-outlined btn-expand">
-												<span class="icon">
-													<i class="fas fa-angle-down"></i>
 												</span>
-											</button>
+												<span>
+													Hello World
+													<br>
+													<span class="icon is-medium is-hidden-mobile">
+														<i></i>
+													</span>
+													<span class="has-text-weight-semibold is-size-7">On 25nd Jun 18, 1:15 AM</span>
+												</span>
+
+											</p>
+											<span class="columns is-mobile">
+
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down"></i>
+														</span>
+													</button>
+												</span>
+											</span>
 										</div>
 										<div class="message-body hidden">
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -345,7 +494,58 @@
 											Nullam gravida purus diam, et dictum
 											<a>felis venenatis</a> efficitur. Aenean ac
 											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
-											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem. facilisis sodales
+											sem.
+											<p class="align-right">
+												<button class="button btn-dismiss has-background-grey-lighter has-text-weight-semibold">
+													<span>Archive</span>
+												</button>
+												<button class="button is-danger btn-dismiss has-text-weight-semibold">
+													<span>Delete</span>
+												</button>
+											</p>
+										</div>
+									</article>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<article class="message is-light">
+										<div class="message-header has-background-white-bis has-text-dark">
+											<p>
+												<span class="icon is-medium">
+													<i class="fas fa-info-circle"></i>
+												</span>
+												<span>
+													<span class="dashboard-msg-sub">
+														Subject of the message is contined here, click to expand
+													</span>
+													<br>
+													<span class="icon is-medium is-hidden-mobile">
+														<i></i>
+													</span>
+													<span class="has-text-weight-semibold is-size-7">On nd Jun 19, 10:00 PM</span>
+												</span>
+
+											</p>
+											<span class="columns is-mobile">
+
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down "></i>
+														</span>
+													</button>
+												</span>
+										</div>
+										<div class="message-body hidden">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											<strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
+											Nullam gravida purus diam, et dictum
+											<a>felis venenatis</a> efficitur. Aenean ac
+											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
+											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem. facilisis sodales
+											sem.
 											<p class="align-right">
 												<button class="button btn-dismiss has-background-grey-lighter has-text-weight-semibold">
 													<span>Archive</span>
@@ -365,12 +565,29 @@
 											<p>
 												<span class="icon is-medium">
 													<i class="fas fa-info-circle"></i>
-												</span>Hello World</p>
-											<button class="button is-rounded is-outlined btn-expand">
-												<span class="icon">
-													<i class="fas fa-angle-down"></i>
 												</span>
-											</button>
+												<span>
+													<span class="dashboard-msg-sub">
+														Subject of the message is contined here, click to expand
+													</span>
+													<br>
+													<span class="icon is-medium is-hidden-mobile">
+														<i></i>
+													</span>
+													<span class="has-text-weight-semibold is-size-7">On 2nd Jun 19, 10:00 PM</span>
+												</span>
+
+											</p>
+											<span class="columns is-mobile">
+
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down"></i>
+														</span>
+													</button>
+												</span>
+											</span>
 										</div>
 										<div class="message-body hidden">
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -378,7 +595,8 @@
 											Nullam gravida purus diam, et dictum
 											<a>felis venenatis</a> efficitur. Aenean ac
 											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
-											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem. facilisis sodales
+											sem.
 											<p class="align-right">
 												<button class="button btn-dismiss has-background-grey-lighter has-text-weight-semibold">
 													<span>Archive</span>
@@ -394,16 +612,31 @@
 							<tr>
 								<td>
 									<article class="message is-light">
-										<div class="message-header ">
+										<div class="message-header has-background-white-bis has-text-dark">
 											<p>
 												<span class="icon is-medium">
 													<i class="fas fa-info-circle"></i>
-												</span>Subject of the message is contined here, click to expand</p>
-											<button class="button is-rounded is-outlined btn-expand">
-												<span class="icon">
-													<i class="fas fa-angle-down"></i>
 												</span>
-											</button>
+												<span>
+													<span class="dashboard-msg-sub"> Hello World </span>
+													<br>
+													<span class="icon is-medium is-hidden-mobile">
+														<i></i>
+													</span>
+													<span class="has-text-weight-semibold is-size-7">On nd Jun 19, 10:00 PM</span>
+												</span>
+
+											</p>
+											<span class="columns is-mobile">
+
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down"></i>
+														</span>
+													</button>
+												</span>
+											</span>
 										</div>
 										<div class="message-body hidden">
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -411,7 +644,56 @@
 											Nullam gravida purus diam, et dictum
 											<a>felis venenatis</a> efficitur. Aenean ac
 											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
-											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem. facilisis sodales
+											sem.
+											<p class="align-right">
+												<button class="button btn-dismiss has-background-grey-lighter has-text-weight-semibold">
+													<span>Archive</span>
+												</button>
+												<button class="button is-danger btn-dismiss has-text-weight-semibold">
+													<span>Delete</span>
+												</button>
+											</p>
+										</div>
+									</article>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<article class="message is-light">
+										<div class="message-header has-background-white-bis has-text-darke">
+											<p>
+												<span class="icon is-medium">
+													<i class="fas fa-info-circle"></i>
+												</span>
+												<span>
+													<span class="dashboard-msg-sub"> Subject of the message is contined here, click to expand </span>
+													<br>
+													<span class="icon is-medium is-hidden-mobile">
+														<i></i>
+													</span>
+													<span class="has-text-weight-semibold is-size-7 ">On nd Jun 19, 10:00 PM</span>
+												</span>
+
+											</p>
+											<span class="columns is-mobile">
+
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down"></i>
+														</span>
+													</button>
+												</span>
+										</div>
+										<div class="message-body hidden">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											<strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
+											Nullam gravida purus diam, et dictum
+											<a>felis venenatis</a> efficitur. Aenean ac
+											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
+											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem. facilisis sodales
+											sem.
 											<p class="align-right">
 												<button class="button btn-dismiss has-background-grey-lighter has-text-weight-semibold">
 													<span>Archive</span>
@@ -426,57 +708,37 @@
 							</tr>
 						</tbody>
 					</table>
-				</div>
-				<div class="title  is-size-3 has-text-left title-padding section-reduce-padding ">Global Messagess</div>
-				<div class="box">
+					<div class="title  is-size-4 has-text-left title-padding section-reduce-padding ">Department Messages</div>
 					<table cellspacing=5 class="table is-fullwidth">
 						<tbody>
 							<tr>
 								<td>
 									<article class="message is-light">
-										<div class="message-header ">
+										<div class="message-header has-background-white-bis has-text-dark">
 											<p>
 												<span class="icon is-medium">
 													<i class="fas fa-info-circle"></i>
-												</span>Subject of the message is contined here, click to expand</p>
-											<button class="button is-rounded is-outlined btn-expand">
-												<span class="icon">
-													<i class="fas fa-angle-down"></i>
 												</span>
-											</button>
-										</div>
-										<div class="message-body hidden">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-											<strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
-											Nullam gravida purus diam, et dictum
-											<a>felis venenatis</a> efficitur. Aenean ac
-											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
-											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-											<p class="align-right">
-												<button class="button btn-dismiss has-background-grey-lighter has-text-weight-semibold">
-													<span>Archive</span>
-												</button>
-												<button class="button is-danger btn-dismiss has-text-weight-semibold">
-													<span>Delete</span>
-												</button>
+												<span>
+													<span class="dashboard-msg-sub"> Subject of the message is contined here, click to expand </span>
+													<br>
+													<span class="icon is-medium is-hidden-mobile">
+														<i></i>
+													</span>
+													<span class="has-text-weight-semibold is-size-7">On 22nd Jun 18, 11:15 PM</span>
+												</span>
+
 											</p>
-										</div>
-									</article>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<article class="message is-light">
-										<div class="message-header ">
-											<p>
-												<span class="icon is-medium">
-													<i class="fas fa-info-circle"></i>
-												</span>Subject of the message is contined here, click to expand</p>
-											<button class="button is-rounded is-outlined btn-expand">
-												<span class="icon">
-													<i class="fas fa-angle-down"></i>
+											<span class="columns is-mobile">
+
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down"></i>
+														</span>
+													</button>
 												</span>
-											</button>
+											</span>
 										</div>
 										<div class="message-body hidden">
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -484,40 +746,8 @@
 											Nullam gravida purus diam, et dictum
 											<a>felis venenatis</a> efficitur. Aenean ac
 											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
-											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-											<p class="align-right">
-												<button class="button btn-dismiss has-background-grey-lighter has-text-weight-semibold">
-													<span>Archive</span>
-												</button>
-												<button class="button is-danger btn-dismiss has-text-weight-semibold">
-													<span>Delete</span>
-												</button>
-											</p>
-										</div>
-									</article>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<article class="message is-light">
-										<div class="message-header ">
-											<p>
-												<span class="icon is-medium">
-													<i class="fas fa-info-circle"></i>
-												</span>Subject of the message is contined here, click to expand</p>
-											<button class="button is-rounded is-outlined btn-expand">
-												<span class="icon">
-													<i class="fas fa-angle-down"></i>
-												</span>
-											</button>
-										</div>
-										<div class="message-body hidden">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-											<strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
-											Nullam gravida purus diam, et dictum
-											<a>felis venenatis</a> efficitur. Aenean ac
-											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
-											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem. facilisis sodales
+											sem.
 											<p class="align-right">
 												<button class="button btn-dismiss has-background-grey-lighter has-text-weight-semibold">
 													<span>Archive</span>
@@ -537,12 +767,27 @@
 											<p>
 												<span class="icon is-medium">
 													<i class="fas fa-info-circle"></i>
-												</span>Subject of the message is contined here, click to expand</p>
-											<button class="button is-rounded is-outlined btn-expand">
-												<span class="icon">
-													<i class="fas fa-angle-down"></i>
 												</span>
-											</button>
+												<span>
+													Hello World
+													<br>
+													<span class="icon is-medium is-hidden-mobile">
+														<i></i>
+													</span>
+													<span class="has-text-weight-semibold is-size-7">On 25nd Jun 18, 1:15 AM</span>
+												</span>
+
+											</p>
+											<span class="columns is-mobile">
+
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down"></i>
+														</span>
+													</button>
+												</span>
+											</span>
 										</div>
 										<div class="message-body hidden">
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -550,7 +795,58 @@
 											Nullam gravida purus diam, et dictum
 											<a>felis venenatis</a> efficitur. Aenean ac
 											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
-											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem. facilisis sodales
+											sem.
+											<p class="align-right">
+												<button class="button btn-dismiss has-background-grey-lighter has-text-weight-semibold">
+													<span>Archive</span>
+												</button>
+												<button class="button is-danger btn-dismiss has-text-weight-semibold">
+													<span>Delete</span>
+												</button>
+											</p>
+										</div>
+									</article>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<article class="message is-light">
+										<div class="message-header has-background-white-bis has-text-dark">
+											<p>
+												<span class="icon is-medium">
+													<i class="fas fa-info-circle"></i>
+												</span>
+												<span>
+													<span class="dashboard-msg-sub">
+														Subject of the message is contined here, click to expand
+													</span>
+													<br>
+													<span class="icon is-medium is-hidden-mobile">
+														<i></i>
+													</span>
+													<span class="has-text-weight-semibold is-size-7">On nd Jun 19, 10:00 PM</span>
+												</span>
+
+											</p>
+											<span class="columns is-mobile">
+
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down "></i>
+														</span>
+													</button>
+												</span>
+										</div>
+										<div class="message-body hidden">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											<strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
+											Nullam gravida purus diam, et dictum
+											<a>felis venenatis</a> efficitur. Aenean ac
+											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
+											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem. facilisis sodales
+											sem.
 											<p class="align-right">
 												<button class="button btn-dismiss has-background-grey-lighter has-text-weight-semibold">
 													<span>Archive</span>
@@ -570,12 +866,29 @@
 											<p>
 												<span class="icon is-medium">
 													<i class="fas fa-info-circle"></i>
-												</span>Hello World</p>
-											<button class="button is-rounded is-outlined btn-expand">
-												<span class="icon">
-													<i class="fas fa-angle-down"></i>
 												</span>
-											</button>
+												<span>
+													<span class="dashboard-msg-sub">
+														Subject of the message is contined here, click to expand
+													</span>
+													<br>
+													<span class="icon is-medium is-hidden-mobile">
+														<i></i>
+													</span>
+													<span class="has-text-weight-semibold is-size-7">On 2nd Jun 19, 10:00 PM</span>
+												</span>
+
+											</p>
+											<span class="columns is-mobile">
+
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down"></i>
+														</span>
+													</button>
+												</span>
+											</span>
 										</div>
 										<div class="message-body hidden">
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -583,7 +896,8 @@
 											Nullam gravida purus diam, et dictum
 											<a>felis venenatis</a> efficitur. Aenean ac
 											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
-											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem. facilisis sodales
+											sem.
 											<p class="align-right">
 												<button class="button btn-dismiss has-background-grey-lighter has-text-weight-semibold">
 													<span>Archive</span>
@@ -599,16 +913,31 @@
 							<tr>
 								<td>
 									<article class="message is-light">
-										<div class="message-header ">
+										<div class="message-header has-background-white-bis has-text-dark">
 											<p>
 												<span class="icon is-medium">
 													<i class="fas fa-info-circle"></i>
-												</span>Subject of the message is contined here, click to expand</p>
-											<button class="button is-rounded is-outlined btn-expand">
-												<span class="icon">
-													<i class="fas fa-angle-down"></i>
 												</span>
-											</button>
+												<span>
+													<span class="dashboard-msg-sub"> Hello World </span>
+													<br>
+													<span class="icon is-medium is-hidden-mobile">
+														<i></i>
+													</span>
+													<span class="has-text-weight-semibold is-size-7">On nd Jun 19, 10:00 PM</span>
+												</span>
+
+											</p>
+											<span class="columns is-mobile">
+
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down"></i>
+														</span>
+													</button>
+												</span>
+											</span>
 										</div>
 										<div class="message-body hidden">
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -616,7 +945,357 @@
 											Nullam gravida purus diam, et dictum
 											<a>felis venenatis</a> efficitur. Aenean ac
 											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
-											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem. facilisis sodales
+											sem.
+											<p class="align-right">
+												<button class="button btn-dismiss has-background-grey-lighter has-text-weight-semibold">
+													<span>Archive</span>
+												</button>
+												<button class="button is-danger btn-dismiss has-text-weight-semibold">
+													<span>Delete</span>
+												</button>
+											</p>
+										</div>
+									</article>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<article class="message is-light">
+										<div class="message-header has-background-white-bis has-text-darke">
+											<p>
+												<span class="icon is-medium">
+													<i class="fas fa-info-circle"></i>
+												</span>
+												<span>
+													<span class="dashboard-msg-sub"> Subject of the message is contined here, click to expand </span>
+													<br>
+													<span class="icon is-medium is-hidden-mobile">
+														<i></i>
+													</span>
+													<span class="has-text-weight-semibold is-size-7 ">On nd Jun 19, 10:00 PM</span>
+												</span>
+
+											</p>
+											<span class="columns is-mobile">
+
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down"></i>
+														</span>
+													</button>
+												</span>
+										</div>
+										<div class="message-body hidden">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											<strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
+											Nullam gravida purus diam, et dictum
+											<a>felis venenatis</a> efficitur. Aenean ac
+											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
+											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem. facilisis sodales
+											sem.
+											<p class="align-right">
+												<button class="button btn-dismiss has-background-grey-lighter has-text-weight-semibold">
+													<span>Archive</span>
+												</button>
+												<button class="button is-danger btn-dismiss has-text-weight-semibold">
+													<span>Delete</span>
+												</button>
+											</p>
+										</div>
+									</article>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="title  is-size-4 has-text-left title-padding section-reduce-padding ">Global Messagess</div>
+					<table cellspacing=5 class="table is-fullwidth">
+						<tbody>
+							<tr>
+								<td>
+									<article class="message is-light">
+										<div class="message-header has-background-white-bis has-text-dark">
+											<p>
+												<span class="icon is-medium">
+													<i class="fas fa-info-circle"></i>
+												</span>
+												<span>
+													<span class="dashboard-msg-sub"> Subject of the message is contined here, click to expand </span>
+													<br>
+													<span class="icon is-medium is-hidden-mobile">
+														<i></i>
+													</span>
+													<span class="has-text-weight-semibold is-size-7">On 22nd Jun 18, 11:15 PM</span>
+												</span>
+
+											</p>
+											<span class="columns is-mobile">
+
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down"></i>
+														</span>
+													</button>
+												</span>
+											</span>
+										</div>
+										<div class="message-body hidden">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											<strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
+											Nullam gravida purus diam, et dictum
+											<a>felis venenatis</a> efficitur. Aenean ac
+											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
+											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem. facilisis sodales
+											sem.
+											<p class="align-right">
+												<button class="button btn-dismiss has-background-grey-lighter has-text-weight-semibold">
+													<span>Archive</span>
+												</button>
+												<button class="button is-danger btn-dismiss has-text-weight-semibold">
+													<span>Delete</span>
+												</button>
+											</p>
+										</div>
+									</article>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<article class="message is-light">
+										<div class="message-header">
+											<p>
+												<span class="icon is-medium">
+													<i class="fas fa-info-circle"></i>
+												</span>
+												<span>
+													Hello World
+													<br>
+													<span class="icon is-medium is-hidden-mobile">
+														<i></i>
+													</span>
+													<span class="has-text-weight-semibold is-size-7">On 25nd Jun 18, 1:15 AM</span>
+												</span>
+
+											</p>
+											<span class="columns is-mobile">
+
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down"></i>
+														</span>
+													</button>
+												</span>
+											</span>
+										</div>
+										<div class="message-body hidden">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											<strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
+											Nullam gravida purus diam, et dictum
+											<a>felis venenatis</a> efficitur. Aenean ac
+											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
+											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem. facilisis sodales
+											sem.
+											<p class="align-right">
+												<button class="button btn-dismiss has-background-grey-lighter has-text-weight-semibold">
+													<span>Archive</span>
+												</button>
+												<button class="button is-danger btn-dismiss has-text-weight-semibold">
+													<span>Delete</span>
+												</button>
+											</p>
+										</div>
+									</article>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<article class="message is-light">
+										<div class="message-header has-background-white-bis has-text-dark">
+											<p>
+												<span class="icon is-medium">
+													<i class="fas fa-info-circle"></i>
+												</span>
+												<span>
+													<span class="dashboard-msg-sub">
+														Subject of the message is contined here, click to expand
+													</span>
+													<br>
+													<span class="icon is-medium is-hidden-mobile">
+														<i></i>
+													</span>
+													<span class="has-text-weight-semibold is-size-7">On nd Jun 19, 10:00 PM</span>
+												</span>
+
+											</p>
+											<span class="columns is-mobile">
+
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down "></i>
+														</span>
+													</button>
+												</span>
+										</div>
+										<div class="message-body hidden">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											<strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
+											Nullam gravida purus diam, et dictum
+											<a>felis venenatis</a> efficitur. Aenean ac
+											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
+											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem. facilisis sodales
+											sem.
+											<p class="align-right">
+												<button class="button btn-dismiss has-background-grey-lighter has-text-weight-semibold">
+													<span>Archive</span>
+												</button>
+												<button class="button is-danger btn-dismiss has-text-weight-semibold">
+													<span>Delete</span>
+												</button>
+											</p>
+										</div>
+									</article>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<article class="message is-light">
+										<div class="message-header">
+											<p>
+												<span class="icon is-medium">
+													<i class="fas fa-info-circle"></i>
+												</span>
+												<span>
+													<span class="dashboard-msg-sub">
+														Subject of the message is contined here, click to expand
+													</span>
+													<br>
+													<span class="icon is-medium is-hidden-mobile">
+														<i></i>
+													</span>
+													<span class="has-text-weight-semibold is-size-7">On 2nd Jun 19, 10:00 PM</span>
+												</span>
+
+											</p>
+											<span class="columns is-mobile">
+
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down"></i>
+														</span>
+													</button>
+												</span>
+											</span>
+										</div>
+										<div class="message-body hidden">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											<strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
+											Nullam gravida purus diam, et dictum
+											<a>felis venenatis</a> efficitur. Aenean ac
+											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
+											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem. facilisis sodales
+											sem.
+											<p class="align-right">
+												<button class="button btn-dismiss has-background-grey-lighter has-text-weight-semibold">
+													<span>Archive</span>
+												</button>
+												<button class="button is-danger btn-dismiss has-text-weight-semibold">
+													<span>Delete</span>
+												</button>
+											</p>
+										</div>
+									</article>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<article class="message is-light">
+										<div class="message-header has-background-white-bis has-text-dark">
+											<p>
+												<span class="icon is-medium">
+													<i class="fas fa-info-circle"></i>
+												</span>
+												<span>
+													<span class="dashboard-msg-sub"> Hello World </span>
+													<br>
+													<span class="icon is-medium is-hidden-mobile">
+														<i></i>
+													</span>
+													<span class="has-text-weight-semibold is-size-7">On nd Jun 19, 10:00 PM</span>
+												</span>
+
+											</p>
+											<span class="columns is-mobile">
+
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down"></i>
+														</span>
+													</button>
+												</span>
+											</span>
+										</div>
+										<div class="message-body hidden">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											<strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
+											Nullam gravida purus diam, et dictum
+											<a>felis venenatis</a> efficitur. Aenean ac
+											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
+											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem. facilisis sodales
+											sem.
+											<p class="align-right">
+												<button class="button btn-dismiss has-background-grey-lighter has-text-weight-semibold">
+													<span>Archive</span>
+												</button>
+												<button class="button is-danger btn-dismiss has-text-weight-semibold">
+													<span>Delete</span>
+												</button>
+											</p>
+										</div>
+									</article>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<article class="message is-light">
+										<div class="message-header has-background-white-bis has-text-darke">
+											<p>
+												<span class="icon is-medium">
+													<i class="fas fa-info-circle"></i>
+												</span>
+												<span>
+													<span class="dashboard-msg-sub"> Subject of the message is contined here, click to expand </span>
+													<br>
+													<span class="icon is-medium is-hidden-mobile">
+														<i></i>
+													</span>
+													<span class="has-text-weight-semibold is-size-7 ">On nd Jun 19, 10:00 PM</span>
+												</span>
+
+											</p>
+											<span class="columns is-mobile">
+
+												<span class="column">
+													<button class="button is-rounded is-outlined btn-expand">
+														<span class="icon">
+															<i class="fas fa-angle-down"></i>
+														</span>
+													</button>
+												</span>
+										</div>
+										<div class="message-body hidden">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											<strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
+											Nullam gravida purus diam, et dictum
+											<a>felis venenatis</a> efficitur. Aenean ac
+											<em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula,
+											id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem. facilisis sodales
+											sem.
 											<p class="align-right">
 												<button class="button btn-dismiss has-background-grey-lighter has-text-weight-semibold">
 													<span>Archive</span>
@@ -634,6 +1313,7 @@
 				</div>
 			</div>
 		</div>
+
 	</section>
 
 	<script src="./app.js"></script>
