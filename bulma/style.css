@@ -190,24 +190,37 @@ pre {
   margin-top: 1rem;
 }
 
-.staff-dash-card {
+.dash-card {
   border-radius: 15px;
   min-height: 170px;
   box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, .2);
   cursor: pointer;
 }
 
-.staff-dash-card:hover {
+.dash-card:hover {
   transition: all 0.1s ease-in;
   box-shadow: 2px 4px 8px 0 rgba(46, 61, 73, .2);
 }
 
-.staff-dash-card-image {
+.dash-card-image {
   padding-top: 1rem;
 }
 
-.staff-dash-inner-image {
+.dash-inner-image {
   width: 40px;
+}
+
+.dash-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2.5rem;
+  height: 1.9rem;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  background-color: #ff3860;
+  border-radius: 0px 15px 0px 10px;
 }
 
 /* TODO: Set max width on a containing block element to prevenet text overflow in smaller devices and tablets for extremely large names */
