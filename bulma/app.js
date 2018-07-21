@@ -84,9 +84,12 @@ $(function () {
   });
 
   //increase height of of textarea with increasing number of lines
-  $('section').on('change keyup keydown paste cut', 'textarea', function () {
+  $('textarea').on('change keyup keydown paste cut',  function () {
+    //TODO: this implementation is slightly buggy, the textarea does not resize properly and it is not possible to manually resize the textarea
+    console.log($(this), $(this).height());
+    
     $(this).height(0).height(this.scrollHeight);
-  }).find('textarea').change();
+  }).change();
 
   //  =========== CLIENT DASHBOARD ============
 
