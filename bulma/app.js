@@ -19,7 +19,16 @@ $(function () {
       $(this).toggleClass('is-active');
       $('.navbar-menu').toggleClass('is-active');
     });
-
+    loadChangePasswordModal();
+  });
+ 
+  //load admin navbar
+  $("#navbar-admin").load("admin-navbar.html", function () {
+    //nav bar burger toggle
+    $('#navbar-toggle').click(function () {
+      $(this).toggleClass('is-active');
+      $('.navbar-menu').toggleClass('is-active');
+    });
     loadChangePasswordModal();
   });
 
