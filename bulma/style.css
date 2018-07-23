@@ -212,6 +212,36 @@ pre {
   margin: auto;
 }
 
+#tab-root-override {
+  margin-bottom: 0;
+}
+
+#tab-ul-override {
+  border-bottom-color: #dbdbdb;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+#tab-active-override {
+  background-color: #fcfcfc;
+  border-color: #dbdbdb;
+  border-bottom-color: transparent;
+  color: #3273dc;
+}
+
+#tab-override:hover {
+  background-color: #fafafa;
+}
+
+.message-container {
+  border: 1px solid #d1d1d1;
+  background-color: #fcfcfc;
+  border-radius: 0 0 5px 5px;
+  padding: 1.5rem; /* to negate the negative margin of columns */
+  border-top: none;
+  margin-bottom: 0.9rem;
+}
+
 .align_dash_msg {
   border: 1px solid black;
   margin-top: 1rem;

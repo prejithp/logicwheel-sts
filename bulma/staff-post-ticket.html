@@ -18,7 +18,7 @@
 
   <div id="modal-change-password-container"></div>
 
-  <div id="reply-container" class="is-hidden-mobile-">
+  <div id="reply-container">
     <span class="icon center-in-parent">
       <i class="fas fa-reply"></i>
     </span>
@@ -414,54 +414,87 @@
               </figure>
             </div>
             <div class="column">
-              <div class="field">
-                <label class="label">Message</label>
-                <div class="control">
-                  <textarea class="textarea input-message placeholders" placeholder="Leave Jean Batistar comments here"></textarea>
-                </div>
+              <div class="tabs is-boxed" id="tab-root-override">
+                <ul id="tab-ul-override">
+                  <li class="is-active">
+                    <a id="tab-active-override">
+                      <span class="icon is-small">
+                        <i class="fas fa-pencil-alt"></i>
+                      </span>
+                      <span>Write</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a id="tab-override">
+                      <span class="icon is-small">
+                        <i class="far fa-eye"></i>
+                      </span>
+                      <span>Preview</span>
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <div class="field">
-                <div class="control">
-                  <label class="label">Private Message</label>
-                  <textarea class="textarea input-message" rows="5" placeholder="Use this field to pass secure information"></textarea>
-                </div>
-              </div>
-              <div class="columns">
-                <div class="field is-expanded column is-one-quarter">
-                  <label class="label">Priority</label>
-                  <div class="control">
-                    <div class="select is-fullwidth">
-                      <select>
-                        <option>Low</option>
-                        <option>Normal</option>
-                        <option>Emergency</option>
-                        <option>Critical</option>
-                      </select>
+              <div class="message-container">
+                <div class="columns"></div>
+                <div class="columns">
+                  <div class="column is-12">
+                    <div class="field">
+                      <label class="label">Message</label>
+                      <div class="control">
+                        <textarea class="textarea input-message placeholders" placeholder="Leave your comments here"></textarea>
+                      </div>
                     </div>
                   </div>
+
                 </div>
-                <div class="field column is-narrow">
-                  <label class="label">Attachments</label>
-                  <div class="control">
-                    <div class="file">
-                      <label class="file-label">
-                        <input id="input-file-new-ticket" class="file-input" type="file" multiple name="resume">
-                        <span class="file-cta">
-                          <span class="file-icon">
-                            <i class="fas fa-upload"></i>
-                          </span>
-                          <span class="file-label">
-                            Choose a file…
-                          </span>
-                        </span>
-                      </label>
+                <div class="columns">
+                  <div class="column is-12">
+                    <div class="field">
+                      <div class="control">
+                        <label class="label">Private Message</label>
+                        <textarea class="textarea input-message" rows="5" placeholder="Use this field to pass secure information"></textarea>
+                      </div>
                     </div>
                   </div>
+
                 </div>
-                <div class="column is-hidden" id="file-attachments">
-                  <div class="field">
-                    <label class="label">Attached Files:</label>
-                    <div class="control buttons" id="file-attachments-container">
+                <div class="columns">
+                  <div class="field is-expanded column is-one-quarter">
+                    <label class="label">Priority</label>
+                    <div class="control">
+                      <div class="select is-fullwidth">
+                        <select>
+                          <option>Low</option>
+                          <option>Normal</option>
+                          <option>Emergency</option>
+                          <option>Critical</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="field column is-narrow">
+                    <label class="label">Attachments</label>
+                    <div class="control">
+                      <div class="file">
+                        <label class="file-label">
+                          <input id="input-file-new-ticket" class="file-input" type="file" multiple name="resume">
+                          <span class="file-cta">
+                            <span class="file-icon">
+                              <i class="fas fa-upload"></i>
+                            </span>
+                            <span class="file-label">
+                              Choose a file…
+                            </span>
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column is-hidden" id="file-attachments">
+                    <div class="field">
+                      <label class="label">Attached Files:</label>
+                      <div class="control buttons" id="file-attachments-container">
+                      </div>
                     </div>
                   </div>
                 </div>

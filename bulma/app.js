@@ -184,13 +184,6 @@ $(function () {
   })
 
   // Hide reply button while being scrolled
-  // $(window).scroll(function() {
-  //   if($(this).scrollTop() > 0) {
-  //     
-  //   } else {
-  //     
-  //   }
-  // })
 
   $(window).scroll(function () {
     clearTimeout($.data(this, 'scrollTimer'));
