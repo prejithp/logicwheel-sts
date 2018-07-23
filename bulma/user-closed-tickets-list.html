@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Closed Tickets</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css' />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+	  crossorigin="anonymous">
+	<link rel="stylesheet" href="./style.css">
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+</head>
+
+<body>
+	<div id="navbar"></div>
+
+	<!-- modal to change passwords to be loaded async -->
+	<div id="modal-change-password-container"></div>
+
+	<section class="section breadcrumb-padding">
+		<nav class="container breadcrumb">
+			<ul>
+				<li>
+					<a href="client-dash-homepage.html">Home</a>
+				</li>
+				<li>
+					<a href="client-ticket-list.html">Tickets</a>
+				</li>
+				<li class="is-active">
+					<a href="#">Closed Tickets</a>
+				</li>
+			</ul>
+		</nav>
+	</section>
+	<section id="root" class="section hero is-light section-reduce-padding">
+		<div class="columns">
+			<div class="column is-10 is-offset-1">
+				<section class="title is-size-3 has-text-left title-padding section-reduce-padding">
+					Closed Tickets
+				</section>
+
+				<div class="box">
+					<button class="button is-primary is-rounded">
+						<span class="icon">
+							<i class="fas fa-plus"></i>
+						</span>
+						<a href="./client-new-ticket.html">
+							<span>New ticket</span>
+						</a>
+					</button>
+					<div class="table-container">
+						<table class="table is-striped is-hoverable is-fullwidth">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>
+										<abbr title="Suspended">
+											<span class="icon is-medium">
+												<i class="fas fa-lock fa-lg"></i>
+											</span>
+										</abbr>
+
+									</th>
+									<th>Subject</th>
+									<th>Department</th>
+									<th>Time</th>
+									<th>Close</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>AG8FEFRG24</td>
+									<td></td>
+									<td>Computer not switching on</td>
+									<td>Software</td>
+									<td>23/06/16 09:00AM</td>
+									<td>
+										<span class="icon is-medium">
+											<i class="far fa-window-close fa-lg"></i>
+										</span>
+									</td>
+								</tr>
+								<tr class="">
+									<td>EF899P92KD</td>
+									<td>
+										<span class="icon is-medium">
+											<i class="fas fa-lock fa-lg"></i>
+										</span>
+									</td>
+
+									<td>Keyboard damaged</td>
+									<td>Hardware</td>
+									<td>25/07/16 06:00PM</td>
+									<td>
+										<span class="icon is-medium">
+											<i class="far fa-window-close fa-lg"></i>
+										</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="columns is-centered">
+						<div class="column is-narrow">
+							<nav class="pagination is-centered" role="navigation" aria-label="pagination">
+								<a class="pagination-previous  has-background-white-ter">
+									<i class="fas fa-less-than"></i>
+									<i class="fas fa-less-than"></i>
+								</a>
+								<a class="pagination-previous is-hidden-mobile has-background-white-ter">
+									<i class="fas fa-less-than"></i>
+								</a>
+								<a class="pagination-next is-hidden-mobile has-background-white-ter">
+									<i class="fas fa-greater-than"></i>
+								</a>
+								<a class="pagination-next has-background-white-ter">
+									<i class="fas fa-greater-than"></i>
+									<i class="fas fa-greater-than"></i>
+								</a>
+								<ul class="pagination-list">
+									<li class="is-hidden-mobile">
+										<button class="pagination-spacer">&nbsp;</button>
+									</li>
+									<li>
+										<a class="pagination-link" aria-label="Goto page 45">1</a>
+									</li>
+									<li>
+										<a class="pagination-link" aria-label="Goto page 45">2</a>
+									</li>
+									<li>
+										<a class="pagination-link is-current" style="color: white" aria-label="Page 46" aria-current="page">3</a>
+									</li>
+									<li>
+										<a class="pagination-link" aria-label="Goto page 47">4</a>
+									</li>
+									<li>
+										<a class="pagination-link" aria-label="Goto page 45">5</a>
+									</li>
+									<li class="is-hidden-mobile">
+										<button class="pagination-spacer">&nbsp;</button>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<script src="app.js"></script>
+		</script>
+</body>
+
+</html>

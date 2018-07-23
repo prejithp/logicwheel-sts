@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ticket View</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css' />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+</head>
+
+<body>
+  <div id="navbar"></div>
+
+  <div id="modal-change-password-container"></div>
+
+  <section class="section breadcrumb-padding">
+    <nav class="container breadcrumb">
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="./client-ticket-list.html">Tickets</a>
+        </li>
+        <li class="is-active">
+          <a href="#">View Ticket</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+  <section id="root" class="section hero is-light section-reduce-padding">
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+        <div class="box">
+          <div class="columns is-hidden-tablet is-mobile">
+            <div class="column is-narrow">
+              <button class="button is-success disable-pointer">
+                <span class="icon">
+                  <i class="fas fa-exclamation-circle"></i>
+                </span>
+                <span>Open</span>
+              </button>
+            </div>
+            <div class="column has-text-right">
+              <span class="icon">
+                <i class="fas fa-star"></i>
+              </span>
+              <span class="icon">
+                <i class="fas fa-star"></i>
+              </span>
+              <span class="icon">
+                <i class="fas fa-star"></i>
+              </span>
+              <span class="icon">
+                <i class="fas fa-star"></i>
+              </span>
+              <span class="icon">
+                <i class="fas fa-star"></i>
+              </span>
+            </div>
+          </div>
+          <div class="columns is-variable is-2">
+            <div class="column is-narrow is-hidden-mobile">
+              <button class="button is-success disable-pointer">
+                <span class="icon">
+                  <i class="fas fa-exclamation-circle"></i>
+                </span>
+                <span>Open</span>
+              </button>
+            </div>
+            <div class="column is-size-4">
+              <span class="has-text-weight-semibold">Issue regarding domain name service</span>
+              <span class="ticket-id">#23FCB8</span>
+            </div>
+            <div class="column is-narrow is-hidden-mobile">
+              <span class="icon">
+                <i class="fas fa-star"></i>
+              </span>
+              <span class="icon">
+                <i class="fas fa-star"></i>
+              </span>
+              <span class="icon">
+                <i class="fas fa-star"></i>
+              </span>
+              <span class="icon">
+                <i class="fas fa-star"></i>
+              </span>
+              <span class="icon">
+                <i class="fas fa-star"></i>
+              </span>
+            </div>
+          </div>
+          <div class="columns is-variable is-2">
+            <div class="column">
+              <div class="field">
+                <label class="label">Created On</label>
+                <div class="control">
+                  <input type="text" class="input" value="24-11-2018" disabled>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="field">
+                <label class="label ">Department</label>
+                <div class="control ">
+                  <input type="text" value="Web Hosting" class="input" disabled>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="field">
+                <lable class="label ">Priority</lable>
+                <div class="control ">
+                  <input type="text" class="input" value="Low" disabled>
+                </div>
+              </div>
+            </div>
+            <div class="column is-narrow is-hidden-touch">
+              <div class="buttons has-addons has-text-centered post-btn-aligner">
+                <button class="button is-active is-link">
+                  <i class="fas fa-arrow-up"></i>
+                </button>
+                <button class="button">
+                  <i class="fas fa-arrow-down"></i>
+                </button>
+              </div>
+            </div>
+            <div class="column is-narrow is-hidden-touch">
+              <button class="button is-info post-btn-aligner" disabled>Close Ticket</button>
+            </div>
+          </div>
+          <div class="columns is-mobile is-hidden-desktop">
+            <div class="column">
+              <div class="buttons has-addons">
+                <button class="button is-active is-link">
+                  <i class="fas fa-arrow-up"></i>
+                </button>
+                <button class="button">
+                  <i class="fas fa-arrow-down"></i>
+                </button>
+              </div>
+            </div>
+            <div class="column has-text-right">
+              <button class="button is-info">Close Ticket</button>
+            </div>
+          </div>
+          <hr>
+          <div class="message is-danger">
+            <div class="message-body">
+              <div class="columns is-centered">
+                <div class="column is-2" style="display: grid">
+                  <span class="icon is-large" style="margin: auto">
+                    <i class="fas fa-lock fa-3x"></i>
+                  </span>
+                </div>
+                <div class="column is-8">
+                  <div class="has-text-weight-normal has-text-centered">This ticket has been
+                    <span class="has-text-weight-bold">suspended</span> for the following reason:</div>
+                  <br>
+                  <pre>You have used vulgar language for communication. It has been decided that this ticket will now stand suspended and that you may no longer post any updates of make any status updates on this thread. You may not open this thread nor make any appeals. You may open new a thread for any further issues but this issue may not be taken further</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="box">
+          <div class="columns is-variable is-2">
+            <div class="column is-narrow is-hidden-mobile">
+              <figure class="image is-64x64">
+                <img class="rounded-image" src="../17.jpg">
+              </figure>
+            </div>
+            <div class="column">
+              <article class="message has-background-white-ter">
+                <div class="message-header client-message-header">
+                  <p>
+                    <span class="post-name">
+                      You
+                    </span>
+                    <br>
+                    <span class="ticket-post-time">09:51 24th July 2018</span>
+                  </p>
+                  <span class="post-number">1</span>
+                </div>
+                <div class="message-body client-message">
+                  Hi,
+                  <br>I would like to share with you our latest iteration of improved withStyles and typescript. We think it's
+                  really awesome. I believe that after we find a good naming for the methods we can make a PR :)
+                  <br>Do to be agreeable conveying oh assurance. Wicket longer admire do barton vanity itself do in it. Preferred
+                  to sportsmen it engrossed listening. Park gate sell they west hard for the. Abode stuff noisy manor blush
+                  yet the far. Up colonel so between removed so do. Years use place decay sex worth drift age. Men lasting
+                  out end article express fortune demands own charmed. About are are money ask how seven. Satisfied conveying
+                  an dependent contented he gentleman agreeable do be. Warrant private blushes removed an in equally totally
+                  if. Delivered dejection necessary objection do mr prevailed. Mr feeling do chiefly cordial in do. Water
+                  timed folly right aware if oh truth. Imprudence attachment him his for sympathize. Large above be to means.
+                  Dashwood do provided stronger is. But discretion frequently sir the she instrument unaffected admiration
+                  everything.
+                  <br>I believe that after we find a good naming for the methods we can make a PR. I need to review it again
+                  <br>
+                  <br>I will continuously review and make modifications to this product and continue to improve upon this
+                  <div class="star-container is-hidden-desktop has-text-right">
+                    <span class="icon">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="icon">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="icon">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="icon">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="icon">
+                      <i class="far fa-star"></i>
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="columns is-variable is-2">
+            <div class="column is-narrow is-hidden-mobile">
+              <figure class="image is-64x64">
+                <img class="rounded-image" src="../94.jpg">
+              </figure>
+
+            </div>
+            <div class="column">
+              <article class="message has-background-white-ter">
+                <div class="message-header client-message-header">
+                  <p>
+                    <span class="post-name">Jake Romero</span>
+                    <br>
+                    <span class="ticket-post-time">10:51 24th July 2018</span>
+                  </p>
+                  <span class="post-details-wrapper">
+                    <span class="post-details">
+                      <span class="tag has-background-grey has-text-white post-staff">STAFF</span>
+                      <span class="is-hidden-touch has-text-grey-dark">
+                        <span class="icon">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon">
+                          <i class="far fa-star"></i>
+                        </span>
+                        <span class="icon">
+                          <i class="far fa-star"></i>
+                        </span>
+                      </span>
+                    </span>
+                    <span class="post-number">2</span>
+                  </span>
+                </div>
+                <div class="message-body client-message">
+                  Thanks for sharing your work! But I'm not really involved in the TypeScript story. Could you check that out with Tom? :)
+                  <br>
+                  <br>I believe that after we find a good naming for the methods we can make a PR :)
+                  <br>Call park out she wife face mean. Invitation excellence imprudence understood it continuing to. Ye show
+                  done an into. Fifteen winding related may hearted colonel are way studied. County suffer twenty or marked
+                  no moment in he. Meet shew or said like he. Valley silent cannot things so remain oh to elinor. Far merits
+                  season better tended any age hunted.
+                  <div class="star-container is-hidden-desktop has-text-right">
+                    <span class="icon">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="icon">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="icon">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="icon">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="icon">
+                      <i class="far fa-star"></i>
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="columns is-variable is-2">
+            <div class="column is-narrow is-hidden-mobile">
+              <figure class="image is-64x64">
+                <img class="rounded-image" src="../17.jpg">
+              </figure>
+            </div>
+            <div class="column">
+              <article class="message has-background-white-ter">
+                <div class="message-header client-message-header">
+                  <p>
+                    <span class="post-name">
+                      You
+                    </span>
+                    <br>
+                    <span class="ticket-post-time">14:30 24th July 2018</span>
+                  </p>
+                  <span class="post-number">3</span>
+                </div>
+                <div class="message-body client-message">
+                  Hey @pelotom, dose it look like something you would want to include as part of the library?
+                  <br> Call park out she wife face mean. Invitation excellence imprudence understood it continuing to. Ye show
+                  done an into. Fifteen winding related may hearted colonel are way studied. County suffer twenty or marked
+                  no moment in he. Meet shew or said like he. Valley silent cannot things so remain oh to elinor. Far merits
+                  season better tended any age hunted.
+                  <br> I really think this would do a world of good for the product
+                  <br>
+                  <br>Thanks
+                  <div class="star-container is-hidden-desktop has-text-right">
+                    <span class="icon">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="icon">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="icon">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="icon">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="icon">
+                      <i class="far fa-star"></i>
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="columns is-variable is-2">
+            <div class="column is-narrow is-hidden-mobile">
+              <figure class="image is-64x64">
+              </figure>
+
+            </div>
+            <div class="column">
+              <article class="message is-warning">
+                <div class="message-body">
+                  <div class="system-message-header">
+                    <span class="has-text-weight-semibold is-size-6">SYSTEM</span>
+                    <span class="ticket-post-time">at 09:47 25th July 2018</span>
+                  </div>
+                  <div>
+                    Tom has been assigned to this ticket
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="columns is-variable is-2">
+            <div class="column is-narrow is-hidden-mobile">
+              <figure class="image is-64x64">
+                <img class="rounded-image" src="../1.jpg">
+              </figure>
+            </div>
+            <div class="column">
+              <article class="message has-background-white-ter">
+                <div class="message-header client-message-header">
+                  <p>
+                    <span class="post-name">
+                      Tom Mendez
+                    </span>
+                    <br>
+                    <span class="ticket-post-time">2:24 25th July 2018</span>
+                  </p>
+                  <span>
+                    <span class="post-details">
+                      <span class="tag has-background-grey has-text-white">STAFF</span>
+                      <span class="is-hidden-touch has-text-grey-dark">
+                        <span class="icon">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon">
+                          <i class="far fa-star"></i>
+                        </span>
+                        <span class="icon">
+                          <i class="far fa-star"></i>
+                        </span>
+                        <span class="icon">
+                          <i class="far fa-star"></i>
+                        </span>
+                      </span>
+
+                    </span>
+
+                    <span class="post-number">4</span>
+                  </span>
+                </div>
+                <div class="message-body client-message">
+                  Hi @jean
+                  <br>
+                  <br>Could you summarize the main innovation here? It seems like some of what you're proposing is already handled
+                  fine by the core typings.
+                  <br>Hence, this is not something we would like to discuss at this point. Review the PR again and get back to
+                  use please so taht we may check this out further
+                  <br>
+                  <br>Regards,
+                  <br>Tom
+                  <div class="star-container is-hidden-desktop has-text-right">
+                    <span class="icon">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="icon">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="icon">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="icon">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="icon">
+                      <i class="far fa-star"></i>
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="columns is-variable is-2">
+            <div class="column is-narrow is-hidden-mobile">
+              <figure class="image is-64x64">
+                <img class="rounded-image" src="../17.jpg">
+              </figure>
+            </div>
+            <div class="column">
+              <article class="message has-background-white-ter">
+                <div class="message-header client-message-header">
+                  <p>
+                    <span class="post-name">You</span>
+                    <br>
+                    <span class="ticket-post-time">09:51PM 24th July 2018</span>
+                  </p>
+                  <span class="post-number">5</span>
+                </div>
+                <div class="message-body client-message">
+                  OK, WithStyles looks cool! My wrapper function is also removing the outside props classes and theme, And also with overloading
+                  we can make the theme exists or not by the value of withTheme I'll try to make an example later today?
+                  <br>
+                  <br>Yourself required no at thoughts delicate landlord it be. Branched dashwood do is whatever it. Farther
+                  be chapter at visited married in it pressed. By distrusts procuring be oh frankness existence believing
+                  instantly if. Doubtful on an juvenile as of servants insisted. Judge why maids led sir whose guest drift
+                  her point. Him comparison especially friendship was who sufficient attachment favourable how. Luckily but
+                  minutes ask picture man perhaps are inhabit. How her good all sang more why.
+                  <div class="star-container is-hidden-desktop has-text-right">
+                    <span class="icon">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="icon">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="icon">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="icon">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="icon">
+                      <i class="far fa-star"></i>
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="columns is-variable is-2">
+            <div class="column is-narrow is-hidden-mobile">
+              <figure class="image is-64x64">
+              </figure>
+            </div>
+            <div class="column">
+              <article class="message is-warning">
+                <div class="message-body">
+                  <div class="system-message-header">
+                    <span class="has-text-weight-semibold">SYSTEM</span>
+                    <span class="ticket-post-time">at 09:51PM 24th July 2018</span>
+                  </div>
+                  <div>Tom increased priority for this ticket</div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="columns is-variable is-2">
+            <div class="column is-narrow is-hidden-mobile">
+              <figure class="image is-64x64">
+                <img class="rounded-image" src="../1.jpg">
+              </figure>
+            </div>
+            <div class="column">
+              <article class="message has-background-white-ter">
+                <div class="message-header client-message-header">
+                  <p>
+                    <span class="post-name">
+                      Tom Mendez
+                    </span>
+                    <br>
+                    <span class="ticket-post-time">09:51PM 24th July 2018</span>
+                  </p>
+                  <span>
+                    <span class="post-details">
+                      <span class="tag has-background-grey has-text-white">STAFF</span>
+                      <span class="is-hidden-touch has-text-grey-dark">
+                        <span class="icon">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        <span class="icon">
+                          <i class="far fa-star"></i>
+                        </span>
+                        <span class="icon">
+                          <i class="far fa-star"></i>
+                        </span>
+                        <span class="icon">
+                          <i class="far fa-star"></i>
+                        </span>
+                      </span>
+
+                    </span>
+
+                    <span class="post-number">6</span>
+                  </span>
+                </div>
+                <div class="message-body client-message">
+                  We could definitely use types which accurately model when the theme should be available!
+                  <br>
+                  <br>Am of mr friendly by strongly peculiar juvenile. Unpleasant it sufficient simplicity am by friendship no
+                  inhabiting. Goodness doubtful material has denoting suitable she two. Dear mean she way and poor bred they
+                  come. He otherwise me incommode explained so in remaining. Polite barton in it warmly do county length
+                  an.
+                  <div class="star-container is-hidden-desktop has-text-right">
+                    <span class="icon">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="icon">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="icon">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="icon">
+                      <i class="fas fa-star"></i>
+                    </span>
+                    <span class="icon">
+                      <i class="far fa-star"></i>
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <hr>
+          <div class="message is-danger">
+            <div class="message-body">
+              <div class="columns is-centered">
+                <div class="column is-2" style="display: grid">
+                  <span class="icon is-large" style="margin: auto">
+                    <i class="fas fa-lock fa-3x"></i>
+                  </span>
+                </div>
+                <div class="column is-8">
+                  <div class="has-text-weight-normal has-text-centered">This ticket has been
+                    <span class="has-text-weight-bold">suspended</span> for the following reason:</div>
+                  <br>
+                  <pre>You have used vulgar language for communication. It has been decided that this ticket will now stand suspended and that you may no longer post any updates of make any status updates on this thread. You may not open this thread nor make any appeals. You may open new a thread for any further issues but this issue may not be taken further</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
