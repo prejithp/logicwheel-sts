@@ -18,11 +18,11 @@
 
   <div id="modal-change-password-container"></div>
 
-  <div id="reply-container">
+  <a href="#reply" id="reply-container">
     <span class="icon center-in-parent">
       <i class="fas fa-reply"></i>
     </span>
-  </div>
+  </a>
 
   <section class="section breadcrumb-padding">
     <nav class="container breadcrumb">
@@ -414,6 +414,26 @@
               </figure>
             </div>
             <div class="column">
+              <!-- TODO: Placeholder for left arrow -->
+              <span id="left-arrow"></span>
+              <div class="staff-toolbox">
+                <div class="columns">
+                  <div class="field is-expanded column is-one-quarter">
+                    <label class="label">Priority</label>
+                    <div class="control">
+                      <div class="select is-fullwidth">
+                        <select>
+                          <option>Low</option>
+                          <option>Normal</option>
+                          <option>Emergency</option>
+                          <option>Critical</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
               <div class="tabs is-boxed" id="tab-root-override">
                 <ul id="tab-ul-override">
                   <li class="is-active">
@@ -434,7 +454,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="message-container">
+              <div id="reply" class="message-container">
                 <div class="columns"></div>
                 <div class="columns">
                   <div class="column is-12">
@@ -459,19 +479,6 @@
 
                 </div>
                 <div class="columns">
-                  <div class="field is-expanded column is-one-quarter">
-                    <label class="label">Priority</label>
-                    <div class="control">
-                      <div class="select is-fullwidth">
-                        <select>
-                          <option>Low</option>
-                          <option>Normal</option>
-                          <option>Emergency</option>
-                          <option>Critical</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
                   <div class="field column is-narrow">
                     <label class="label">Attachments</label>
                     <div class="control">

@@ -230,7 +230,16 @@ pre {
 }
 
 #tab-override:hover {
-  background-color: #fafafa;
+  background-color: #f7f7f7;
+}
+
+/* TODO: Placeholder for left arrow */
+#left-arrow {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 30px;
+  height: 40px;
 }
 
 .message-container {
@@ -240,6 +249,15 @@ pre {
   padding: 1.5rem; /* to negate the negative margin of columns */
   border-top: none;
   margin-bottom: 0.9rem;
+}
+
+.staff-toolbox {
+  background-color: #fcfcfc;
+  border: 1px solid #d1d1d1;
+  padding: 1.0rem;
+  padding-top: 0.7rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
 }
 
 .align_dash_msg {
