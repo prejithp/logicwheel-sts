@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>New Ticket</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css' />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+	  crossorigin="anonymous">
+	<link rel="stylesheet" href="./style.css">
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+</head>
+
+<body>
+	<div id="navbar"></div>
+
+	<!-- modal to change passwords to be loaded async -->
+	<div id="modal-change-password-container"></div>
+
+	<section class="section breadcrumb-padding">
+		<nav class="container breadcrumb">
+			<ul>
+				<li>
+					<a href="client-dash-homepage.html">Home</a>
+				</li>
+				<li>
+					<a href="client-ticket-list.html">Messages</a>
+				</li>
+				<li class="is-active">
+					<a href="#">New Message</a>
+				</li>
+			</ul>
+		</nav>
+	</section>
+	<section id="root" class="section hero is-light section-reduce-padding is-fullheight">
+
+		<div class="columns">
+			<div class="column is-offset-1 is-10">
+				<section class="title is-size-3 has-text-left title-padding section-reduce-padding">
+					New Message
+				</section>
+				<div class="box">
+					<div class="columns is-centered is-variable is-8">
+						<div class="column ">
+							<div class="field is-expanded">
+								<label class="label">Type</label>
+								<div class="control">
+									<div class="select is-fullwidth">
+										<select>
+											<option>Client</option>
+											<option>Staff Message</option>
+											<option>Global</option>
+										</select>
+									</div>
+								</div>
+							</div>
+            </div>					
+            	<div class="column">
+                <div class="field is-expanded">
+                  <label class="label">Department</label>
+                  <div class="control">
+                    <div class="select is-fullwidth">
+                      <select>
+                          <option>----</option>
+                        <option>Cloud Handling</option>
+                        <option>Web Hosting</option>
+                        <option>Networking</option>
+                        <option>Services</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+          </div>
+
+          <div class="field column ">
+              <label class="label">Subject</label>
+              <div class="control">
+                <input type="text" class="input" placeholder="Enter the subject here">
+              </div>
+            </div>
+					<div class="field">
+						<label class="label">Message</label>
+						<div class="control">
+							<textarea class="textarea input-message" placeholder="Use this field to enter your queries" rows="10"></textarea>
+						</div>
+					</div>
+					
+					<div class="columns">
+						<div class="column is-narrow">
+							<div class="field">
+								<label class="label">Attachments</label>
+								<div class="control">
+									<div class="file">
+										<label class="file-label">
+											<input id="input-file-new-ticket" class="file-input" type="file" multiple>
+											<span class="file-cta">
+												<span class="file-icon">
+													<i class="fas fa-upload"></i>
+												</span>
+												<span class="file-label">
+													Choose a file…
+												</span>
+											</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column is-hidden" id="file-attachments">
+							<div class="field">
+								<label class="label">Attached Files:</label>
+								<div class="control buttons" id="file-attachments-container">
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="buttons is-centered">
+						<button class="button is-info has-text-weight-semibold">Submit Ticket</button>
+						<button class="button has-background-grey-lighter has-text-weight-semibold">Clear</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<script src="./app.js"></script>
+	</script>
+</body>
+
+</html>

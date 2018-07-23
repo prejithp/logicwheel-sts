@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Assigned Tickets</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css' />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+</head>
+
+<body>
+  <div id="navbar-staff"></div>
+
+
+  <div id="modal-change-password-container"></div>
+
+  <section class="section breadcrumb-padding">
+    <nav class="container breadcrumb">
+      <ul>
+        <li>
+          <a href="staff-dashboard.html">Home</a>
+        </li>
+        <li class="is-active">
+          <a href="#">Assigned Tickets</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+
+  <section id="root" class="section hero is-light section-reduce-padding">
+    <div class="columns">
+      <div class="column is-offset-1 is-10">
+        <div class="level">
+          <div class="level-left">
+            <div class="level-item">
+              <div class="title is-size-3 has-text-left title-padding section-reduce-padding">Assigned Tickets</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="table-container">
+            <table class="table is-striped is-hoverable is-fullwidth">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Subject</th>
+                  <th>Department</th>
+                  <th>Post Count</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="has-text-weight-bold">
+                  <td>A98FE4TSF</td>
+                  <td>Computer not switching on what to do treid restarting and all but still don't work</td>
+                  <td>Hardware</td>
+                  <td class="has-text-centered">5</td>
+                </tr>
+                <tr>
+                  <td>AG8FEFRG24</td>
+                  <td>Computer not switching on</td>
+                  <td>Software</td>
+                  <td class="has-text-centered">24</td>
+                </tr>
+                <tr class="has-text-weight-bold">
+                  <td>CD888H4FE2</td>
+                  <td>Wifi not switching on Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, accusamus fuga</td>
+                  <td>Software</td>
+                  <td class="has-text-centered">2</td>
+                </tr>
+                <tr>
+                  <td>AD8FE6HS21</td>
+                  <td>Computer not switching on</td>
+                  <td>Hardware</td>
+                  <td class="has-text-centered">41</td>
+                </tr>
+
+                <tr>
+                  <td>EF899P92KD</td>
+                  <td>Keyboard damaged Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis molestiae ut facilis
+                    excepturi </td>
+                  <td>Hardware</td>
+                  <td class="has-text-centered">8</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="columns is-centered">
+            <div class="column is-narrow">
+              <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+                <a class="pagination-previous  has-background-white-ter">
+                  <i class="fas fa-less-than"></i>
+                  <i class="fas fa-less-than"></i>
+                </a>
+                <a class="pagination-previous is-hidden-mobile has-background-white-ter">
+                  <i class="fas fa-less-than"></i>
+                </a>
+                <a class="pagination-next is-hidden-mobile has-background-white-ter">
+                  <i class="fas fa-greater-than"></i>
+                </a>
+                <a class="pagination-next has-background-white-ter">
+                  <i class="fas fa-greater-than"></i>
+                  <i class="fas fa-greater-than"></i>
+                </a>
+                <ul class="pagination-list">
+                  <li class="is-hidden-mobile">
+                    <button class="pagination-spacer">&nbsp;</button>
+                  </li>
+                  <li>
+                    <a class="pagination-link" aria-label="Goto page 45">1</a>
+                  </li>
+                  <li>
+                    <a class="pagination-link" aria-label="Goto page 45">2</a>
+                  </li>
+                  <li>
+                    <a class="pagination-link is-current" style="color: white" aria-label="Page 46" aria-current="page">3</a>
+                  </li>
+                  <li>
+                    <a class="pagination-link" aria-label="Goto page 47">4</a>
+                  </li>
+                  <li>
+                    <a class="pagination-link" aria-label="Goto page 45">5</a>
+                  </li>
+                  <li class="is-hidden-mobile">
+                    <button class="pagination-spacer">&nbsp;</button>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
