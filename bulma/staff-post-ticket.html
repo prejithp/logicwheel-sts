@@ -14,9 +14,71 @@
 </head>
 
 <body>
-  <div id="navbar"></div>
+  <div id="navbar-staff"></div>
 
   <div id="modal-change-password-container"></div>
+
+  <div class="modal is-active" id="modal-list-template-root">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Choose template</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <div class="modal-card-body">
+        <div class="table-container">
+            <table class="table is-striped is-hoverable is-fullwidth">
+            <thead>
+              <tr>
+                <th>Keyboard Code</th>
+                <th>Subject</th>
+                <th>Department</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>r+m</td>
+                <td>Welcome template</td>
+                <td>Hardware & Billing</td>
+              </tr>
+              <tr>
+                <td>m+m</td>
+                <td>Closing template with suspend reason</td>
+                <td>Software</td>
+              </tr>
+              <tr>
+                <td>w+l</td>
+                <td>Usual tempate</td>
+                <td>Software</td>
+              </tr>
+              <tr>
+                <td>e</td>
+                <td>Computer not switching on</td>
+                <td>Hardware</td>
+              </tr>
+              <tr>
+                <td>f+d</td>
+                <td> Lorem ipsum dolor, sit amet consectetur </td>
+                <td>Hardware</td>
+              </tr>
+              <tr>
+                <td>e</td>
+                <td>Computer not switching on</td>
+                <td>Hardware</td>
+              </tr>
+              <tr>
+                <td>f+d</td>
+                <td> Lorem ipsum dolor, sit amet consectetur adipisicing elit</td>
+                <td>Hardware</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
 
   <a href="#reply" id="reply-container">
     <span class="icon center-in-parent">
@@ -418,45 +480,45 @@
               <span id="left-arrow"></span>
               <div class="staff-toolbox">
                 <div class="columns">
-                    <div class="field is-expanded column is-one-quarter">
+                  <div class="field is-expanded column is-one-quarter">
                     <label class="label">Boost Priority</label>
                     <div class="control">
-                        <div class="select is-fullwidth">
-                          <select>
-                            <option>Low</option>
-                            <option>Normal</option>
-                            <option>Emergency</option>
-                            <option>Critical</option>
-                          </select>
-                      </div>
-                      </div>               
-                    </div>
-                    <div class="field is-expanded column is-one-quarter">
-                      <label for="" class="label">Department</label>
-                      <div class="control">
-                        <div class="select is-fullwidth">
-                          <select>
-                            <option>Web Handling</option>
-                            <option>Hosting</option>
-                            <option>Service Provider</option>
-                            <option>Domain Service</option>
-                            <option>Pheripherals</option>
-                            <option>Network</option>
-                          </select>
-                        </div>
+                      <div class="select is-fullwidth">
+                        <select>
+                          <option>Low</option>
+                          <option>Normal</option>
+                          <option>Emergency</option>
+                          <option>Critical</option>
+                        </select>
                       </div>
                     </div>
-                    <div class="field is-expanded column is-one-quarter">
-                      <label for="" class="label">Suspend Ticket</label>
-                      <div class="control">
-                          <div class="select is-fullwidth">
-                            <select>
-                              <option>No</option>
-                              <option>Yes</option>
-                            </select>
-                          </div>
-                        </div>
+                  </div>
+                  <div class="field is-expanded column is-one-quarter">
+                    <label for="" class="label">Department</label>
+                    <div class="control">
+                      <div class="select is-fullwidth">
+                        <select>
+                          <option>Web Handling</option>
+                          <option>Hosting</option>
+                          <option>Service Provider</option>
+                          <option>Domain Service</option>
+                          <option>Pheripherals</option>
+                          <option>Network</option>
+                        </select>
+                      </div>
                     </div>
+                  </div>
+                  <div class="field is-expanded column is-one-quarter">
+                    <label for="" class="label">Suspend Ticket</label>
+                    <div class="control">
+                      <div class="select is-fullwidth">
+                        <select>
+                          <option>No</option>
+                          <option>Yes</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
 
                 </div>
               </div>
