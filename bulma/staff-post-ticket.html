@@ -23,13 +23,13 @@
     <div class="modal-card">
       <header class="modal-card-head">
         <p class="modal-card-title">Choose template</p>
-        <button class="delete" aria-label="close"></button>
       </header>
       <div class="modal-card-body">
         <div class="table-container">
-            <table class="table is-striped is-hoverable is-fullwidth">
+          <table class="table is-striped is-hoverable is-fullwidth">
             <thead>
               <tr>
+                <th>Select</th>
                 <th>Keyboard Code</th>
                 <th>Subject</th>
                 <th>Department</th>
@@ -37,36 +37,57 @@
             </thead>
             <tbody>
               <tr>
+                <td>
+                  <input type="radio" class="radio" name="template">
+                </td>
                 <td>r+m</td>
                 <td>Welcome template</td>
                 <td>Hardware & Billing</td>
               </tr>
               <tr>
+                <td>
+                  <input type="radio" class="radio" name="template">
+                </td>
                 <td>m+m</td>
                 <td>Closing template with suspend reason</td>
                 <td>Software</td>
               </tr>
               <tr>
+                <td>
+                  <input type="radio" class="radio" name="template">
+                </td>
                 <td>w+l</td>
                 <td>Usual tempate</td>
                 <td>Software</td>
               </tr>
               <tr>
+                <td>
+                  <input type="radio" class="radio" name="template">
+                </td>
                 <td>e</td>
                 <td>Computer not switching on</td>
                 <td>Hardware</td>
               </tr>
               <tr>
+                <td>
+                  <input type="radio" class="radio" name="template">
+                </td>
                 <td>f+d</td>
                 <td> Lorem ipsum dolor, sit amet consectetur </td>
                 <td>Hardware</td>
               </tr>
               <tr>
+                <td>
+                  <input type="radio" class="radio" name="template">
+                </td>
                 <td>e</td>
                 <td>Computer not switching on</td>
                 <td>Hardware</td>
               </tr>
               <tr>
+                <td>
+                  <input type="radio" class="radio" name="template">
+                </td>
                 <td>f+d</td>
                 <td> Lorem ipsum dolor, sit amet consectetur adipisicing elit</td>
                 <td>Hardware</td>
@@ -75,7 +96,10 @@
           </table>
         </div>
       </div>
-
+      <footer class="modal-card-foot">
+        <button class="button is-success">Apply Template</button>
+        <button class="button">Cancel</button>
+      </footer>
     </div>
     <button class="modal-close is-large" aria-label="close"></button>
   </div>
