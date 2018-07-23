@@ -12,6 +12,16 @@ $(function () {
 
     loadChangePasswordModal();
   });
+  //load user navbar
+  $("#navbar-user").load("user-navbar.html", function () {
+    //nav bar burger toggle
+    $('#navbar-toggle').click(function () {
+      $(this).toggleClass('is-active');
+      $('.navbar-menu').toggleClass('is-active');
+    });
+
+    loadChangePasswordModal();
+  });
 
   //load staff navbar
   $("#navbar-staff").load("staff-navbar.html", function () {
@@ -23,6 +33,7 @@ $(function () {
 
     loadChangePasswordModal();
   })
+
 
   //load change password modal after navbar has finished loading
   function loadChangePasswordModal() {

@@ -29,25 +29,36 @@
 					<a href="./user-ticket-list.html">Tickets</a>
 				</li>
 				<li class="is-active">
-					<a href="#">Open Tickets</a>
+					<a href="#">All Tickets</a>
 				</li>
 			</ul>
 		</nav>
 	</section>
-	<section id="root"  class="section hero is-light section-reduce-padding">
+	<section id="root" class="section hero is-light section-reduce-padding">
 		<div class="columns">
 			<div class="column is-10 is-offset-1">
 				<section class="title is-size-3 has-text-left title-padding section-reduce-padding">
-					Open Tickets
+					Tickets
 				</section>
 
 				<div class="box">
-					<button class="button is-primary is-rounded">
-						<span class="icon">
-							<i class="fas fa-plus"></i>
-						</span>
-						<span>New ticket</span>
-					</button>
+					<div class="buttons">
+						<button class="button is-primary is-rounded">
+							<span class="icon">
+								<i class="fas fa-plus"></i>
+							</span>
+							<a href="./user-new-ticket.html">
+								<span class="has-text-weight-semibold">New ticket</span>
+							</a>
+							</span>
+						</button>
+						<button class="button is-warning is-rounded">
+							<span class="icon">
+								<i class="fas fa-minus"></i>
+							</span>
+							<span class="has-text-weight-semibold">Hide resolved</span>
+						</button>
+					</div>
 					<div class="table-container">
 						<table class="table is-striped is-hoverable is-fullwidth">
 							<thead>
@@ -63,6 +74,7 @@
 									</th>
 									<th>Subject</th>
 									<th>Department</th>
+									<th>Status</th>
 									<th>Time</th>
 									<th>Close</th>
 								</tr>
@@ -77,7 +89,53 @@
 									</td>
 									<td>Computer not switching on</td>
 									<td>Hardware</td>
+									<td>Open</td>
 									<td>19/04/18 12:00AM</td>
+									<td>
+										<span class="icon is-medium">
+											<i class="far fa-window-close fa-lg"></i>
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<td>AG8FEFRG24</td>
+									<td></td>
+									<td>Computer not switching on</td>
+									<td>Software</td>
+									<td>Closed</td>
+									<td>23/06/16 09:00AM</td>
+									<td>
+										<span class="icon is-medium">
+											<i class="far fa-window-close fa-lg"></i>
+										</span>
+									</td>
+								</tr>
+								<tr class="">
+									<td>EF899P92KD</td>
+									<td>
+										<span class="icon is-medium">
+											<i class="fas fa-lock fa-lg"></i>
+										</span>
+									</td>
+
+									<td>Keyboard damaged</td>
+									<td>Hardware</td>
+									<td>Closed</td>
+									<td>25/07/16 06:00PM</td>
+									<td>
+										<span class="icon is-medium">
+											<i class="far fa-window-close fa-lg"></i>
+										</span>
+									</td>
+								</tr>
+								<tr class="has-text-weight-bold">
+									<td>CD888H4FE2</td>
+									<td>
+									</td>
+									<td>Wifi not switching on</td>
+									<td>Software</td>
+									<td>Awaiting response</td>
+									<td>19/04/16 10:00AM</td>
 									<td>
 										<span class="icon is-medium">
 											<i class="far fa-window-close fa-lg"></i>
@@ -91,6 +149,7 @@
 
 									<td>Computer not switching on</td>
 									<td>Hardware</td>
+									<td>Open</td>
 									<td>19/04/18 12:00AM</td>
 									<td>
 										<span class="icon is-medium">
@@ -148,9 +207,10 @@
 				</div>
 			</div>
 		</div>
+	</section>
 
-		<script src="app.js"></script>
-		</script>
+	<script src="app.js"></script>
+	</script>
 </body>
 
 </html>
