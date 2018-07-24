@@ -260,6 +260,31 @@ pre {
   border-radius: 5px;
 }
 
+.staff-template-preview-icon {
+  cursor: pointer;
+}
+
+.staff-template-preview {
+  padding: 0 !important;
+  background-color: #fff;
+}
+
+.staff-template-preview > .notification {
+  border-radius: 0 0 4px 4px;
+  margin-bottom: 0.6rem;
+  padding: 1.25rem 0.4rem 1.25rem 2.75rem;
+}
+
+.staff-template-selected {
+  font-weight: 500;
+  background-color: #dbdbdb !important;
+  border-radius: 4px 4px 0 0;
+}
+
+#template-modal {
+  width: 800px;
+}
+
 .align_dash_msg {
   border: 1px solid black;
   margin-top: 1rem;

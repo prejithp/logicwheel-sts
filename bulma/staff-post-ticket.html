@@ -20,7 +20,7 @@
 
   <div class="modal is-active" id="modal-list-template-root">
     <div class="modal-background"></div>
-    <div class="modal-card">
+    <div class="modal-card" id="template-modal" >
       <header class="modal-card-head">
         <p class="modal-card-title">Choose template</p>
       </header>
@@ -29,10 +29,11 @@
           <table class="table is-striped is-hoverable is-fullwidth">
             <thead>
               <tr>
-                <th>Select</th>
+                <th></th>
                 <th>Keyboard Code</th>
                 <th>Subject</th>
                 <th>Department</th>
+                <th></th>
               </tr>
             </thead>
             <tbody>
@@ -40,18 +41,36 @@
                 <td>
                   <input type="radio" class="radio" name="template">
                 </td>
-                <td>r+m</td>
-                <td>Welcome template</td>
-                <td>Hardware & Billing</td>
-              </tr>
-              <tr>
-                <td>
-                  <input type="radio" class="radio" name="template">
-                </td>
                 <td>m+m</td>
                 <td>Closing template with suspend reason</td>
                 <td>Software</td>
+                <td class="staff-template-preview-icon">
+                  <i class="fas fa-external-link-alt"></i>
+                </td>
               </tr>
+              <tr class="staff-template-selected">
+                <td>
+                  <input type="radio" class="radio" name="template">
+                </td>
+                <td>r+m</td>
+                <td>Welcome template</td>
+                <td>Hardware & Billing</td>
+                <td class="staff-template-preview-icon">
+                  <i class="fas fa-external-link-alt"></i>
+                </td>
+              </tr>
+              <tr>
+                <td class="staff-template-preview" colspan="5">
+                  <div class="notification">
+                    Hi #name,<br>
+                    Welcome to Customer Support of ABC Limited Corp. Please state your problem in more detail and attach more logs so that we may solve your problem. Thank you for your cooperation
+                    <div class="buttons is-right">
+                      <div class="button has-text-weight-semibold" >Shrink</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
               <tr>
                 <td>
                   <input type="radio" class="radio" name="template">
@@ -59,6 +78,9 @@
                 <td>w+l</td>
                 <td>Usual tempate</td>
                 <td>Software</td>
+                <td class="staff-template-preview-icon">
+                  <i class="fas fa-external-link-alt"></i>
+                </td>
               </tr>
               <tr>
                 <td>
@@ -67,6 +89,9 @@
                 <td>e</td>
                 <td>Computer not switching on</td>
                 <td>Hardware</td>
+                <td class="staff-template-preview-icon">
+                  <i class="fas fa-external-link-alt"></i>
+                </td>
               </tr>
               <tr>
                 <td>
@@ -75,6 +100,9 @@
                 <td>f+d</td>
                 <td> Lorem ipsum dolor, sit amet consectetur </td>
                 <td>Hardware</td>
+                <td class="staff-template-preview-icon">
+                  <i class="fas fa-external-link-alt"></i>
+                </td>
               </tr>
               <tr>
                 <td>
@@ -83,6 +111,9 @@
                 <td>e</td>
                 <td>Computer not switching on</td>
                 <td>Hardware</td>
+                <td class="staff-template-preview-icon">
+                  <i class="fas fa-external-link-alt"></i>
+                </td>
               </tr>
               <tr>
                 <td>
@@ -91,17 +122,19 @@
                 <td>f+d</td>
                 <td> Lorem ipsum dolor, sit amet consectetur adipisicing elit</td>
                 <td>Hardware</td>
+                <td class="staff-template-preview-icon">
+                  <i class="fas fa-external-link-alt"></i>
+                </td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Apply Template</button>
-        <button class="button">Cancel</button>
+      <footer class="modal-card-foot buttons is-right">
+        <button class="button is-link has-text-weight-semibold">Apply Template</button>
+        <button class="button has-background-grey-lighter has-text-weight-semibold">Cancel</button>
       </footer>
     </div>
-    <button class="modal-close is-large" aria-label="close"></button>
   </div>
 
   <a href="#reply" id="reply-container">
