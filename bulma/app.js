@@ -238,7 +238,6 @@ $(function () {
     }
   })
 
-
   $(window).trigger('resize');
 
   // ============ temp jQuery to showcase working of message ==================
