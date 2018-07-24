@@ -21,7 +21,7 @@ $(function () {
     });
     loadChangePasswordModal();
   });
- 
+
   //load admin navbar
   $("#navbar-admin").load("admin-navbar.html", function () {
     //nav bar burger toggle
@@ -69,7 +69,6 @@ $(function () {
       rootContainer.addClass('section')
     }
   })
-  $(window).trigger('resize');
 
   //Use for select all in modal boxes 
   $("#check-all-modal").click(function (event) {
@@ -213,21 +212,34 @@ $(function () {
   });
 
   // hide and display template modal
-  $('.modal-preview-templates').click(function() {
+  $('.modal-preview-templates').click(function () {
     $('#modal-template-root').addClass('is-active');
-  });
+  })
 
   // display expanded view
-  $('.staff-template-preview-icon').click(function() {
+  $('.staff-template-preview-icon').click(function () {
     $(this).parent('tr').next().removeClass('is-hidden');
     $(this).parent('tr').addClass('staff-template-selected');
   })
 
   // remove expanded view
-  $('.btn-shrink-preview').click(function() {
+  $('.btn-shrink-preview').click(function () {
     $(this).parents('tr').addClass('is-hidden')
     $(this).parents('tr').prev('tr').removeClass('staff-template-selected')
   })
+
+  $(window).resize(function () {
+    var mediaWidth = window.matchMedia("only screen and (max-width: 600px)");
+    if (mediaWidth.matches) {
+      $('.template-item-row').click(function () {
+        $(this).next().removeClass('is-hidden');
+        $(this).addClass('staff-template-selected');
+      })
+    }
+  })
+
+
+  $(window).trigger('resize');
 
   // ============ temp jQuery to showcase working of message ==================
   $('.btn-msg-sort-time').click(function () {
