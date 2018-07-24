@@ -204,7 +204,6 @@ $(function () {
   })
 
   // Hide reply button while being scrolled
-
   $(window).scroll(function () {
     clearTimeout($.data(this, 'scrollTimer'));
     $('#reply-container').slideUp(200);
@@ -212,6 +211,23 @@ $(function () {
       $('#reply-container').slideDown(200);
     }, 500));
   });
+
+  // hide and display template modal
+  $('.modal-preview-templates').click(function() {
+    $('#modal-template-root').addClass('is-active');
+  });
+
+  // display expanded view
+  $('.staff-template-preview-icon').click(function() {
+    $(this).parent('tr').next().removeClass('is-hidden');
+    $(this).parent('tr').addClass('staff-template-selected');
+  })
+
+  // remove expanded view
+  $('.btn-shrink-preview').click(function() {
+    $(this).parents('tr').addClass('is-hidden')
+    $(this).parents('tr').prev('tr').removeClass('staff-template-selected')
+  })
 
   // ============ temp jQuery to showcase working of message ==================
   $('.btn-msg-sort-time').click(function () {
