@@ -358,4 +358,23 @@ pre {
   .dashboard-msg-sub {
     font-size: 0.9rem;
   }
+  #reply-container {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.3rem;
+    right: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #reply-container {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1rem;
+    right: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0;
+  }
 }
