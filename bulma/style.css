@@ -285,6 +285,18 @@ pre {
   width: 800px;
 }
 
+#message-label {
+  position: relative;
+  margin-bottom: 1.1rem;
+}
+
+.modal-preview-templates {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+}
+
 .align_dash_msg {
   border: 1px solid black;
   margin-top: 1rem;

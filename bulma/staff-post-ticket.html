@@ -18,7 +18,7 @@
 
   <div id="modal-change-password-container"></div>
 
-  <div class="modal is-active" id="modal-template-root">
+  <div class="modal" id="modal-template-root">
     <div class="modal-background"></div>
     <div class="modal-card" id="template-modal">
       <header class="modal-card-head">
@@ -649,10 +649,21 @@
                       </div>
                     </div>
                   </div>
-                  <div class="column">
-                    <div class="button modal-preview-templates">Template</div>
+                  <div class="field is-expanded column is-one-quarter">
+                    <label for="" class="label">Department</label>
+                    <div class="control">
+                      <div class="select is-fullwidth">
+                        <select>
+                          <option>Web Handling</option>
+                          <option>Hosting</option>
+                          <option>Service Provider</option>
+                          <option>Domain Service</option>
+                          <option>Pheripherals</option>
+                          <option>Network</option>
+                        </select>
+                      </div>
+                    </div>
                   </div>
-
                 </div>
               </div>
               <div class="tabs is-boxed" id="tab-root-override">
@@ -676,11 +687,13 @@
                 </ul>
               </div>
               <div id="reply" class="message-container">
-                <div class="columns"></div>
                 <div class="columns">
                   <div class="column is-12">
                     <div class="field">
-                      <label class="label">Message</label>
+                      <div class="label" id="message-label">
+                        <label id="message-label">Message</label>
+                        <div class="button modal-preview-templates">Template</div>
+                      </div>
                       <div class="control">
                         <textarea class="textarea input-message placeholders" placeholder="Leave your comments here"></textarea>
                       </div>
