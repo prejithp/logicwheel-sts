@@ -211,7 +211,7 @@
     </div>
   </div>
 
-  <!-- modal to supsend ticket -->
+  <!-- modal to suspend ticket -->
   <div class="modal" id="modal-suspend-root">
     <div class="modal-background"></div>
     <div class="modal-card">
@@ -239,7 +239,47 @@
         </div>
       </section>
       <footer class="modal-card-foot">
-        <button id="btn-delete-user" class="button is-danger has-text-weight-semibold" disabled>Delete ticket</button>
+        <button id="btn-delete-user" class="button is-danger has-text-weight-semibold" disabled>Suspend ticket</button>
+        <a class="button has-background-grey-lighter has-text-weight-semibold modal-close-btn">Cancel</a>
+      </footer>
+    </div>
+  </div>
+
+  <!-- modal to boost priority ticket -->
+  <div class="modal is-active" id="modal-suspend-root">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Boost Priority</p>
+        <button class="delete modal-close-btn" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div class="content">
+          <p> This operation can be used to set the priority of this ticket
+          </p>
+
+          <div class="field">
+            <label class="label">Set Priority</label>
+            <div class="control">
+              <label class="radio">
+                <input type="radio" name="priority" checked> None
+              </label>
+              <label class="radio">
+                <input type="radio" name="priority"> Recommended
+              </label>
+              <label class="radio">
+                <input type="radio" name="priority"> Emergency
+              </label>
+              <label class="radio">
+                <input type="radio" name="priority"> Critical
+              </label>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-info has-text-weight-semibold">Confirm Changes</button>
         <a class="button has-background-grey-lighter has-text-weight-semibold modal-close-btn">Cancel</a>
       </footer>
     </div>
