@@ -261,4 +261,7 @@ $(function () {
       $('#time-sorted').addClass('is-hidden');
     }
   })
+  //==============================template view modal ==========================
+  
+
 });
