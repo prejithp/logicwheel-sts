@@ -240,6 +240,14 @@ $(function () {
     }
   })
 
+  $('#modal-change-department').click(function() {
+    $('#modal-change-department-root').addClass('is-active')
+  })
+
+  $('#modal-boost-priority').click(function() {
+    $('#modal-boost-priority-root').addClass('is-active')
+  })
+
   $(window).trigger('resize');
 
   // ============ temp jQuery to showcase working of message ==================
