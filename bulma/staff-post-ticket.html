@@ -212,36 +212,37 @@
   </div>
 
   <!-- modal to supsend ticket -->
-	<div class="modal" id="modal-suspend-root">
-		<div class="modal-background"></div>
-		<div class="modal-card">
-			<header class="modal-card-head">
-				<p class="modal-card-title">Suspend Ticket</p>
-				<button class="delete modal-close-btn" aria-label="close"></button>
-			</header>
-			<section class="modal-card-body">
-				<div class="content">
-					<p>
-						This is an irreversible operation. This ticket will be suspended, i.e, the customer and staff may no longer respond to this ticket and it will henceforth be in a locked stage
-					</p>
+  <div class="modal" id="modal-suspend-root">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Suspend Ticket</p>
+        <button class="delete modal-close-btn" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div class="content">
+          <p>
+            This is an irreversible operation. This ticket will be suspended, i.e, the customer and staff may no longer respond to this
+            ticket and it will henceforth be in a locked stage
+          </p>
 
-					<p> Are you sure you want to perform this operation?
-						<br />Please type in
-						<strong>YES</strong> to confirm this action
-					</p>
-				</div>
+          <p> Are you sure you want to perform this operation?
+            <br />Please type in
+            <strong>YES</strong> to confirm this action
+          </p>
+        </div>
 
-				<div class="field">
-					<div class="control">
-						<input id="modal-delete-user-field" type="text" class="input" autofocus>
-					</div>
-				</div>
-			</section>
-			<footer class="modal-card-foot">
-				<button id="btn-delete-user" class="button is-danger has-text-weight-semibold" disabled>Delete ticket</button>
-				<a class="button has-background-grey-lighter has-text-weight-semibold modal-close-btn">Cancel</a>
-			</footer>
-		</div>
+        <div class="field">
+          <div class="control">
+            <input id="modal-delete-user-field" type="text" class="input" autofocus>
+          </div>
+        </div>
+      </section>
+      <footer class="modal-card-foot">
+        <button id="btn-delete-user" class="button is-danger has-text-weight-semibold" disabled>Delete ticket</button>
+        <a class="button has-background-grey-lighter has-text-weight-semibold modal-close-btn">Cancel</a>
+      </footer>
+    </div>
   </div>
 
   <a href="#reply" id="reply-container">
@@ -632,133 +633,127 @@
             </div>
           </div>
           <hr>
-          <div class="columns is-variable is-2">
-            <div class="column is-narrow is-hidden-mobile">
-              <label class="label">&nbsp;</label>
-              <figure class="image is-64x64">
-                <img class="rounded-image" src="../1.jpg">
-              </figure>
-            </div>
-            <div class="column">
-              <!-- TODO: Placeholder for left arrow -->
-              <span id="left-arrow"></span>
-              <div class="staff-toolbox">
-                <div class="columns is-variable is-1">
-                  <div class="column is-one-quarter">
-                    <button class="button is-fullwidth has-text-weight-semibold  is-link">
-                      <span class="icon is-small">
-                        <i class="fas fa-level-up-alt"></i>
-                      </span>
-                      <span>Boost Priority</span>
-                    </button>
-                  </div>
-                  <div class="column is-one-quarter">
-                    <button class="button is-fullwidth has-text-weight-semibold has-background-grey-lighter">
-                      <span class="icon is-small">
-                        <i class="fas fa-exchange-alt"></i>
-                      </span>
-                      <span>Change Department</span>
-                    </button>
-                  </div>
-                  <div class="column is-one-quarter">
-                    <button class="button is-fullwidth has-text-weight-semibold has-background-grey-lighter">
-                      <span class="icon is-small"><i class="fas fa-angle-double-up"></i></span>
-                      <span>
-                        Escalate
-                      </span>
-                    </button>
-                  </div>
-                  <div class="column is-one-quarter">
-                    <button id="modal-suspend-ticket" class="button is-fullwidth has-text-weight-semibold is-danger">
-                      <span class="icon is-small">
-                        <i class="fas fa-lock"></i>
-                      </span>
-                      <span>Suspend Ticket</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="tabs is-boxed" id="tab-root-override">
-                <ul id="tab-ul-override">
-                  <li class="is-active">
-                    <a id="tab-active-override">
-                      <span class="icon is-small">
-                        <i class="fas fa-pencil-alt"></i>
-                      </span>
-                      <span>Write</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a id="tab-override">
-                      <span class="icon is-small">
-                        <i class="far fa-eye"></i>
-                      </span>
-                      <span>Preview</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div id="reply" class="message-container">
-                <div class="columns">
-                  <div class="column is-12">
-                    <div class="field">
-                      <div class="label" id="message-label">
-                        <label id="message-label">Message</label>
-                        <div class="button modal-preview-templates">Template</div>
-                      </div>
-                      <div class="control">
-                        <textarea class="textarea input-message placeholders" placeholder="Leave your comments here"></textarea>
-                      </div>
-                    </div>
-                  </div>
 
-                </div>
-                <div class="columns">
-                  <div class="column is-12">
-                    <div class="field">
-                      <div class="control">
-                        <label class="label">Private Message</label>
-                        <textarea class="textarea input-message" rows="5" placeholder="Use this field to pass secure information"></textarea>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-                <div class="columns">
-                  <div class="field column is-narrow">
-                    <label class="label">Attachments</label>
-                    <div class="control">
-                      <div class="file">
-                        <label class="file-label">
-                          <input id="input-file-new-ticket" class="file-input" type="file" multiple name="resume">
-                          <span class="file-cta">
-                            <span class="file-icon">
-                              <i class="fas fa-upload"></i>
-                            </span>
-                            <span class="file-label">
-                              Choose a file…
-                            </span>
-                          </span>
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column is-hidden" id="file-attachments">
-                    <div class="field">
-                      <label class="label">Attached Files:</label>
-                      <div class="control buttons" id="file-attachments-container">
-                      </div>
-                    </div>
-                  </div>
-                </div>
+          <!-- TODO: Placeholder for left arrow -->
+          <span id="left-arrow"></span>
+          <div class="staff-toolbox">
+            <div class="columns is-variable is-1">
+              <div class="column is-one-quarter">
+                <button id="modal-boost-priority" class="button is-fullwidth has-text-weight-semibold  has-background-grey-lighter">
+                  <span class="icon is-small">
+                    <i class="fas fa-level-up-alt"></i>
+                  </span>
+                  <span>Boost Priority</span>
+                </button>
               </div>
-              <div class="buttons is-centered">
-                <button class="button has-text-weight-semibold has-background-white-ter">Close Ticket</button>
-                <div class="button has-background-white-ter has-text-weight-semibold">Update&nbsp;&amp;&nbsp;Close</div>
-                <div class="button has-text-weight-semibold is-link">Update</div>
-
+              <div class="column is-one-quarter">
+                <button class="button is-fullwidth has-text-weight-semibold has-background-grey-lighter">
+                  <span class="icon is-small">
+                    <i class="fas fa-exchange-alt"></i>
+                  </span>
+                  <span>Change Department</span>
+                </button>
+              </div>
+              <div class="column is-one-quarter">
+                <button class="button is-fullwidth has-text-weight-semibold has-background-grey-lighter">
+                  <span class="icon is-small">
+                    <i class="fas fa-angle-double-up"></i>
+                  </span>
+                  <span>
+                    Escalate Level
+                  </span>
+                  <span class="button-count">3</span>
+                </button>
+              </div>
+              <div class="column is-one-quarter">
+                <button id="modal-suspend-ticket" class="button is-fullwidth has-text-weight-semibold is-danger">
+                  <span class="icon is-small">
+                    <i class="fas fa-lock"></i>
+                  </span>
+                  <span>Suspend Ticket</span>
+                </button>
               </div>
             </div>
+          </div>
+          <div class="tabs is-boxed" id="tab-root-override">
+            <ul id="tab-ul-override">
+              <li class="is-active">
+                <a id="tab-active-override">
+                  <span class="icon is-small">
+                    <i class="fas fa-pencil-alt"></i>
+                  </span>
+                  <span>Write</span>
+                </a>
+              </li>
+              <li>
+                <a id="tab-override">
+                  <span class="icon is-small">
+                    <i class="far fa-eye"></i>
+                  </span>
+                  <span>Preview</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div id="reply" class="message-container">
+            <div class="columns">
+              <div class="column is-12">
+                <div class="field">
+                  <div class="label" id="message-label">
+                    <label id="message-label">Message</label>
+                    <div class="button modal-preview-templates">Template</div>
+                  </div>
+                  <div class="control">
+                    <textarea class="textarea input-message placeholders" placeholder="Leave your comments here"></textarea>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="columns">
+              <div class="column is-12">
+                <div class="field">
+                  <div class="control">
+                    <label class="label">Private Message</label>
+                    <textarea class="textarea input-message" rows="5" placeholder="Use this field to pass secure information"></textarea>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="columns">
+              <div class="field column is-narrow">
+                <label class="label">Attachments</label>
+                <div class="control">
+                  <div class="file">
+                    <label class="file-label">
+                      <input id="input-file-new-ticket" class="file-input" type="file" multiple name="resume">
+                      <span class="file-cta">
+                        <span class="file-icon">
+                          <i class="fas fa-upload"></i>
+                        </span>
+                        <span class="file-label">
+                          Choose a file…
+                        </span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-hidden" id="file-attachments">
+                <div class="field">
+                  <label class="label">Attached Files:</label>
+                  <div class="control buttons" id="file-attachments-container">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="buttons is-centered">
+            <button class="button has-text-weight-semibold has-background-white-ter">Close Ticket</button>
+            <div class="button has-background-white-ter has-text-weight-semibold">Update&nbsp;&amp;&nbsp;Close</div>
+            <div class="button has-text-weight-semibold is-link">Update</div>
+
           </div>
 
         </div>

@@ -234,6 +234,7 @@ pre {
 }
 
 /* TODO: Placeholder for left arrow */
+
 #left-arrow {
   position: absolute;
   top: 50px;
@@ -246,7 +247,8 @@ pre {
   border: 1px solid #d1d1d1;
   background-color: #fcfcfc;
   border-radius: 0 0 5px 5px;
-  padding: 1.5rem; /* to negate the negative margin of columns */
+  padding: 1.5rem;
+  /* to negate the negative margin of columns */
   border-top: none;
   margin-bottom: 0.9rem;
 }
@@ -260,6 +262,20 @@ pre {
   border-radius: 5px;
 }
 
+.button-count {
+  background-color: #ffffff;
+  border-left: 1px solid black;
+  margin-left: auto;
+  height: 100%;
+  border-radius: 0 4px 4px 0;
+  /* margin-top: calc(.375em - 2.5px); */
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  /* padding-top: calc(.375em - 2.5px); */
+  font-weight: 300;
+  border: 1px solid white;
+}
+
 .staff-template-preview-icon {
   cursor: pointer;
 }
@@ -269,7 +285,7 @@ pre {
   background-color: #fff;
 }
 
-.staff-template-preview > .notification {
+.staff-template-preview>.notification {
   border-radius: 0 0 4px 4px;
   margin-bottom: 0.6rem;
   padding: 1.25rem 0.4rem 1.25rem 2.75rem;
