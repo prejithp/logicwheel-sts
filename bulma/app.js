@@ -161,8 +161,6 @@ $(function () {
 
   // listener on x buttons in departments which triggers confirmation delete department modal
   $('.delete-department').click(function () {
-    console.log('test');
-
     $('#modal-delete-department-root').addClass('is-active');
   });
 
@@ -226,6 +224,10 @@ $(function () {
   $('.btn-shrink-preview').click(function () {
     $(this).parents('tr').addClass('is-hidden')
     $(this).parents('tr').prev('tr').removeClass('staff-template-selected')
+  })
+
+  $('#modal-suspend-ticket').click(function() {
+    $('#modal-suspend-root').addClass('is-active');    
   })
 
   $(window).resize(function () {

@@ -18,6 +18,7 @@
 
   <div id="modal-change-password-container"></div>
 
+  <!-- modal to list templates -->
   <div class="modal" id="modal-template-root">
     <div class="modal-background"></div>
     <div class="modal-card" id="template-modal">
@@ -208,6 +209,39 @@
         <button class="button has-background-grey-lighter has-text-weight-semibold modal-close-btn">Cancel</button>
       </footer>
     </div>
+  </div>
+
+  <!-- modal to supsend ticket -->
+	<div class="modal" id="modal-suspend-root">
+		<div class="modal-background"></div>
+		<div class="modal-card">
+			<header class="modal-card-head">
+				<p class="modal-card-title">Suspend Ticket</p>
+				<button class="delete modal-close-btn" aria-label="close"></button>
+			</header>
+			<section class="modal-card-body">
+				<div class="content">
+					<p>
+						This is an irreversible operation. This ticket will be suspended, i.e, the customer and staff may no longer respond to this ticket and it will henceforth be in a locked stage
+					</p>
+
+					<p> Are you sure you want to perform this operation?
+						<br />Please type in
+						<strong>YES</strong> to confirm this action
+					</p>
+				</div>
+
+				<div class="field">
+					<div class="control">
+						<input id="modal-delete-user-field" type="text" class="input" autofocus>
+					</div>
+				</div>
+			</section>
+			<footer class="modal-card-foot">
+				<button id="btn-delete-user" class="button is-danger has-text-weight-semibold" disabled>Delete ticket</button>
+				<a class="button has-background-grey-lighter has-text-weight-semibold modal-close-btn">Cancel</a>
+			</footer>
+		</div>
   </div>
 
   <a href="#reply" id="reply-container">
@@ -609,10 +643,9 @@
               <!-- TODO: Placeholder for left arrow -->
               <span id="left-arrow"></span>
               <div class="staff-toolbox">
-                <!-- <span class="label">Staff Toolbox</span> -->
                 <div class="columns is-variable is-1">
                   <div class="column is-one-quarter">
-                    <button class="button is-fullwidth has-text-weight-semibold has-background-grey-lighter">
+                    <button class="button is-fullwidth has-text-weight-semibold  is-link">
                       <span class="icon is-small">
                         <i class="fas fa-level-up-alt"></i>
                       </span>
@@ -636,7 +669,7 @@
                     </button>
                   </div>
                   <div class="column is-one-quarter">
-                    <button class="button is-fullwidth has-text-weight-semibold has-background-grey-lighter">
+                    <button id="modal-suspend-ticket" class="button is-fullwidth has-text-weight-semibold is-danger">
                       <span class="icon is-small">
                         <i class="fas fa-lock"></i>
                       </span>
