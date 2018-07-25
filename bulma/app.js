@@ -262,6 +262,23 @@ $(function () {
     }
   })
   //==============================template view modal ==========================
-  
+ 
+  let linkicon = document.querySelectorAll(".link-icon");
+  for(let i=0;i<linkicon.length;i++){
+  linkicon[i].addEventListener("click",function(){
+    document.querySelector(".template-view").classList.add("is-active");
+  });
+}
+ 
+ 
+ // to remove the open modal
+ let bgclose = document.querySelector(".modal-background");
+ let btnclsoe = document.querySelector(".delete");
+ bgclose.addEventListener("click",function(){
+document.querySelector(".template-view").classList.remove("is-active");
+ });  
+ btnclsoe.addEventListener("click",function(){
+  document.querySelector(".template-view").classList.remove("is-active");
+ });
 
 });
