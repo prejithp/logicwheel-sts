@@ -246,7 +246,7 @@
   </div>
 
   <!-- modal to boost priority ticket -->
-  <div class="modal is-active" id="modal-suspend-root">
+  <div class="modal" id="modal-boost-priority-root">
     <div class="modal-background"></div>
     <div class="modal-card">
       <header class="modal-card-head">
@@ -274,6 +274,111 @@
                 <input type="radio" name="priority"> Critical
               </label>
             </div>
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-info has-text-weight-semibold">Confirm Changes</button>
+        <a class="button has-background-grey-lighter has-text-weight-semibold modal-close-btn">Cancel</a>
+      </footer>
+    </div>
+  </div>
+
+  <!-- modal to change department -->
+  <div class="modal" id="modal-change-department-root">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Change Deprtment</p>
+        <button class="delete modal-close-btn" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div class="content">
+          <p> This operation can be used to set the priority of this ticket
+          </p>
+
+          <div class="buttons">
+            <button class="button level is-mobile">
+              <span class="level-item">
+                <label class="radio">
+                  <input type="radio" name="department">
+                </label>
+              </span>
+              <span class="level-item has-text-weight-semibold">Household</span>
+            </button>
+            <button class="button level is-mobile">
+              <span class="level-item">
+                <label class="radio">
+                  <input type="radio" name="department">
+                </label>
+              </span>
+              <span class="level-item has-text-weight-semibold">Sever Handling</span>
+            </button>
+            <button class="button level is-mobile">
+              <span class="level-item">
+                <label class="radio">
+                  <input type="radio" name="department">
+                </label>
+              </span>
+              <span class="level-item has-text-weight-semibold">Cloud</span>
+            </button>
+            <button class="button level is-mobile">
+              <span class="level-item">
+                <label class="radio">
+                  <input type="radio" name="department">
+                </label>
+              </span>
+              <span class="level-item has-text-weight-semibold">Cloud</span>
+            </button>
+            <button class="button level is-mobile">
+              <span class="level-item">
+                <label class="radio">
+                  <input type="radio" name="department">
+                </label>
+              </span>
+              <span class="level-item has-text-weight-semibold">Super Compunting</span>
+            </button>
+            <button class="button level is-mobile">
+              <span class="level-item">
+                <label class="radio">
+                  <input type="radio" name="department">
+                </label>
+              </span>
+              <span class="level-item has-text-weight-semibold">Web Hosting</span>
+            </button>
+            <button class="button level is-mobile">
+              <span class="level-item">
+                <label class="radio">
+                  <input type="radio" name="department">
+                </label>
+              </span>
+              <span class="level-item has-text-weight-semibold">Domain Services</span>
+            </button>
+            <button class="button level is-mobile">
+              <span class="level-item">
+                <label class="radio">
+                  <input type="radio" name="department">
+                </label>
+              </span>
+              <span class="level-item has-text-weight-semibold">Networking</span>
+            </button>
+            <button class="button level is-mobile">
+              <span class="level-item">
+                <label class="radio">
+                  <input type="radio" name="department">
+                </label>
+              </span>
+              <span class="level-item has-text-weight-semibold">General check</span>
+            </button>
+            <button class="button level is-mobile">
+              <span class="level-item">
+                <label class="radio">
+                  <input type="radio" name="department">
+                </label>
+              </span>
+              <span class="level-item has-text-weight-semibold">Peripherals</span>
+            </button>
           </div>
         </div>
 
@@ -687,7 +792,7 @@
                 </button>
               </div>
               <div class="column is-one-quarter">
-                <button class="button is-fullwidth has-text-weight-semibold has-background-grey-lighter">
+                <button id="modal-change-department" class="button is-fullwidth has-text-weight-semibold has-background-grey-lighter">
                   <span class="icon is-small">
                     <i class="fas fa-exchange-alt"></i>
                   </span>
