@@ -782,8 +782,8 @@
           <!-- TODO: Placeholder for left arrow -->
           <span id="left-arrow"></span>
           <div class="staff-toolbox">
-            <div class="columns is-variable is-1">
-              <div class="column is-one-quarter">
+            <div class="columns is-variable is-1 is-multiline">
+              <div class="column is-one-quarter-desktop">
                 <button id="modal-boost-priority" class="button is-fullwidth has-text-weight-semibold  has-background-grey-lighter">
                   <span class="icon is-small">
                     <i class="fas fa-level-up-alt"></i>
@@ -791,26 +791,30 @@
                   <span>Boost Priority</span>
                 </button>
               </div>
-              <div class="column is-one-quarter">
+              <div class="column is-one-quarter-desktop is-half-tablet">
                 <button id="modal-change-department" class="button is-fullwidth has-text-weight-semibold has-background-grey-lighter">
                   <span class="icon is-small">
                     <i class="fas fa-exchange-alt"></i>
                   </span>
-                  <span>Change Department</span>
+                  <span>Change Dept</span>
                 </button>
               </div>
-              <div class="column is-one-quarter">
-                <button class="button is-fullwidth has-text-weight-semibold has-background-grey-lighter">
-                  <span class="icon is-small">
-                    <i class="fas fa-angle-double-up"></i>
+              <div class="column is-one-quarter-desktop is-half-tablet">
+                <button id="button-escalate" class="button is-fullwidth has-text-weight-semibold has-background-grey-lighter">
+                  <div class="empty">&nbsp;</div>
+                  <span class="button-escalate-text">
+                    <span class="icon is-small">
+                      <i class="fas fa-angle-double-up"></i>
+                    </span>
+                    <span>
+                      Escalate Level
+                    </span>
                   </span>
-                  <span>
-                    Escalate Level
-                  </span>
-                  <span class="button-count">3</span>
+
+                  <span class="button-count-field has-text-black">3</span>
                 </button>
               </div>
-              <div class="column is-one-quarter">
+              <div class="column is-one-quarter-desktop is-half-tablet">
                 <button id="modal-suspend-ticket" class="button is-fullwidth has-text-weight-semibold is-danger">
                   <span class="icon is-small">
                     <i class="fas fa-lock"></i>
