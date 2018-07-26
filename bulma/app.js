@@ -274,7 +274,6 @@ $(function () {
     if (!$(this).hasClass('is-success')) {
       $('#modal-escalate-ticket-root').addClass('is-active');
     }
-
   });
 
   //listener to disable/enable the escalate ticket button
@@ -305,6 +304,10 @@ $(function () {
   $('#preview-message').click(function () {
     $('#preview-message-box').siblings().addClass('is-hidden')
     $('#preview-message-box').removeClass('is-hidden')
+  })
+
+  $('.modal-delete-ticket').click(function() {
+    $('#modal-delete-root').addClass('is-active')
   })
 
   $(window).trigger('resize');
