@@ -257,9 +257,25 @@ $(function () {
       $(this).addClass('is-success');
       $(this).removeClass('has-background-grey-lighter');
       $(this).children('.button-count-field').text(Number(($(this).children('.button-count-field').text())) + 1)
-       
     }
   })
+
+  $('.tab-item').click(function () {
+    $(this).addClass('is-active')
+    $prevTabs = $(this).prevAll();
+    $nextTabs = $(this).nextAll();
+
+    $prevTabs.removeClass('is-active')
+    $prevTabs.children().attr('id', 'tab-override')
+
+    $nextTabs.removeClass('is-active')
+    $nextTabs.children().attr('id', 'tab-override')
+
+    $(this).addClass('is-active')
+    $(this).children().attr('id', 'tab-active-override')
+  })
+
+  
 
   $(window).trigger('resize');
 
@@ -283,15 +299,15 @@ $(function () {
     }
   })
   //==============================template view modal ==========================
- 
-// staff template view and display modal
-$('.staff-modal-preview-templates').click(function () {
-  $('#staff-modal-template-root').addClass('is-active');
-})
 
-// admin template view and remove modal
-$('.admin-modal-preview-templates').click(function () {
-  $('#admin-modal-template-root').addClass('is-active');
-})
+  // staff template view and display modal
+  $('.staff-modal-preview-templates').click(function () {
+    $('#staff-modal-template-root').addClass('is-active');
+  })
+
+  // admin template view and remove modal
+  $('.admin-modal-preview-templates').click(function () {
+    $('#admin-modal-template-root').addClass('is-active');
+  })
 
 });
