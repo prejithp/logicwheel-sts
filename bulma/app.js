@@ -248,17 +248,34 @@ $(function () {
     $('#modal-boost-priority-root').addClass('is-active')
   })
 
-  $('#button-escalate').click(function () {
-    if ($(this).hasClass('is-success')) {
-      $(this).removeClass('is-success');
-      $(this).addClass('has-background-grey-lighter');
-      $(this).children('.button-count-field').text(Number(($(this).children('.button-count-field').text())) - 1)
-    } else {
-      $(this).addClass('is-success');
-      $(this).removeClass('has-background-grey-lighter');
-      $(this).children('.button-count-field').text(Number(($(this).children('.button-count-field').text())) + 1)
-    }
+  $('#btn-escalate-ticket').click(function () {
+
+    $escalateButton = $('#button-escalate')
+    $escalateButton.addClass('is-success');
+    $escalateButton.css('pointer-events', 'none');
+    $escalateButton.removeClass('has-background-grey-lighter');
+    $escalateButton.children('.button-count-field').text(Number(($escalateButton.children('.button-count-field').text())) + 1)
+
+    $('#modal-escalate-ticket-root').removeClass('is-active');
+
   })
+
+  // listener for escalate ticket button
+  $('.modal-escalate-ticket').click(function () {
+    if (!$(this).hasClass('is-success')) {
+      $('#modal-escalate-ticket-root').addClass('is-active');
+    }
+
+  });
+
+  //listener to disable/enable the escalate ticket button
+  $('#modal-escalate-ticket-field').keyup(function () {
+    if ($(this).val().toLowerCase() !== '') {
+      $('#btn-escalate-ticket').attr('disabled', false)
+    } else {
+      $('#btn-escalate-ticket').attr('disabled', true);
+    }
+  });
 
   $('.tab-item').click(function () {
     $(this).addClass('is-active')
@@ -271,12 +288,12 @@ $(function () {
     $(this).children().attr('id', 'tab-active-override')
   })
 
-  $('#write-message ').click(function() {
+  $('#write-message ').click(function () {
     $('#write-message-box').siblings().addClass('is-hidden')
     $('#write-message-box').removeClass('is-hidden')
   })
 
-  $('#preview-message').click(function() {
+  $('#preview-message').click(function () {
     $('#preview-message-box').siblings().addClass('is-hidden')
     $('#preview-message-box').removeClass('is-hidden')
   })

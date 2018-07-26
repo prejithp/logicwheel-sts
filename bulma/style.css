@@ -248,9 +248,9 @@ pre {
   background-color: #fcfcfc;
   border-radius: 0 0 5px 5px;
   padding: 1.5rem;
-  /* to negate the negative margin of columns */
   border-top: none;
   margin-bottom: 0.9rem;
+  min-height: 300px
 }
 
 .staff-toolbox {
