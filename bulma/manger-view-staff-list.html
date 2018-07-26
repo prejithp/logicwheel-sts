@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ticket List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css' />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+</head>
+
+<body>
+  <div id="navbar-user"></div>
+
+  <!-- modal to change passwords to be loaded async -->
+  <div id="modal-change-password-container"></div>
+
+  <section class="section breadcrumb-padding">
+    <nav class="container breadcrumb">
+      <ul>
+        <li>
+          <a href="./user-dash-homepage.html">Home</a>
+        </li>
+        <li>
+          <a href="./user-ticket-list.html">Staff</a>
+        </li>
+        <li class="is-active">
+          <a href="#">Staff list</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+  <section id="root" class="section hero is-light section-reduce-padding">
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+        <section class="title is-size-3 has-text-left title-padding section-reduce-padding">
+          <div class="columns">
+          <span class="column">
+            Staff List
+          </span>
+          <span class="column is-narrow" style="justify-content: flex-end">
+            <span class=" is-size-6" style="position: relative; bottom: 0.3rem;font-weight: 500;"> Department</span>
+            <span class="field">
+              
+              <span class="control">
+                <div class="select">
+                  <select>
+                    <option>Hosting</option>
+                    <option>Domain Services</option>
+                    <option>Cloud Services</option>
+                  </select>
+                </div>
+              </span>
+            </span>
+          </span>
+        </div>
+        </section>
+
+        <div class="box">
+
+          <div class="table-container">
+            <table class="table is-striped is-hoverable is-fullwidth">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Phone No</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>hs132</td>
+                  <td>Ramesh Kumar Yadhav</td>
+                  <td>
+                    <a href="mailto:rameshkumar67@gmail.com">rameshkumar67@gmail.com</a>
+                  </td>
+                  <td>
+                    <a href="tel">9852145546</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>hs234</td>
+                  <td>Sudhish Nair</td>
+                  <td>
+                    <a href="mailto:pandey@gmail.com"> pandey@gmail.com </a>
+                  </td>
+                  <td>
+                    <a href="tel"> 9852187445</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>hs675</td>
+                  <td>Prejith shukala</td>
+                  <td>
+                    <a href="shukala@gmail.com"> shukala@gmail.com</a>
+                  </td>
+                  <td>
+                    <a href="tel"> 9846852117</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>hs885</td>
+                  <td>Ram prasad</td>
+                  <td>
+                    <a href="ramprasad35@gmail.com">ramprasad35@gmail.com</a>
+                  </td>
+                  <td>
+                    <a href="tel">8265452152</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>hs451</td>
+                  <td>Ramu</td>
+                  <td>
+                    <a href="ramu.ramu@gmail.com"> ramu.ramu@gmail.com</a>
+                  </td>
+                  <td>
+                    <a href="tel"> 864597812</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>hs132</td>
+                  <td>Ramesh Kumar Yadhav</td>
+                  <td>
+                    <a href="rameshkumar67@gmail.com"> rameshkumar67@gmail.com</a>
+                  </td>
+                  <td>
+                    <a href="tel"> 9852145546</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>hs234</td>
+                  <td>Sudhish Nair</td>
+                  <td>
+                    <a href="pandey@gmail.com"> pandey@gmail.com</a>
+                  </td>
+                  <td>
+                    <a href="tel"> 9852187445</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>hs675</td>
+                  <td>Prejith shukala</td>
+                  <td>
+                    <a href="shukala@gmail.com"> shukala@gmail.com</a>
+                  </td>
+                  <td>
+                    <a href="tel"> 9846852117</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>hs885</td>
+                  <td>Ram prasad</td>
+                  <td>
+                    <a href="ramprasad35@gmail.com"> ramprasad35@gmail.com</a>
+                  </td>
+                  <td>
+                    <a href="tel"> 8265452152</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>hs451</td>
+                  <td>Ramu</td>
+                  <td>
+                    <a href="ramu.ramu@gmail.com "> ramu.ramu@gmail.com </a>
+                  </td>
+                  <td>
+                    <a href="tel"> 864597812</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="columns is-centered">
+            <div class="column is-narrow">
+              <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+                <a class="pagination-previous  has-background-white-ter">
+                  <i class="fas fa-less-than"></i>
+                  <i class="fas fa-less-than"></i>
+                </a>
+                <a class="pagination-previous is-hidden-mobile has-background-white-ter">
+                  <i class="fas fa-less-than"></i>
+                </a>
+                <a class="pagination-next is-hidden-mobile has-background-white-ter">
+                  <i class="fas fa-greater-than"></i>
+                </a>
+                <a class="pagination-next has-background-white-ter">
+                  <i class="fas fa-greater-than"></i>
+                  <i class="fas fa-greater-than"></i>
+                </a>
+                <ul class="pagination-list">
+                  <li class="is-hidden-mobile">
+                    <button class="pagination-spacer">&nbsp;</button>
+                  </li>
+                  <li>
+                    <a class="pagination-link" aria-label="Goto page 45">1</a>
+                  </li>
+                  <li>
+                    <a class="pagination-link" aria-label="Goto page 45">2</a>
+                  </li>
+                  <li>
+                    <a class="pagination-link is-current" style="color: white" aria-label="Page 46" aria-current="page">3</a>
+                  </li>
+                  <li>
+                    <a class="pagination-link" aria-label="Goto page 47">4</a>
+                  </li>
+                  <li>
+                    <a class="pagination-link" aria-label="Goto page 45">5</a>
+                  </li>
+                  <li class="is-hidden-mobile">
+                    <button class="pagination-spacer">&nbsp;</button>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+  </script>
+</body>
+
+</html>
