@@ -160,11 +160,11 @@ $(function () {
   });
 
   //listener to disable/enable the delete user button in delete users modal
-  $('#modal-delete-user-field').keyup(function () {
+  $('#modal-dangerous-field').keyup(function () {
     if ($(this).val().toLowerCase() === 'yes') {
-      $('#btn-delete-user').attr('disabled', false)
+      $('#btn-danger').attr('disabled', false)
     } else {
-      $('#btn-delete-user').attr('disabled', true);
+      $('#btn-danger').attr('disabled', true);
     }
   });
 

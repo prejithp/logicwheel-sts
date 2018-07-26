@@ -14,9 +14,447 @@
 </head>
 
 <body>
-  <div id="navbar"></div>
+  <div id="navbar-staff"></div>
 
   <div id="modal-change-password-container"></div>
+
+  <!-- modal to list templates -->
+  <div class="modal" id="modal-template-root">
+    <div class="modal-background"></div>
+    <div class="modal-card" id="template-modal">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Choose template</p>
+      </header>
+      <div class="modal-card-body">
+        <div class="table-container">
+          <table class="table is-hoverable is-fullwidth">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Keyboard Code</th>
+                <th>Subject</th>
+                <th>Department</th>
+                <th class="is-hidden-mobile"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="template-item-row">
+                <td>
+                  <input type="radio" class="radio" name="template">
+                </td>
+                <td>m+m</td>
+                <td>Closing template with suspend reason</td>
+                <td>Software</td>
+                <td class="staff-template-preview-icon is-hidden-mobile">
+                  <i class="fas fa-external-link-alt"></i>
+                </td>
+              </tr>
+              <tr class="is-hidden">
+                <td class="staff-template-preview" colspan="5">
+                  <div class="notification">
+                    Hi #name,
+                    <br> Welcome to Customer Support of ABC Limited Corp. Please state your problem in more detail and attach
+                    more logs so that we may solve your problem. Thank you for your cooperation
+                    <div class="buttons is-right">
+                      <div class="button has-text-weight-semibold btn-shrink-preview">Shrink</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="template-item-row">
+                <td>
+                  <input type="radio" class="radio" name="template">
+                </td>
+                <td>r+m</td>
+                <td>Welcome template</td>
+                <td>Hardware & Billing</td>
+                <td class="staff-template-preview-icon is-hidden-mobile">
+                  <i class="fas fa-external-link-alt"></i>
+                </td>
+              </tr>
+              <tr class="is-hidden">
+                <td class="staff-template-preview" colspan="5">
+                  <div class="notification">
+                    Hi #name,
+                    <br> Welcome to Customer Support of ABC Limited Corp. Please state your problem in more detail and attach
+                    more logs so that we may solve your problem. Thank you for your cooperation
+                    <div class="buttons is-right">
+                      <div class="button has-text-weight-semibold btn-shrink-preview">Shrink</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="template-item-row">
+                <td>
+                  <input type="radio" class="radio" name="template">
+                </td>
+                <td>w+l</td>
+                <td>Usual tempate</td>
+                <td>Software</td>
+                <td class="staff-template-preview-icon is-hidden-mobile">
+                  <i class="fas fa-external-link-alt"></i>
+                </td>
+              </tr>
+              <tr class="is-hidden">
+                <td class="staff-template-preview" colspan="5">
+                  <div class="notification">
+                    Hi #name,
+                    <br> Welcome to Customer Support of ABC Limited Corp. Please state your problem in more detail and attach
+                    more logs so that we may solve your problem. Thank you for your cooperation
+                    <div class="buttons is-right">
+                      <div class="button has-text-weight-semibold btn-shrink-preview">Shrink</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="template-item-row">
+                <td>
+                  <input type="radio" class="radio" name="template">
+                </td>
+                <td>e</td>
+                <td>Computer not switching on</td>
+                <td>Hardware</td>
+                <td class="staff-template-preview-icon is-hidden-mobile">
+                  <i class="fas fa-external-link-alt"></i>
+                </td>
+              </tr>
+              <tr class="is-hidden">
+                <td class="staff-template-preview" colspan="5">
+                  <div class="notification">
+                    Hi #name,
+                    <br> Welcome to Customer Support of ABC Limited Corp. Please state your problem in more detail and attach
+                    more logs so that we may solve your problem. Thank you for your cooperation
+                    <div class="buttons is-right">
+                      <div class="button has-text-weight-semibold btn-shrink-preview">Shrink</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="template-item-row">
+                <td>
+                  <input type="radio" class="radio" name="template">
+                </td>
+                <td>f+d</td>
+                <td> Lorem ipsum dolor, sit amet consectetur </td>
+                <td>Hardware</td>
+                <td class="staff-template-preview-icon is-hidden-mobile">
+                  <i class="fas fa-external-link-alt"></i>
+                </td>
+              </tr>
+              <tr class="is-hidden">
+                <td class="staff-template-preview" colspan="5">
+                  <div class="notification">
+                    Hi #name,
+                    <br> Welcome to Customer Support of ABC Limited Corp. Please state your problem in more detail and attach
+                    more logs so that we may solve your problem. Thank you for your cooperation
+                    <div class="buttons is-right">
+                      <div class="button has-text-weight-semibold btn-shrink-preview">Shrink</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="template-item-row">
+                <td>
+                  <input type="radio" class="radio" name="template">
+                </td>
+                <td>e</td>
+                <td>Computer not switching on</td>
+                <td>Hardware</td>
+                <td class="staff-template-preview-icon is-hidden-mobile">
+                  <i class="fas fa-external-link-alt"></i>
+                </td>
+              </tr>
+              <tr class="is-hidden">
+                <td class="staff-template-preview" colspan="5">
+                  <div class="notification">
+                    Hi #name,
+                    <br> Welcome to Customer Support of ABC Limited Corp. Please state your problem in more detail and attach
+                    more logs so that we may solve your problem. Thank you for your cooperation
+                    <div class="buttons is-right">
+                      <div class="button has-text-weight-semibold btn-shrink-preview">Shrink</div>
+                    </div>
+                  </div>
+                </td>
+
+              </tr>
+              <tr class="template-item-row">
+                <td>
+                  <input type="radio" class="radio" name="template">
+                </td>
+                <td>f+d</td>
+                <td> Lorem ipsum dolor, sit amet consectetur adipisicing elit</td>
+                <td>Hardware</td>
+                <td class="staff-template-preview-icon is-hidden-mobile">
+                  <i class="fas fa-external-link-alt"></i>
+                </td>
+              </tr>
+              <tr class="is-hidden">
+                <td class="staff-template-preview" colspan="5">
+                  <div class="notification">
+                    Hi #name,
+                    <br> Welcome to Customer Support of ABC Limited Corp. Please state your problem in more detail and attach
+                    more logs so that we may solve your problem. Thank you for your cooperation
+                    <div class="buttons is-right">
+                      <div class="button has-text-weight-semibold btn-shrink-preview">Shrink</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <footer class="modal-card-foot buttons is-right">
+        <button class="button is-link has-text-weight-semibold">Apply Template</button>
+        <button class="button has-background-grey-lighter has-text-weight-semibold modal-close-btn">Cancel</button>
+      </footer>
+    </div>
+  </div>
+
+  <!-- modal to suspend ticket -->
+  <div class="modal" id="modal-suspend-root">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Suspend Ticket</p>
+        <button class="delete modal-close-btn" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div class="content">
+          <p>
+            This is an irreversible operation. This ticket will be suspended, i.e, the customer and staff may no longer respond to this
+            ticket and it will henceforth be in a locked stage
+          </p>
+
+          <p> Are you sure you want to perform this operation?
+            <br />Please type in
+            <strong>YES</strong> to confirm this action
+          </p>
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <input id="modal-dangerous-field" type="text" class="input" autofocus>
+          </div>
+        </div>
+      </section>
+      <footer class="modal-card-foot">
+        <button id="btn-danger" class="button is-danger has-text-weight-semibold" disabled>Suspend ticket</button>
+        <a class="button has-background-grey-lighter has-text-weight-semibold modal-close-btn">Cancel</a>
+      </footer>
+    </div>
+  </div>
+
+  <!-- modal to boost priority ticket -->
+  <div class="modal" id="modal-boost-priority-root">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Boost Priority</p>
+        <button class="delete modal-close-btn" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div class="content">
+          <p> This operation can be used to set the priority of this ticket
+          </p>
+
+          <div class="field">
+            <label class="label">Set Priority</label>
+            <div class="control">
+              <label class="radio">
+                <input type="radio" name="priority" checked> None
+              </label>
+              <label class="radio">
+                <input type="radio" name="priority"> Recommended
+              </label>
+              <label class="radio">
+                <input type="radio" name="priority"> Emergency
+              </label>
+              <label class="radio">
+                <input type="radio" name="priority"> Critical
+              </label>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-info has-text-weight-semibold">Confirm Changes</button>
+        <a class="button has-background-grey-lighter has-text-weight-semibold modal-close-btn">Cancel</a>
+      </footer>
+    </div>
+  </div>
+
+  <!-- modal to change department -->
+  <div class="modal" id="modal-change-department-root">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Change Deprtment</p>
+        <button class="delete modal-close-btn" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div class="content">
+          <p> This operation can be used to set the priority of this ticket
+          </p>
+
+          <div class="buttons">
+            <button class="button level is-mobile">
+              <span class="level-item">
+                <label class="radio">
+                  <input type="radio" name="department">
+                </label>
+              </span>
+              <span class="level-item has-text-weight-semibold">Household</span>
+            </button>
+            <button class="button level is-mobile">
+              <span class="level-item">
+                <label class="radio">
+                  <input type="radio" name="department">
+                </label>
+              </span>
+              <span class="level-item has-text-weight-semibold">Sever Handling</span>
+            </button>
+            <button class="button level is-mobile">
+              <span class="level-item">
+                <label class="radio">
+                  <input type="radio" name="department">
+                </label>
+              </span>
+              <span class="level-item has-text-weight-semibold">Cloud</span>
+            </button>
+            <button class="button level is-mobile">
+              <span class="level-item">
+                <label class="radio">
+                  <input type="radio" name="department">
+                </label>
+              </span>
+              <span class="level-item has-text-weight-semibold">Cloud</span>
+            </button>
+            <button class="button level is-mobile">
+              <span class="level-item">
+                <label class="radio">
+                  <input type="radio" name="department">
+                </label>
+              </span>
+              <span class="level-item has-text-weight-semibold">Super Compunting</span>
+            </button>
+            <button class="button level is-mobile">
+              <span class="level-item">
+                <label class="radio">
+                  <input type="radio" name="department">
+                </label>
+              </span>
+              <span class="level-item has-text-weight-semibold">Web Hosting</span>
+            </button>
+            <button class="button level is-mobile">
+              <span class="level-item">
+                <label class="radio">
+                  <input type="radio" name="department">
+                </label>
+              </span>
+              <span class="level-item has-text-weight-semibold">Domain Services</span>
+            </button>
+            <button class="button level is-mobile">
+              <span class="level-item">
+                <label class="radio">
+                  <input type="radio" name="department">
+                </label>
+              </span>
+              <span class="level-item has-text-weight-semibold">Networking</span>
+            </button>
+            <button class="button level is-mobile">
+              <span class="level-item">
+                <label class="radio">
+                  <input type="radio" name="department">
+                </label>
+              </span>
+              <span class="level-item has-text-weight-semibold">General check</span>
+            </button>
+            <button class="button level is-mobile">
+              <span class="level-item">
+                <label class="radio">
+                  <input type="radio" name="department">
+                </label>
+              </span>
+              <span class="level-item has-text-weight-semibold">Peripherals</span>
+            </button>
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-info has-text-weight-semibold">Confirm Changes</button>
+        <a class="button has-background-grey-lighter has-text-weight-semibold modal-close-btn">Cancel</a>
+      </footer>
+    </div>
+  </div>
+
+  <!-- modal to escalate tickets -->
+  <div class="modal" id="modal-escalate-ticket-root">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Escalate Ticket</p>
+        <button class="delete modal-close-btn" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div class="content">
+          <p>
+            This is an irreversible operation. This ticket will be escalated to the next level of authority
+          </p>
+
+          <p> Please enter the
+            <strong>reason</strong> for escalation
+          </p>
+
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <input id="modal-escalate-ticket-field" type="text" class="input" autofocus>
+          </div>
+        </div>
+      </section>
+      <footer class="modal-card-foot">
+        <button id="btn-escalate-ticket" class="button is-info has-text-weight-semibold" disabled>Escalate ticket</button>
+        <a class="button has-background-grey-lighter has-text-weight-semibold modal-close-btn">Cancel</a>
+      </footer>
+    </div>
+  </div>
+
+  <!-- modal to delete ticket -->
+  <div class="modal" id="modal-delete-root">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Delete Ticket</p>
+        <button class="delete modal-close-btn" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div class="content">
+          <p>
+            This is an irreversible operation. This ticket will be deleted, i.e. the ticket and all its posts and details will be erased from the database leaving no history of this ticket
+          </p>
+
+          <p> Are you sure you want to perform this operation?
+            <br />Please type in
+            <strong>YES</strong> to confirm this action
+          </p>
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <input id="modal-dangerous-field" type="text" class="input" autofocus>
+          </div>
+        </div>
+      </section>
+      <footer class="modal-card-foot">
+        <button id="btn-danger" class="button is-danger has-text-weight-semibold" disabled>Suspend ticket</button>
+        <a class="button has-background-grey-lighter has-text-weight-semibold modal-close-btn">Cancel</a>
+      </footer>
+    </div>
+  </div>
 
   <a href="#reply" id="reply-container">
     <span class="icon center-in-parent">
@@ -127,6 +565,13 @@
               </div>
             </div>
             <div class="column is-narrow is-hidden-touch">
+              <div class="buttons has-text-centered post-btn-aligner">
+                <button class="button is-danger">
+                  <i class="fas fa-trash-alt"></i>
+                </button>
+              </div>
+            </div>
+            <div class="column is-narrow is-hidden-touch">
               <div class="buttons has-addons has-text-centered post-btn-aligner">
                 <button class="button is-active is-link">
                   <i class="fas fa-arrow-up"></i>
@@ -141,7 +586,12 @@
             </div>
           </div>
           <div class="columns is-mobile is-hidden-desktop">
-            <div class="column">
+            <div class="column is-narrow">
+              <button class="button is-danger">
+                <i class="fas fa-trash-alt"></i>
+              </button>
+            </div>
+            <div class="column has-text-left">
               <div class="buttons has-addons">
                 <button class="button is-active is-link">
                   <i class="fas fa-arrow-up"></i>
@@ -406,139 +856,135 @@
             </div>
           </div>
           <hr>
-          <div class="columns is-variable is-2">
-            <div class="column is-narrow is-hidden-mobile">
-              <label class="label">&nbsp;</label>
-              <figure class="image is-64x64">
-                <img class="rounded-image" src="../1.jpg">
-              </figure>
+
+          <!-- TODO: Placeholder for left arrow -->
+          <span id="left-arrow"></span>
+          <div class="staff-toolbox">
+            <div class="columns is-variable is-1 is-multiline">
+              <div class="column is-one-quarter-desktop">
+                <button id="modal-boost-priority" class="button is-fullwidth has-text-weight-semibold  has-background-grey-lighter">
+                  <span class="icon is-small">
+                    <i class="fas fa-level-up-alt"></i>
+                  </span>
+                  <span>Boost Priority</span>
+                </button>
+              </div>
+              <div class="column is-one-quarter-desktop is-half-tablet">
+                <button id="modal-change-department" class="button is-fullwidth has-text-weight-semibold has-background-grey-lighter">
+                  <span class="icon is-small">
+                    <i class="fas fa-exchange-alt"></i>
+                  </span>
+                  <span>Change Dept</span>
+                </button>
+              </div>
+              <div class="column is-one-quarter-desktop is-half-tablet">
+                <button id="button-escalate" class="button is-fullwidth has-text-weight-semibold has-background-grey-lighter modal-escalate-ticket">
+                  <div class="empty">&nbsp;</div>
+                  <span class="button-escalate-text">
+                    <span class="icon is-small">
+                      <i class="fas fa-angle-double-up"></i>
+                    </span>
+                    <span>
+                      Escalate Level
+                    </span>
+                  </span>
+
+                  <span class="button-count-field has-text-black">3</span>
+                </button>
+              </div>
+              <div class="column is-one-quarter-desktop is-half-tablet">
+                <button id="modal-suspend-ticket" class="button is-fullwidth has-text-weight-semibold is-danger">
+                  <span class="icon is-small">
+                    <i class="fas fa-lock"></i>
+                  </span>
+                  <span>Suspend Ticket</span>
+                </button>
+              </div>
             </div>
-            <div class="column">
-              <!-- TODO: Placeholder for left arrow -->
-              <span id="left-arrow"></span>
-              <div class="staff-toolbox">
-                <div class="columns">
-                    <div class="field is-expanded column is-one-quarter">
-                    <label class="label">Boost Priority</label>
+          </div>
+          <div class="tabs is-boxed" id="tab-root-override">
+            <ul id="tab-ul-override">
+              <li id="write-message" class="is-active tab-item">
+                <a id="tab-active-override">
+                  <span class="icon is-small">
+                    <i class="fas fa-pencil-alt"></i>
+                  </span>
+                  <span>Write</span>
+                </a>
+              </li>
+              <li id="preview-message" class="tab-item">
+                <a id="tab-override">
+                  <span class="icon is-small">
+                    <i class="far fa-eye"></i>
+                  </span>
+                  <span>Preview</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div id="reply">
+            <div id="write-message-box" class="message-container">
+              <div class="columns">
+                <div class="column is-12">
+                  <div class="field">
+                    <div class="label" id="message-label">
+                      <label id="message-label">Message</label>
+                      <div class="button modal-preview-templates">Template</div>
+                    </div>
                     <div class="control">
-                        <div class="select is-fullwidth">
-                          <select>
-                            <option>Low</option>
-                            <option>Normal</option>
-                            <option>Emergency</option>
-                            <option>Critical</option>
-                          </select>
-                      </div>
-                      </div>               
-                    </div>
-                    <div class="field is-expanded column is-one-quarter">
-                      <label for="" class="label">Department</label>
-                      <div class="control">
-                        <div class="select is-fullwidth">
-                          <select>
-                            <option>Web Handling</option>
-                            <option>Hosting</option>
-                            <option>Service Provider</option>
-                            <option>Domain Service</option>
-                            <option>Pheripherals</option>
-                            <option>Network</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="field is-expanded column is-one-quarter">
-                      <label for="" class="label">Suspend Ticket</label>
-                      <div class="control">
-                          <div class="select is-fullwidth">
-                            <select>
-                              <option>No</option>
-                              <option>Yes</option>
-                            </select>
-                          </div>
-                        </div>
-                    </div>
-
-                </div>
-              </div>
-              <div class="tabs is-boxed" id="tab-root-override">
-                <ul id="tab-ul-override">
-                  <li class="is-active">
-                    <a id="tab-active-override">
-                      <span class="icon is-small">
-                        <i class="fas fa-pencil-alt"></i>
-                      </span>
-                      <span>Write</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a id="tab-override">
-                      <span class="icon is-small">
-                        <i class="far fa-eye"></i>
-                      </span>
-                      <span>Preview</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div id="reply" class="message-container">
-                <div class="columns"></div>
-                <div class="columns">
-                  <div class="column is-12">
-                    <div class="field">
-                      <label class="label">Message</label>
-                      <div class="control">
-                        <textarea class="textarea input-message placeholders" placeholder="Leave your comments here"></textarea>
-                      </div>
+                      <textarea class="textarea input-message placeholders" placeholder="Leave your comments here"></textarea>
                     </div>
                   </div>
-
                 </div>
-                <div class="columns">
-                  <div class="column is-12">
-                    <div class="field">
-                      <div class="control">
-                        <label class="label">Private Message</label>
-                        <textarea class="textarea input-message" rows="5" placeholder="Use this field to pass secure information"></textarea>
-                      </div>
+
+              </div>
+              <div class="columns">
+                <div class="column is-12">
+                  <div class="field">
+                    <div class="control">
+                      <label class="label">Private Message</label>
+                      <textarea class="textarea input-message" rows="5" placeholder="Use this field to pass secure information"></textarea>
                     </div>
                   </div>
-
                 </div>
-                <div class="columns">
-                  <div class="field column is-narrow">
-                    <label class="label">Attachments</label>
-                    <div class="control">
-                      <div class="file">
-                        <label class="file-label">
-                          <input id="input-file-new-ticket" class="file-input" type="file" multiple name="resume">
-                          <span class="file-cta">
-                            <span class="file-icon">
-                              <i class="fas fa-upload"></i>
-                            </span>
-                            <span class="file-label">
-                              Choose a file…
-                            </span>
+
+              </div>
+              <div class="columns">
+                <div class="field column is-narrow">
+                  <label class="label">Attachments</label>
+                  <div class="control">
+                    <div class="file">
+                      <label class="file-label">
+                        <input id="input-file-new-ticket" class="file-input" type="file" multiple name="resume">
+                        <span class="file-cta">
+                          <span class="file-icon">
+                            <i class="fas fa-upload"></i>
                           </span>
-                        </label>
-                      </div>
+                          <span class="file-label">
+                            Choose a file…
+                          </span>
+                        </span>
+                      </label>
                     </div>
                   </div>
-                  <div class="column is-hidden" id="file-attachments">
-                    <div class="field">
-                      <label class="label">Attached Files:</label>
-                      <div class="control buttons" id="file-attachments-container">
-                      </div>
+                </div>
+                <div class="column is-hidden" id="file-attachments">
+                  <div class="field">
+                    <label class="label">Attached Files:</label>
+                    <div class="control buttons" id="file-attachments-container">
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="buttons is-centered">
-                <button class="button has-text-weight-semibold has-background-white-ter">Close Ticket</button>
-                <div class="button has-background-white-ter has-text-weight-semibold">Update&nbsp;&amp;&nbsp;Close</div>
-                <div class="button has-text-weight-semibold is-link">Update</div>
-
-              </div>
             </div>
+            <div id="preview-message-box" class="message-container is-hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, culpa delectus nobis odio ipsam iusto totam
+              maiores assumenda fuga tempore a quibusdam necessitatibus eos doloribus eum, aut ex vel. Doloremque? </div>
+          </div>
+          <div class="buttons is-centered">
+            <button class="button has-text-weight-semibold has-background-white-ter">Close Ticket</button>
+            <div class="button has-background-white-ter has-text-weight-semibold">Update&nbsp;&amp;&nbsp;Close</div>
+            <div class="button has-text-weight-semibold is-link">Update</div>
+
           </div>
 
         </div>
