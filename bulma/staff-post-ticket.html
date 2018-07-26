@@ -390,6 +390,38 @@
     </div>
   </div>
 
+  <!-- modal to escalate tickets -->
+  <div class="modal" id="modal-escalate-ticket-root">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Escalate Ticket</p>
+        <button class="delete modal-close-btn" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div class="content">
+          <p>
+            This is an irreversible operation. This ticket will be escalated to the next level of authority
+          </p>
+
+          <p> Please enter the <strong>reason</strong> for escalation
+          </p>
+          
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <input id="modal-escalate-ticket-field" type="text" class="input" autofocus>
+          </div>
+        </div>
+      </section>
+      <footer class="modal-card-foot">
+        <button id="btn-escalate-ticket" class="button is-info has-text-weight-semibold" disabled >Escalate ticket</button>
+        <a class="button has-background-grey-lighter has-text-weight-semibold modal-close-btn">Cancel</a>
+      </footer>
+    </div>
+  </div>
+
   <a href="#reply" id="reply-container">
     <span class="icon center-in-parent">
       <i class="fas fa-reply"></i>
@@ -800,7 +832,7 @@
                 </button>
               </div>
               <div class="column is-one-quarter-desktop is-half-tablet">
-                <button id="button-escalate" class="button is-fullwidth has-text-weight-semibold has-background-grey-lighter">
+                <button id="button-escalate" class="button is-fullwidth has-text-weight-semibold has-background-grey-lighter modal-escalate-ticket">
                   <div class="empty">&nbsp;</div>
                   <span class="button-escalate-text">
                     <span class="icon is-small">
@@ -899,7 +931,8 @@
                 </div>
               </div>
             </div>
-            <div id="preview-message-box" class="message-container is-hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, culpa delectus nobis odio ipsam iusto totam maiores assumenda fuga tempore a quibusdam necessitatibus eos doloribus eum, aut ex vel. Doloremque? </div>
+            <div id="preview-message-box" class="message-container is-hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, culpa delectus nobis odio ipsam iusto totam
+              maiores assumenda fuga tempore a quibusdam necessitatibus eos doloribus eum, aut ex vel. Doloremque? </div>
           </div>
           <div class="buttons is-centered">
             <button class="button has-text-weight-semibold has-background-white-ter">Close Ticket</button>
