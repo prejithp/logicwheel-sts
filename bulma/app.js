@@ -262,20 +262,24 @@ $(function () {
 
   $('.tab-item').click(function () {
     $(this).addClass('is-active')
-    $prevTabs = $(this).prevAll();
-    $nextTabs = $(this).nextAll();
+    $siblings = $(this).siblings();
 
-    $prevTabs.removeClass('is-active')
-    $prevTabs.children().attr('id', 'tab-override')
-
-    $nextTabs.removeClass('is-active')
-    $nextTabs.children().attr('id', 'tab-override')
+    $siblings.removeClass('is-active')
+    $siblings.children().attr('id', 'tab-override')
 
     $(this).addClass('is-active')
     $(this).children().attr('id', 'tab-active-override')
   })
 
-  
+  $('#write-message ').click(function() {
+    $('#write-message-box').siblings().addClass('is-hidden')
+    $('#write-message-box').removeClass('is-hidden')
+  })
+
+  $('#preview-message').click(function() {
+    $('#preview-message-box').siblings().addClass('is-hidden')
+    $('#preview-message-box').removeClass('is-hidden')
+  })
 
   $(window).trigger('resize');
 
