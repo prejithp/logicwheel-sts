@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ticket List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css' />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+</head>
+
+<body>
+  <div id="navbar-manager"></div>
+
+  <!-- modal to change passwords to be loaded async -->
+  <div id="modal-change-password-container"></div>
+
+  <section class="section breadcrumb-padding">
+    <nav class="container breadcrumb">
+      <ul>
+        <li>
+          <a href="client-dash-homepage.html">Home</a>
+        </li>
+        <li>
+          <a href="client-ticket-list.html">Department</a>
+        </li>
+        <li class="is-active">
+          <a href="#">All Departments</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+  <section id="root" class="section hero is-light section-reduce-padding">
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+        <section class="title is-size-3 has-text-left title-padding section-reduce-padding">
+          Department List
+        </section>
+
+        <div class="box">
+
+          <div class="table-container">
+            <table class="table is-striped is-hoverable is-fullwidth">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Manager Name</th>
+                  <th>Time of Update</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Computer not switching on</td>
+                  <td>Hyder Kutty</td>
+                  <td>19/04/18 12:00AM</td>
+                </tr>
+                <tr>
+                  <td>Computer not switching on</td>
+                  <td>Ramu Raja</td>
+                  <td>23/06/16 09:00AM</td>
+                </tr>
+                <tr>
+                  <td>Keyboard damaged</td>
+                  <td>Ramu Soman</td>
+                  <td>25/07/16 06:00PM</td>
+                </tr>
+                <tr>
+                  <td>Wifi not switching on</td>
+                  <td>Hari Sasi</td>
+                  <td>19/04/16 10:00AM</td>
+                </tr>
+                <tr>
+                  <td>Computer not switching on</td>
+                  <td>Shukla Raja</td>
+                  <td>19/04/18 12:00AM</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="columns is-centered">
+            <div class="column is-narrow">
+              <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+                <a class="pagination-previous  has-background-white-ter">
+                  <i class="fas fa-less-than"></i>
+                  <i class="fas fa-less-than"></i>
+                </a>
+                <a class="pagination-previous is-hidden-mobile has-background-white-ter">
+                  <i class="fas fa-less-than"></i>
+                </a>
+                <a class="pagination-next is-hidden-mobile has-background-white-ter">
+                  <i class="fas fa-greater-than"></i>
+                </a>
+                <a class="pagination-next has-background-white-ter">
+                  <i class="fas fa-greater-than"></i>
+                  <i class="fas fa-greater-than"></i>
+                </a>
+                <ul class="pagination-list">
+                  <li class="is-hidden-mobile">
+                    <button class="pagination-spacer">&nbsp;</button>
+                  </li>
+                  <li>
+                    <a class="pagination-link" aria-label="Goto page 45">1</a>
+                  </li>
+                  <li>
+                    <a class="pagination-link" aria-label="Goto page 45">2</a>
+                  </li>
+                  <li>
+                    <a class="pagination-link is-current" style="color: white" aria-label="Page 46" aria-current="page">3</a>
+                  </li>
+                  <li>
+                    <a class="pagination-link" aria-label="Goto page 47">4</a>
+                  </li>
+                  <li>
+                    <a class="pagination-link" aria-label="Goto page 45">5</a>
+                  </li>
+                  <li class="is-hidden-mobile">
+                    <button class="pagination-spacer">&nbsp;</button>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+  </script>
+</body>
+
+</html>

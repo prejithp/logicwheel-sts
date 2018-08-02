@@ -372,6 +372,16 @@ pre {
   font-weight: 500;
 }
 
+.modal-card-head {
+  color: white;
+  background-color:#209cee;
+}
+
+.modal-card-title {
+  color: white;
+  font-weight: 500;
+}
+
 /* TODO: Set max width on a containing block element to prevenet text overflow in smaller devices and tablets for extremely large names */
 
 @media only screen and (max-width: 600px) {
