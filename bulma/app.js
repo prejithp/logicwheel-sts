@@ -323,6 +323,10 @@ $(function () {
     $('#modal-delete-department-root').addClass('is-active')
   })
 
+  $('#modal-add-department').click(function() {
+    $('#modal-add-department-root').addClass('is-active')
+  })
+
   // ============ temp jQuery to showcase working of message ==================
   $('.btn-msg-sort-time').click(function () {
     if (!($(this).hasClass('is-active'))) {
