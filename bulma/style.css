@@ -382,6 +382,10 @@ pre {
   font-weight: 500;
 }
 
+.modal-footer-right {
+  justify-content: flex-end;
+}
+
 /* TODO: Set max width on a containing block element to prevenet text overflow in smaller devices and tablets for extremely large names */
 
 @media only screen and (max-width: 600px) {
