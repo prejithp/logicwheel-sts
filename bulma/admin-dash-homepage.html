@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Staff Dash</title>
+    <title>Admin Dash</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css' />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
@@ -28,7 +28,6 @@
             </ul>
         </nav>
     </section>
-    <!-- TODO: client list, ticket list, template list, msgs, settings -->
     <section class="section hero is-light section-reduce-padding-bottom is-hidden-touch">
         <div class="columns">
             <div class="column is-12">
@@ -36,14 +35,27 @@
                     <div class="column is-2">
                         <a href="./staff-assigned-tickets.html">
                             <div class="card dash-card">
-                                <span class="dash-badge">10</span>
                                 <div class="card-image dash-card-image">
                                     <figure class="image is-size-2 has-text-link">
-                                        <i class="far fa-clipboard staff-dash-inner-image"></i>
+                                        <i class="fas fa-users staff-dash-inner-image"></i>
                                     </figure>
                                 </div>
                                 <div class="card-content">
-                                    <div class="is-size-6 has-text-weight-bold">Assigned Tickets</div>
+                                    <div class="is-size-6 has-text-weight-bold">Client List</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="column is-2">
+                        <a href="./staff-attended-tickets.html">
+                            <div class="card dash-card">
+                                <div class="card-image dash-card-image">
+									<figure class="image is-size-2 has-text-info">
+										<i class="fas fa-file-alt dash-inner-image"></i>
+									</figure>
+								</div>
+                                <div class="card-content">
+                                    <div class="is-size-6 has-text-weight-bold">Ticket List</div>
                                 </div>
                             </div>
                         </a>
@@ -53,11 +65,11 @@
                             <div class="card dash-card">
                                 <div class="card-image dash-card-image">
                                     <figure class="image is-size-2 has-text-success">
-                                        <i class="fas fa-user-check dash-inner-image"></i>
+                                        <i class="fab fa-wpforms fa-fw"></i>
                                     </figure>
                                 </div>
                                 <div class="card-content">
-                                    <div class="is-size-6 has-text-weight-bold">Attended Tickets</div>
+                                    <div class="is-size-6 has-text-weight-bold">Template List</div>
                                 </div>
                             </div>
                         </a>
@@ -65,7 +77,6 @@
                     <div class="column is-2">
                         <a href="./staff-message.html">
                             <div class="card dash-card">
-                                <span class="dash-badge">4</span>
                                 <div class="card-image dash-card-image">
                                     <figure class="image is-size-2 has-text-info">
                                         <i class="far fa-envelope staff-dash-inner-image"></i>
