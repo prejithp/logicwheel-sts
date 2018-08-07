@@ -312,6 +312,17 @@ $(function () {
 
   $(window).trigger('resize');
 
+
+  // =================== ADMIN DEPARTMENT LIST ========================
+
+  $('.department-item').click(function() {
+    $('#modal-department-root').addClass('is-active')
+  })
+
+  $('#btn-delete-department').click(function() {
+    $('#modal-delete-department-root').addClass('is-active')
+  })
+
   // ============ temp jQuery to showcase working of message ==================
   $('.btn-msg-sort-time').click(function () {
     if (!($(this).hasClass('is-active'))) {
