@@ -1,4 +1,6 @@
-<div style="background: rgba(184, 221, 19, 0.911);height:0.4rem;"><center>---</center></div>
+<div style="background: rgba(184, 221, 19, 0.911);height:0.4rem;">
+	<center>---</center>
+</div>
 <nav class="navbar has-shadow is-spaced" role="navigation" aria-label="main navigation">
 	<div class="navbar-brand">
 		<a href="./staff-dashboard.html" class="navbar-item">
@@ -14,46 +16,13 @@
 		</a>
 	</div>
 	<div class="navbar-menu ">
-
 		<div class="navbar-start">
-
-			<div class="navbar-item has-dropdown is-hoverable">
-				<a href="./staff-attended-tickets.html" class="navbar-link">
-					<span class="icon is-large has-text-link">
-						<i class="fas fa-ticket-alt fa-lg"></i>
-					</span>
-					<span class="subtitle">Tickets</span>
-				</a>
-				<div class="navbar-dropdown">
-					<a href="./staff-assigned-tickets.html" class="navbar-item">
-						<div class="columns is-mobile is-variable is-2">
-							<div class="column is-narrow">
-								<span class="icon is-large has-text-purple is-size-6">
-									<i class="fas fa-clipboard fa-fw"></i>
-								</span>
-
-							</div>
-							<div class="column">
-								<strong>Assigned Tickets</strong>
-								<br> Reply to tickets assigned to you
-							</div>
-						</div>
-					</a>
-					<hr class="navbar-divider">
-					<a href="./staff-attended-tickets.html" class="navbar-item">
-						<div class="columns is-mobile is-variable is-2">
-							<div class="column is-narrow">
-								<span class="icon is-large has-text-success is-size-6">
-									<i class="fas fa-user-check fa-fw"></i>
-								</span>
-							</div>
-							<div class="column">
-								<strong>Attended Tickets</strong>
-								<br>Track all your attended tickets</div>
-						</div>
-					</a>
-				</div>
-			</div>
+			<a href="./staff-attended-tickets.html" class="navbar-item">
+				<span class="icon is-large has-text-link">
+					<i class="fas fa-ticket-alt fa-lg"></i>
+				</span>
+				<span class="subtitle">Tickets</span>
+			</a>
 			<div class="navbar-item has-dropdown is-hoverable">
 				<a href="./staff-template-list.html" class="navbar-link">
 					<span class="icon is-large has-text-primary">
@@ -79,7 +48,7 @@
 					<a href="./staff-template-list.html" class="navbar-item">
 						<nav class="columns is-mobile is-variable is-2">
 							<div class="column is-narrow">
-								<span class="icon is-large has-text-link is-size-6">
+								<span class="icon is-large has-text-success is-size-6">
 									<i class="fab fa-wpforms fa-fw"></i>
 								</span>
 							</div>
@@ -92,11 +61,47 @@
 				</div>
 			</div>
 			<div class="navbar-item has-dropdown is-hoverable">
+				<a href="client-user-list.html" class="navbar-link">
+					<span class="icon is-large has-text-purple">
+						<i class="fas fa-users fa-lg"></i>
+					</span>
+					<span class="subtitle">Clients</span>
+				</a>
+				<div class="navbar-dropdown">
+					<a href="./client-new-user.html" class="navbar-item">
+						<nav class="columns is-mobile is-variable is-2">
+							<div class="column is-narrow">
+								<span class="icon is-large has-text-grey-dark is-size-6">
+									<i class="fas fa-user-edit fa-fw"></i>
+								</span>
+							</div>
+							<div class="column">
+								<strong>New Client</strong>
+								<br> Create New Client
+							</div>
+						</nav>
+					</a>
+					<hr class="navbar-divider">
+					<a href="client-user-list.html" class="navbar-item">
+						<nav class="columns is-mobile is-variable is-2">
+							<div class="column is-narrow">
+								<span class="icon is-large has-text-success is-size-6">
+									<i class="fas fa-address-card fa-fw"></i>
+								</span>
+							</div>
+							<div class="column">
+								<strong>List Clients</strong>
+								<br> View all clients
+							</div>
+						</nav>
+					</a>
+				</div>
+			</div>
+			<div class="navbar-item has-dropdown is-hoverable">
 				<a class="navbar-link">
 					<span class="icon is-large has-text-info">
 						<i class="fas fa-cog fa-lg "></i>
 					</span>
-					<span class="subtitle">Settings</span>
 				</a>
 				<div class="navbar-dropdown">
 					<a href="./staff-personal-preference.html" class="navbar-item">
@@ -150,7 +155,7 @@
 				<span class="icon is-large has-text-danger">
 					<i class="fas fa- fa-sign-out-alt fa-lg"></i>
 				</span>
-				<span class="subtitle">Logout</span>
+				<span class="subtitle is-hidden-desktop-only">Logout</span>
 			</a>
 		</div>
 	</div>

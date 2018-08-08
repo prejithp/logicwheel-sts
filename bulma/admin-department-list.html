@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Ticket List</title>
+  <title>Department List</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css' />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
@@ -14,10 +14,152 @@
 </head>
 
 <body>
-  <div id="navbar-manager"></div>
+  <div id="navbar-admin"></div>
 
   <!-- modal to change passwords to be loaded async -->
   <div id="modal-change-password-container"></div>
+
+  <!-- modal to show/edit details of a department -->
+  <div class="modal" id="modal-department-root">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title has-text-weight-semibold">Details</p>
+        <button class="delete modal-close-btn"></button>
+      </header>
+      <section class="modal-card-body">
+        <div class="columns">
+          <div class="column is-two-thirds">
+            <div class="field">
+              <label class="label">Department Name</label>
+              <div class="control">
+                <input type="text" class="input" value="Laptops">
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="field">
+              <label class="label">Created On</label>
+              <div class="control">
+                <input type="text" class="input" value="19-08-2018 10:21AM" disabled>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-narrow">
+            <div class="field">
+              <label class="label">Default Template</label>
+              <div class="control">
+                <div class="select">
+                  <select>
+                    <option>KB2015</option>
+                    <option>KA214</option>
+                    <option>PO053</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="field">
+              <label class="label">Manager Name</label>
+              <div class="control">
+                <input type="text" class="input" value="Hari Sankar">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="modal-card-foot buttons is-right">
+        <button class="button is-info has-text-weight-semibold">OK</button>
+        <button class="button has-text-weight-semibold has-background-grey-lighter">Suspend</button>
+        <button id="btn-delete-department" class="button is-danger has-text-weight-semibold">Delete</button>
+      </footer>
+    </div>
+  </div>
+
+  <!-- modal to add a department -->
+  <div class="modal" id="modal-add-department-root">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title has-text-weight-semibold">Add Department</p>
+        <button class="delete modal-close-btn"></button>
+      </header>
+      <section class="modal-card-body">
+
+        <div class="field">
+          <label class="label">Department Name</label>
+          <div class="control">
+            <input type="text" class="input">
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-narrow">
+            <div class="field">
+              <label class="label">Default Template</label>
+              <div class="control">
+                <div class="select">
+                  <select>
+                    <option>KB2015</option>
+                    <option>KA214</option>
+                    <option>PO053</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="field">
+              <label class="label">Manager Name</label>
+              <div class="control">
+                <input type="text" class="input">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="modal-card-foot buttons is-right">
+        <button class="button is-info has-text-weight-semibold">Add</button>
+        <button class="button has-text-weight-semibold has-background-grey-lighter modal-close-btn">Cancel</button>
+      </footer>
+    </div>
+  </div>
+
+  <!-- modal to delete department -->
+  <div class="modal" id="modal-delete-department-root">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Delete department</p>
+        <button class="delete modal-close-btn" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div class="content">
+          <p>
+            This is an irreversible operation. This department will be deleted along with all the tickets assigned to it
+          </p>
+
+          <p> Are you sure you want to perform this operation?
+            <br />Please type in
+            <strong>YES</strong> to confirm this action
+          </p>
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <input id="modal-dangerous-field" type="text" class="input" autofocus>
+          </div>
+        </div>
+      </section>
+      <footer class="modal-card-foot buttons is-right">
+        <button id="btn-danger" class="button is-danger has-text-weight-semibold" disabled>Delete department</button>
+        <a class="button has-background-grey-lighter has-text-weight-semibold modal-close-btn">Cancel</a>
+      </footer>
+    </div>
+  </div>
 
   <section class="section breadcrumb-padding">
     <nav class="container breadcrumb">
@@ -42,41 +184,60 @@
         </section>
 
         <div class="box">
-
+          <button id="modal-add-department" class="button is-rounded is-primary">
+            <span class="icon">
+              <i class="fas fa-plus"></i>
+            </span>
+            <span class="has-text-weight-semibold">Add Department</span>
+          </button>
           <div class="table-container">
             <table class="table is-striped is-hoverable is-fullwidth">
               <thead>
                 <tr>
                   <th>Name</th>
                   <th>Manager Name</th>
-                  <th>Time of Update</th>
+                  <th>Time of Creation</th>
+                  <th>Status</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>Computer not switching on</td>
+                <tr class="department-item">
+                  <td>Laptops</td>
                   <td>Hyder Kutty</td>
                   <td>19/04/18 12:00AM</td>
+                  <td></td>
                 </tr>
-                <tr>
-                  <td>Computer not switching on</td>
+                <tr class="department-item">
+                  <td>Hardware</td>
                   <td>Ramu Raja</td>
                   <td>23/06/16 09:00AM</td>
+                  <td></td>
                 </tr>
-                <tr>
-                  <td>Keyboard damaged</td>
+                <tr class="department-item">
+                  <td>Software</td>
                   <td>Ramu Soman</td>
                   <td>25/07/16 06:00PM</td>
+                  <td class="is-narrow has-text-centered">
+                    <div class="icon">
+                      <i class="fas fa-lock"></i>
+                    </div>
+                  </td>
                 </tr>
-                <tr>
-                  <td>Wifi not switching on</td>
+                <tr class="department-item">
+                  <td>Server Handling</td>
                   <td>Hari Sasi</td>
                   <td>19/04/16 10:00AM</td>
+                  <td></td>
                 </tr>
-                <tr>
-                  <td>Computer not switching on</td>
+                <tr class="department-item">
+                  <td>Web Hosting</td>
                   <td>Shukla Raja</td>
                   <td>19/04/18 12:00AM</td>
+                  <td class="is-narrow has-text-centered">
+                    <div class="icon">
+                      <i class="fas fa-lock"></i>
+                    </div>
+                  </td>
                 </tr>
               </tbody>
             </table>

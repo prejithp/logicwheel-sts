@@ -2,181 +2,178 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Admin Dash</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css' />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Admin Dash</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css' />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="./style.css">
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
 </head>
 
 <body>
-    <div id="navbar-admin"></div>
+	<div id="navbar-admin"></div>
 
+	<div id="modal-change-password-container"></div>
 
-    <div id="modal-change-password-container"></div>
-
-    <section class="section breadcrumb-padding">
-        <nav class="container breadcrumb">
-            <ul>
-                <li class="is-active">
-                    <a href="#">Home</a>
-                </li>
-            </ul>
-        </nav>
-    </section>
-    <section class="section hero is-light section-reduce-padding-bottom is-hidden-touch">
-        <div class="columns">
-            <div class="column is-12">
-                <div class="columns is-centered has-text-centered is-variable is-6">
-                    <div class="column is-2">
-                        <a href="./staff-assigned-tickets.html">
-                            <div class="card dash-card">
-                                <div class="card-image dash-card-image">
-                                    <figure class="image is-size-2 has-text-link">
-                                        <i class="fas fa-users staff-dash-inner-image"></i>
-                                    </figure>
-                                </div>
-                                <div class="card-content">
-                                    <div class="is-size-6 has-text-weight-bold">Client List</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="column is-2">
-                        <a href="./staff-attended-tickets.html">
-                            <div class="card dash-card">
-                                <div class="card-image dash-card-image">
-									<figure class="image is-size-2 has-text-info">
+	<section class="section breadcrumb-padding">
+		<nav class="container breadcrumb">
+			<ul>
+				<li class="is-active">
+					<a href="#">Home</a>
+				</li>
+			</ul>
+		</nav>
+	</section>
+	<section class="section hero is-light section-reduce-padding-bottom is-hidden-touch">
+		<div class="columns">
+			<div class="column is-12">
+				<div class="columns is-centered has-text-centered is-variable is-6">
+					<div class="column is-2">
+						<a href="./staff-assigned-tickets.html">
+							<div class="card dash-card">
+								<div class="card-image dash-card-image">
+									<figure class="image is-size-2 has-text-purple">
+										<i class="fas fa-users staff-dash-inner-image"></i>
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="is-size-6 has-text-weight-bold">Client List</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="column is-2">
+						<a href="./staff-attended-tickets.html">
+							<div class="card dash-card">
+								<div class="card-image dash-card-image">
+									<figure class="image is-size-2 has-text-link">
 										<i class="fas fa-file-alt dash-inner-image"></i>
 									</figure>
 								</div>
-                                <div class="card-content">
-                                    <div class="is-size-6 has-text-weight-bold">Ticket List</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="column is-2">
-                        <a href="./staff-attended-tickets.html">
-                            <div class="card dash-card">
-                                <div class="card-image dash-card-image">
-                                    <figure class="image is-size-2 has-text-success">
-                                        <i class="fab fa-wpforms fa-fw"></i>
-                                    </figure>
-                                </div>
-                                <div class="card-content">
-                                    <div class="is-size-6 has-text-weight-bold">Template List</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="column is-2">
-                        <a href="./staff-message.html">
-                            <div class="card dash-card">
-                                <div class="card-image dash-card-image">
-                                    <figure class="image is-size-2 has-text-info">
-                                        <i class="far fa-envelope staff-dash-inner-image"></i>
-                                    </figure>
-                                </div>
-                                <div class="card-content">
-                                    <div class="is-size-6 has-text-weight-bold">Messages</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="column is-2">
-                        <a href="./staff-personal-preference.html">
-                            <div class="card dash-card">
-                                <div class="card-image dash-card-image">
-                                    <figure class="image is-size-2 has-text-primary">
-                                        <i class="fas fa-cog staff-dash-inner-image"></i>
-                                    </figure>
-                                </div>
-                                <div class="card-content">
-                                    <div class="is-size-6 has-text-weight-bold">Settings</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="root" class="section hero is-light section-reduce-padding">
-        <div class="columns">
-            <div class="column is-offset-1 is-10">
-                <div class="title is-size-3 has-text-left title-padding section-reduce-padding ">Recent Tickets</div>
-                <div class="box">
-                    <div class="table-container">
-                        <table class="table is-striped is-hoverable is-fullwidth">
-                            <thead class="has-background-primary">
-                                <tr>
-                                    <th class="has-text-white">ID</th>
-                                    <th class="has-text-white">Subject</th>
-                                    <th class="has-text-white">Department</th>
-                                    <th class="has-text-white">Post Count</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="has-text-weight-bold">
-                                    <td>A98FE4TSF</td>
-                                    <td>Computer not switching on what to do treid restarting and all but still don't work</td>
-                                    <td>Hardware</td>
-                                    <td class="has-text-centered">5</td>
-                                </tr>
-                                <tr>
-                                    <td>AG8FEFRG24</td>
-                                    <td>Computer not switching on</td>
-                                    <td>Software</td>
-                                    <td class="has-text-centered">24</td>
-                                </tr>
-                                <tr class="has-text-weight-bold">
-                                    <td>CD888H4FE2</td>
-                                    <td>Wifi not switching on Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi,accusamus
-                                        fuga
-                                    </td>
-                                    <td>Software</td>
-                                    <td class="has-text-centered">2</td>
-                                </tr>
-                                <tr class="has-text-weight-bold">
-                                    <td>CD888H4FE2</td>
-                                    <td>Wifi not switching on Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi,accusamus
-                                        fuga
-                                    </td>
-                                    <td>Software</td>
-                                    <td class="has-text-centered">2</td>
-                                </tr>
-                                <tr>
-                                    <td>AD8FE6HS21</td>
-                                    <td>Computer not switching on</td>
-                                    <td>Hardware</td>
-                                    <td class="has-text-centered">41</td>
-                                </tr>
-                                <tr>
-                                    <td>AD8FE6HS21</td>
-                                    <td>Computer not switching on</td>
-                                    <td>Hardware</td>
-                                    <td class="has-text-centered">41</td>
-                                </tr>
-                                <tr>
-                                    <td>EF899P92KD</td>
-                                    <td>Keyboard damaged Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis molestiae
-                                        ut facilis excepturi </td>
-                                    <td>Hardware</td>
-                                    <td class="has-text-centered">8</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-    </section>
+								<div class="card-content">
+									<div class="is-size-6 has-text-weight-bold">Ticket List</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="column is-2">
+						<a href="./staff-attended-tickets.html">
+							<div class="card dash-card">
+								<div class="card-image dash-card-image">
+									<figure class="image is-size-2 has-text-success">
+										<i class="fab fa-wpforms fa-fw"></i>
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="is-size-6 has-text-weight-bold">Template List</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="column is-2">
+						<a href="./staff-message.html">
+							<div class="card dash-card">
+								<div class="card-image dash-card-image">
+									<figure class="image is-size-2 has-text-info">
+										<i class="far fa-envelope staff-dash-inner-image"></i>
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="is-size-6 has-text-weight-bold">Messages</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="column is-2">
+						<a href="./staff-personal-preference.html">
+							<div class="card dash-card">
+								<div class="card-image dash-card-image">
+									<figure class="image is-size-2 has-text-primary">
+										<i class="fas fa-cog staff-dash-inner-image"></i>
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="is-size-6 has-text-weight-bold">Settings</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="root" class="section hero is-light section-reduce-padding">
+		<div class="columns">
+			<div class="column is-offset-1 is-10">
+				<div class="title is-size-3 has-text-left title-padding section-reduce-padding ">Recent Tickets</div>
+				<div class="box">
+					<div class="table-container">
+						<table class="table is-striped is-hoverable is-fullwidth">
+							<thead class="has-background-primary">
+								<tr>
+									<th class="has-text-white">ID</th>
+									<th class="has-text-white">Subject</th>
+									<th class="has-text-white">Department</th>
+									<th class="has-text-white">Post Count</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="has-text-weight-bold">
+									<td>A98FE4TSF</td>
+									<td>Computer not switching on what to do treid restarting and all but still don't work</td>
+									<td>Hardware</td>
+									<td class="has-text-centered">5</td>
+								</tr>
+								<tr>
+									<td>AG8FEFRG24</td>
+									<td>Computer not switching on</td>
+									<td>Software</td>
+									<td class="has-text-centered">24</td>
+								</tr>
+								<tr class="has-text-weight-bold">
+									<td>CD888H4FE2</td>
+									<td>Wifi not switching on Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi,accusamus fuga
+									</td>
+									<td>Software</td>
+									<td class="has-text-centered">2</td>
+								</tr>
+								<tr class="has-text-weight-bold">
+									<td>CD888H4FE2</td>
+									<td>Wifi not switching on Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi,accusamus fuga
+									</td>
+									<td>Software</td>
+									<td class="has-text-centered">2</td>
+								</tr>
+								<tr>
+									<td>AD8FE6HS21</td>
+									<td>Computer not switching on</td>
+									<td>Hardware</td>
+									<td class="has-text-centered">41</td>
+								</tr>
+								<tr>
+									<td>AD8FE6HS21</td>
+									<td>Computer not switching on</td>
+									<td>Hardware</td>
+									<td class="has-text-centered">41</td>
+								</tr>
+								<tr>
+									<td>EF899P92KD</td>
+									<td>Keyboard damaged Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis molestiae ut facilis excepturi
+										</td>
+									<td>Hardware</td>
+									<td class="has-text-centered">8</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+	</section>
 
-    <script src="app.js"></script>
+	<script src="app.js"></script>
 </body>
 
 </html>
